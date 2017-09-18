@@ -1,0 +1,4 @@
+PWD C:/Users/ricki/Desktop/Tesi/capitoli
+INPUT C:/Users/ricki/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
+INPUT Capitolo1.tex
+OUTPUT Capitolo1.log
