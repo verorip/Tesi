@@ -56,22 +56,14 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
 INPUT C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map
-INPUT indice/indice.tex
-INPUT indice/indice.tex
+INPUT capitoli/Abstract.tex
+INPUT capitoli/Abstract.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT indice/indice.tex
+INPUT indice/indice.tex
 INPUT Tesi.toc
 INPUT Tesi.toc
-OUTPUT Tesi.toc
-INPUT capitoli/Abstract.tex
-INPUT capitoli/Abstract.tex
-INPUT capitoli/introduzione.tex
-INPUT capitoli/introduzione.tex
-INPUT capitoli/capitolo1.tex
-INPUT capitoli/capitolo1.tex
-INPUT bibliografia/bibliografia.tex
-INPUT bibliografia/bibliografia.tex
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmtt12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr8.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr6.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
@@ -80,7 +72,18 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi6.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy8.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy6.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsl12.tfm
+OUTPUT Tesi.toc
+INPUT capitoli/introduzione.tex
+INPUT capitoli/introduzione.tex
+INPUT capitoli/capitolo1.tex
+INPUT capitoli/capitolo1.tex
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmti12.tfm
+INPUT bibliografia/bibliografia.tex
+INPUT bibliografia/bibliografia.tex
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmtt12.tfm
 INPUT Tesi.aux
 INPUT ./Tesi.out
 INPUT ./Tesi.out
@@ -90,7 +93,9 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb

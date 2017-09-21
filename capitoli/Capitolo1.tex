@@ -1,6 +1,238 @@
-\chapter{Linguaggi e Software usati}
+\chapter{Nozioni, linguaggio e strumenti utilizzati}
 Durante il percorso di stage presso Wellnet ho appreso conoscenze riguardanti
 le tecnologie più recenti e promettenti nel campo dei sistemi e delle
-macchine virtuali , utilizzando il nuovo linguaggio di programmazione
-Go  sviluppato da Google e tecnologie di versioning del codice stabili
+macchine virtuali (Docker \cite{docker-website}), utilizzando il nuovo linguaggio di programmazione
+Go (Golang \cite{go-website}) sviluppato da Google e tecnologie di versioning del codice stabili
 e collaudate (Git \cite{git-website}).
+\\
+Nel corso dello sviluppo del tool abbiamo cercato di seguire una metodologia di
+lavoro chiamata Agile, che descrive una serie di principi che aiutano lo sviluppatore
+ed il team di sviluppo nel produrre software di qualità.
+
+\section{Docker}
+Docker \cite{docker-website} è un software open source per la gestione dei container:
+ aiuta ad amministrare in maniera più semplice i Containers Linux (tramite
+ prima i driver LXC, poi recentemente sostituiti da runC \cite{runC-website}).
+Lo scopo di Docker è quello di fornire un layer di astrazione intermedio (tra
+la macchina e l'applicazione) che fornisce alle applicazioni un kernel
+linux condiviso.
+Insieme alla gestione del kernel condiviso Docker offre anche un sistema di
+distribuzione delle immagini Docker (modelli di containers) e numerosi tool
+per una migliore gestione dei container (dalla gestione dei cluster di containers
+con Docker Swarm a interfacce grafiche per l'hub di distribuzione).
+\\
+Docker permette di gestire il meccanismo di isolamento di processi in un kernel
+condiviso. È possibile isolare in modo semplice un singolo processo (quindi
+una singola applicazione) in un ambiente protetto e gestibile, sia dal punto
+di vista della sicurezza, che del consumo delle risorse.
+
+\subsection{Differenza tra l’uso di Docker e le Virtual Machines}
+Negli ultimi anni è cresciuto l'interesse per l'utilizzo dei container
+linux come sostituti delle macchine virtuali.
+Mentre una virtual machine offre una virtualizzazione a livello hardware
+(full virtualization), i container linux offrono una virtualizzazione a livello
+del sistema operativo (OS virtualization).
+\\[2\baselineskip]
+Una virtualizzazione a livello hardware fornisce un isolamento maggiore (ad esempio
+la comunicazione tra virtual machines deve avvenire attraverso la rete) ma
+porta con sè alcuni difetti, tra i quali grandi costo a livello hardware e
+una gestione complicata delle macchine\cite{dockerAndContainers-slides}.\\
+Una virtualizzazione a livello di sistema operativo presenta numerosi punti di forza:
+
+\begin{itemize}
+\item il supporto da parte di qualsiasi kernel linux abbastanza recente (e quindi la possibilità di essere usato su dispositivi molto vari, da un server ad un sistema embedded)
+\item la velocità, sia in avvio che in esecuzione di applicazioni \cite{containerVSvm-paper}
+\item la flessibilità e l'efficienza nell'uso delle risorse: in caso di necessità è possibile replicare il container e scalare orizzontalmente l'applicazione
+\item un isolamento \textquotedblleft{}diverso\textquotedblright{}: non forte come quello delle virtual machines, ma permette ai container di comunicare anche condividendo files, socket, code FIFO\ldots{} proprio perché hanno un kernel condiviso. \cite{linuxContainers-paper}
+\item la distribuzione dei modelli di containers: una immagine di Docker è di dimensione molto ridotta rispetto all'immagine di un sistema operativo per una virtual machine: è più facile distribuire una immagine.
+\end{itemize}
+
+Oltre a queste caratteristiche dei containers linux, Docker fornisce nativamente
+un protocollo per la distribuzione delle immagini (modelli di containers)
+pubblico e open-source.
+
+
+
+\section{Go}
+Go è un linguaggio di programmazione open source sviluppato inizialmente in
+Google nel 2009 da Robert Griesemer (programmatore), Rob Pike (informatico, creatore
+insieme a Ken Thompson dello standard UTF-8) e Ken Thompson (informatico, creatore
+del linguaggio B e vincitore del premio Turing nel 1983).
+Il linguaggio Go è compilato, fortemente tipizzato, concorrente e ha un
+sistema di garbage collection per la gestione della memoria\cite{go-website}.
+
+I programmi sono composti da packages i quali permettono una gestione efficiente
+delle dipendenze. L'implementazione attuale utilizza il tradizionale modello
+compilazione/link per generare i file eseguibili.
+La grammatica è compatta e regolare e si focalizza sull'uso di poche
+keywords (25 in totale) dalla forte chiarezza semantica. \cite{goSpec-website}
+Il codice sorgente è codificato nativamente secondo lo standard Unicode UTF-8.
+\\[2\baselineskip]
+Una delle caratteristiche che hanno permesso al linguaggio Go di acquisire
+un sempre maggior successo \cite{programmingLanguagesIndex-website} è l'uso di alcuni tool integrati nel programma
+di sviluppo che ne permettono una scrittura rapida e sicura.
+Ne sono un esempio gofmt e golint, che permettono di avere uno stile univoco nel
+codice e uno standard nell'uso di spazi e indentazioni, e godoc e go get per una
+generazione standard di documentazione e gestione delle librerie.
+
+
+\section{Git}
+Git\cite{git-website} è un software per la gestione del versionamento del codice creato da Linus Torvalds nel 2005.
+Semplificando, git non è altro che un grafo diretto aciclico (DAG) di oggetti,
+ciascuno identificato da un hash univoco\cite{gitCS-website}.\\
+Gli oggetti presenti nel grafo sono principalmente tre: i blob, gli alberi e le etichette.
+I blob sono semplici insiemi di bytes che contengono i dati contenuti nei files,
+gli alberi rappresentano le directory mentre le etichette mostrano dati aggiuntivi
+per identificare e gestire i nodi.\\
+Quando un nodo punta ad un altro nodo viene definita una relazione di dipendenza tra i due:
+ il secondo non può esistere senza il primo.
+Le relazioni tra i singoli nodi (blob o alberi) e le etichette tra i nodi definiscono
+la struttura del progetto e la sua storia (il suo stato prima e dopo ogni singolo cambiamento).
+Questa struttura permette di visualizzare e gestire integramente tutte le modifiche avvenute su un file.
+\\[1\baselineskip]
+Due caratteristiche che hanno reso git (o sue alternative per il versionamento del codice)
+uno strumento indispensabile per ogni sviluppatore: la semplicità di utilizzo e
+la gestione distribuita tramite repository online.
+Semplicità di utilizzo perché per iniziare ad usare git in maniera
+efficace, anche grazie ai tool grafici presenti in rete, non è necessaria
+alcuna conoscenza pregressa.
+Un repository online (nel nostro caso abbiamo usato bitbucket per lo sviluppo
+iniziale e poi github) permette di condividere il codice scritto tra i componenti
+del team e gestire lo stato di ogni file sorgente tra i partecipanti al repository.
+
+
+
+\section{Metodologie agili}
+Per metodologie agili si intendono una serie di principi (o modelli) per lo
+sviluppo software attraverso i quali il prodotto prende forma e si evolve
+attraverso la collaborazione  tra il team di sviluppo ed il cliente.
+Il termine \textquotedblleft{}agile\textquotedblright{} venne utilizzato
+ per la prima volta nel 2001 nel \textquotedblleft{}manifesto Agile\textquotedblright{},
+ anche se lo sviluppo di tali metodologie è iniziato già nella metà
+ degli anni '90 in contrapposizione ai metodi a cascata tradizionali.
+\\[1\baselineskip]
+\begin{center}
+  \textbf{Manifesto agile} \cite{agileManifest-website}
+\\[1\baselineskip]
+Stiamo scoprendo modi migliori di creare software,
+sviluppandolo e aiutando gli altri a fare lo stesso.
+Grazie a questa attività siamo arrivati a considerare importanti:
+\\[1\baselineskip]
+
+\textbf{Gli individui e le interazioni} più che \textit{i processi e gli strumenti}\\
+\textbf{Il software funzionante} più che \textit{la documentazione esaustiva}\\
+\textbf{La collaborazione col cliente} più che \textit{la negoziazione dei contratti}\\
+\textbf{Rispondere al cambiamento} più che \textit{seguire un piano}
+\\[1\baselineskip]
+
+Ovvero, fermo restando il valore delle voci a \textit{destra},\\
+consideriamo più importanti le voci a \textbf{sinistra}.
+\end{center}
+\newpage
+Poiché nel manifesto agile sono descritti solamente i principi sui quali è
+fondata la metodologia agile, nel corso degli anni sono state date differenti
+definizioni di Metodologie o Metodi Agili, tra le quali una in particolare le
+descrive in modo sufficientemente completo:\\
+Il metodo agile è un modello di sviluppo software incentrato sulle persone,
+orientato alla comunicazione, flessibile e reattivo (in modo tale da adattarsi
+in ogni momento a cambiamenti voluti e non), veloce (incoraggiando uno sviluppo
+del prodotto rapido ed iterativo), snello (focalizzandosi su piccoli intervalli
+di tempo e sulla qualità) e proattivo (puntando sul miglioramento durante e
+dopo lo sviluppo)\cite{agileMethod-website}.\\
+Su questo modello sono nate numerose metodologie specifiche e spesso si parla
+di \textquotedblleft{}tecniche agili\textquotedblright{}. \\
+Le più popolari sono: Scrum, Kanban, Adaptive Software Development, Extreme Programming, Lean Software Development, etc.\\
+Durante lo sviluppo, vista la natura dinamica del progetto, abbiamo utilizzato
+principalmente un mix di queste \textquotedblleft{}tecniche agili\textquotedblright{}:
+Adaptive Software Development (ASD), Scrum e Kanban.
+
+\subsection{Adaptive Software Development (ASD)}
+Lo sviluppo Adaptive Software Development promuove il paradigma adattivo ed è
+stato proposto per la prima volta da Jim Highsmith nel 1999 nel suo libro "Adaptive Software Development".
+Lo sviluppo secondo questo paradigma si focalizza sulla collaborazione tra gli
+individui e l'organizzazione autonoma del team.\\
+A differenza di altre \textquotedblleft{}tecniche agili\textquotedblright{}
+si basa su un ciclo diviso in tre fasi: una di speculazione, una di
+collaborazione ed una di apprendimento.\\
+Questo ciclo permette uno sviluppo continuativo, dinamico e adattivo del
+progetto e  favorisce una maggiore tolleranza ai cambiamenti.
+Il termine \textquotedblleft{}speculazione\textquotedblright{} prende il posto
+di \textquotedblleft{}pianificazione\textquotedblright{} di un normale ciclo di
+vita del software e si riferisce al paradosso della pianificazione dettagliata:
+nel caso di progetti basati su tecnologie molto recenti ed in continuo mutamento
+ (ad esempio Docker: che durante i mesi di stage ha sviluppato una versione
+ nativa per macchine non linux ed una gestione di pacchetti di containers sperimentale)
+  è necessario che alcune fasi della pianificazione siano continuamente
+  messi in discussione ed aggiornate.\\
+Per collaborazione ed apprendimento ci si riferisce allo sforzo di gestire la
+speculazione tra i membri del team ed alla risposta dello stesso per modificare
+e adattare lo sviluppo alle nuove sfide.\\
+
+\subsection{Scrum}
+Scrum è un metodo di sviluppo agile pensato all'inizio degli anni '90 da
+Jeff Sutherland. Nel corso degli ultimi anni lo studio e lo sviluppo di questo
+metodo è stato portato avanti da numerose personalità di spicco dell'ingegneria
+del software, tra cui Schwaber e Beedle.\\
+Il metodo Scrum si basa sui princìpi del manifesto agile e tali princpipi sono
+usati per guidare il ciclo di vita del prodotto, suddiviso in cinque principali
+attività: requisiti, analisi, progettazione, evoluzione e consegna.
+Ogni attività di lavoro segue un particolare modello temporale chiamato
+\textquotedblleft{}sprint\textquotedblright{}.
+
+Scrum si focalizza su un insieme di metodologie dalla provata efficacia per
+progetti nei quali sono presenti particolari caratteristiche: tempistiche
+ristrette e requisiti dinamici.
+Come si può vedere nell'immagine, il metodo definisce alcune strutture utili:\\
+\textbf{Backlog}: una lista delle priorità nei requisiti del progetto o caratteristiche
+che potrebbero dare maggior valore al prodotto.
+Il project manager prepara il backlog ed aggiorna la lista.\\
+\textbf{Sprints}: uno sprint consiste in una unità di base dello sviluppo
+secondo il metodo Scrum. è di durata fissa (da una a quattro settimane) e
+durante lo sprint vengono create porzioni complete del prodotto.
+Durante lo sprint non è possibile cambiare  gli obiettivi ma è necessario
+aspettare il termine dello stesso per eventuali modifiche.\\
+Scrum incorpora inoltre una serie di caratteristiche che enfatizzano le
+priorità del progetto, la suddivisione del progetto in blocchi, la comunicazione
+tra il team e un feedback continuo con il cliente.\\
+Nel corso dello stage abbiamo definito sprint di 15 giorni per tutta la durata dello sviluppo.
+Ad ogni termine di ogni sprint il backlog è stato aggiornato con le
+caratteristiche da implementare e sono state discusse eventuali problematicità
+o scelte architetturali del tool.
+
+
+\subsection{Kanban}
+Kanban è una metodologia per gestione della conoscenza ispirata ai principi
+dello sviluppo software agile, proposta da David J. Anderson nel 2007 ed
+ufficializzata nel  libro \textquotedblleft{}Kanban\textquotedblright{}
+dello stesso nel 2010.\\
+Tale metodologia nasce però molto prima, negli anni '40, sulla base dei primi
+processi di ottimizzazione negli stabilimenti Toyota per gestire le scorte dei
+prodotti utilizzati nelle sue fabbriche. Per gestire al meglio gli inventari,
+in relazione ai materiali consumati dai vari gruppi di lavoro, venne istituita
+una tessera (un \textquotedblleft{}kanban\textquotedblright{}) che doveva essere
+scambiata tra gli utilizzatori delle risorse\cite{kanban-website}.\\
+Quando un materiale finiva, un kanban veniva passato dalla fabbrica al magazzino
+con tutti i dati necessari (tipo di materiale, esatta quantità del materiale
+richiesto, etc). Il magazzino a sua volta riforniva la fabbrica e forniva un kanban al fornitore.\\
+Mentre la tecnologia per rappresentare questo tipo di scambio si è evoluta,
+questo processo produttivo è rimasto pressoché identico.\\
+Oggi i team che utilizzano la metodologia Agile possono utilizzare gli stessi
+principi sostituendo i materiali con le attività di sviluppo ed il passaggio di
+consegne con il ciclo di vita del software.
+Questo permette al team una migliore e più veloce pianificazione delle attività
+ed una completa trasparenza nel ciclo di sviluppo.\\
+In particolare, il metodo Kanban aiuta nella consapevolezza del team dello stato
+del progetto, nella visualizzazione del flusso di lavoro e nella trasparenza delle
+politiche di processo.\\
+Nello sviluppo software di solito è utilizzata anche una Kanban board (o lavagna)
+che raccoglie e suddivide le tessere Kanban in liste.
+
+Durante tutta la durata dello stage abbiamo utilizzato una Kanban Board, con
+tessere Kanban virtuali, chiamata Trello.\\
+I progetti sono rappresentati da una lavagna, che contiene differenti liste
+(stati del progetto), ciascuna contenenti le tessere Kanban (task del progetto).
+Ad ogni completamento di una attività, la stessa viene spostata da una lista
+all’altra. Ogni tessera (attività) contiene tutte le informazioni della stessa
+attività (durata, descrizione, stato, se bloccante, etichette, etc.)\\
+Le tessere progrediscono da una lista all’altra tramite un semplice drag-and-drop
+ è possibile assegnare particolari notifiche alle liste o alle tessere.
