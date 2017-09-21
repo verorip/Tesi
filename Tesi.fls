@@ -1,7 +1,7 @@
-PWD C:/Users/ricki/Desktop/Tesi
+PWD C:/Users/ricki/Desktop/Tesi/Tesi
 INPUT C:/Users/ricki/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
-INPUT Intro.tex
-OUTPUT Intro.log
+INPUT Tesi.tex
+OUTPUT Tesi.log
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/book.cls
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/book.cls
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/bk12.clo
@@ -32,26 +32,43 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
-INPUT Intro.aux
-INPUT Intro.aux
-OUTPUT Intro.aux
+INPUT Tesi.aux
+INPUT Tesi.aux
+OUTPUT Tesi.aux
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
-INPUT Intro.out
-INPUT Intro.out
-INPUT Intro.out
-INPUT Intro.out
-OUTPUT Intro.pdf
-INPUT ./Intro.out
-INPUT ./Intro.out
-OUTPUT Intro.out
-INPUT capitoli/capitolo1.tex
-INPUT capitoli/capitolo1.tex
+INPUT Tesi.out
+INPUT Tesi.out
+INPUT Tesi.out
+INPUT Tesi.out
+OUTPUT Tesi.pdf
+INPUT ./Tesi.out
+INPUT ./Tesi.out
+OUTPUT Tesi.out
+INPUT frontespizio/frontespizio.tex
+INPUT frontespizio/frontespizio.tex
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
 INPUT C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map
+INPUT indice/indice.tex
+INPUT indice/indice.tex
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT Tesi.toc
+INPUT Tesi.toc
+OUTPUT Tesi.toc
+INPUT capitoli/Abstract.tex
+INPUT capitoli/Abstract.tex
+INPUT capitoli/introduzione.tex
+INPUT capitoli/introduzione.tex
+INPUT capitoli/capitolo1.tex
+INPUT capitoli/capitolo1.tex
 INPUT bibliografia/bibliografia.tex
 INPUT bibliografia/bibliografia.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmtt12.tfm
@@ -64,11 +81,13 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy8.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy6.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsl12.tfm
-INPUT Intro.aux
-INPUT ./Intro.out
-INPUT ./Intro.out
+INPUT Tesi.aux
+INPUT ./Tesi.out
+INPUT ./Tesi.out
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb
