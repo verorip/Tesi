@@ -1,11 +1,24 @@
 \chapter{Scopi e Problemi}
 
 \section{Moduli del MagicMirror}
-Nello sviluppo dei moduli del MagicMirror si è dovuto affrontare il problema di far comunicare
-i diversi dispositivi hardware tra cui microfono e telecamera con il calcolatore principale.
-Inoltre i diversi moduli sono stati sviluppati in linguaggi differenti, perchè alcuni
-erano più facili da interfacciare con il relativo hardware.\\
-Lo scopo dei moduli era di permettere un'interazione umana tra il software principale
-e l'essere umano e di poterlo controllare senza bisogno di usare input meccanici come mouse e tastiera.\\
-L'ambiente in cui è stato svolto lo stage è Raspian una distro di Debian che gira
-sul dispositivo Rasperry.
+Nello sviluppo dei moduli del MagicMirror si \'e dovuto affrontare il problema di far comunicare
+i diversi dispositivi hardware (tra cui microfono e telecamera) con il calcolatore principale, utilizzando tecnologie
+e software diversi tra loro e linguaggi differenti, dal momento che ognuno era risultato
+più facile da implementare con uno specifico linguaggio rispetto ad un altro.\\
+Lo scopo dei moduli \'e di permettere un'interazione umana tra il software principale
+e l'essere umano, e di poter controllare la macchina senza bisogno di usare input meccanici come mouse e tastiera.
+\\[2\baselineskip]
+\section{Interfaccia di controllo del MagicMirror}
+Nello sviluppo della pagina Web di controllo si \'e affrontato il problema di dover modificare
+il documento di configurazione del software principale da una pagina web senza eliminarne parti essenziali
+o modificarlo in un formato sbagliato (gestito tramite validatore).
+Lo scambio dei messaggi tra il Backend ed il Frontend avviene in formato JSON, lo stesso formato
+con cui \'e stipulato il file di configurazione del Magic Mirror.\\
+Lo scopo dell'interfaccia è di permettere ad un qualsiasi utente (con i permessi) di gestire
+i diversi moduli implementati nel software modificandone il JSON, senza accedere fisicamente alla macchina.
+La pagina, inoltre, permette di configurare moduli creati anche da terzi: inserendoli
+semplicemente nella directory del dispositivo il Backend li cerca e li indicizza nell'interfaccia,
+da dove possono essere attivati.
+
+L'ambiente in cui \'e stato svolto lo stage \'e Raspian una distribuzione Debian che gira
+sul calcolatore Rasperry.
