@@ -1,5 +1,10 @@
 \BOOKMARK [0][-]{chapter*.1}{Abstract}{}% 1
 \BOOKMARK [0][-]{chapter*.3}{Introduzione}{}% 2
+<<<<<<< HEAD
 \BOOKMARK [0][-]{chapter.1}{Scopi e Problemi}{}% 3
 \BOOKMARK [1][-]{section.1.1}{Moduli del MagicMirror}{chapter.1}% 4
 \BOOKMARK [1][-]{section.1.2}{Interfaccia di controllo del MagicMirror}{chapter.1}% 5
+=======
+\BOOKMARK [0][-]{chapter.1}{Tecnologie Implicate}{}% 3
+\BOOKMARK [1][-]{section.1.1}{Electron}{chapter.1}% 4
+>>>>>>> chapter2
