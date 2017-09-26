@@ -1,8 +1,15 @@
 \documentclass[a4paper, 12pt, oneside]{book}
 \usepackage{hyperref}
+\usepackage{listings,xcolor}
 \pagestyle{plain}
 
 \begin{document}
+\lstset{
+    string=[s]{"}{"},
+    stringstyle=\color{blue},
+    comment=[l]{:},
+    commentstyle=\color{black},
+}
 \setcounter{page}{1}
 \pagenumbering{Roman}
 %%Frontespizio

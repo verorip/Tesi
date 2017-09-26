@@ -1,9 +1,32 @@
 \chapter{Tecnologie Implicate}
 
 Durante lo sviluppo del progetto sono state adottate diverse tecnologie recenti
-e non nel campo della creazione di moduli per un'applicazione(OpenCV \cite{OpenCV-website},
-GoogleSpeechRecognition \cite{GoogleSTT-website}, Electron \cite{Electron-website})
+e non nel campo della creazione di moduli per un'applicazione(Electron \cite{Electron-website},
+OpenCV \cite{OpenCV-website}, GoogleSpeechRecognition \cite{GoogleSTT-website})
 e di web server (NodeJS \cite{NodeJS-website},  Model-View-Controller Architecture \cite{MVC-Architecture},
 Express \cite{Express-website}, MySQL \cite{MySQL}, Mustache \cite{Mustache}),
 utilizzando diversi linguaggi di programmazione (JavaScript \cite{JavaScript}, Python \cite{Python})
 e tecnologie per visionare e condividere codici (GitLab \cite{git-website}).
+
+\section{Electron}
+Electron è un Framework open source rilasciato per la prima volta nel 2013, ma la prima versione
+stabile è uscita di recente. \'E disponibile sui sistemi operativi Window, MacOS e Linux ed è scritto
+in C++ e Javascript. Il framework permette la creazione di interfacce grafiche (GUI) per
+applicazioni cross platform, utilizzando teconologie già esistenti per lo sviluppo del backend e del frontend
+(Javascript, NodeJS, V8 \cite{V8}).
+Un'applicazione Electorn ha bisongo di 3 componenti principali:
+\begin{itemize}
+\item Il package.json, un file JSON, che deve contenere almeno il nome dell'applicazione,
+la versione dell'applicazione creata, la descrizione di quest'ultima e il il nome del file principale dell'applicazione
+(necessaria per l'avvio)
+\begin{lstlisting}
+{
+  "name": "magicmirror",
+  "version": "2.1.1",
+  "description": "The open source modular smart mirror platform.",
+  "main": "js/electron.js"
+}
+\end{lstlisting}
+\item fdsfaf
+\item la flessibilità e l'ef
+\end{itemize}
