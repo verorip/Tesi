@@ -1,10 +1,7 @@
 \contentsline {chapter}{Abstract}{I}{chapter*.1}
 \contentsline {chapter}{Introduzione}{III}{chapter*.3}
-<<<<<<< HEAD
 \contentsline {chapter}{\numberline {1}Scopi e Problemi}{IV}{chapter.1}
 \contentsline {section}{\numberline {1.1}Moduli del MagicMirror}{IV}{section.1.1}
 \contentsline {section}{\numberline {1.2}Interfaccia di controllo del MagicMirror}{IV}{section.1.2}
-=======
-\contentsline {chapter}{\numberline {1}Tecnologie Implicate}{IV}{chapter.1}
-\contentsline {section}{\numberline {1.1}Electron}{IV}{section.1.1}
->>>>>>> chapter2
+\contentsline {chapter}{\numberline {2}Tecnologie Implicate}{VI}{chapter.2}
+\contentsline {section}{\numberline {2.1}Electron}{VI}{section.2.1}

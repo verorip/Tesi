@@ -89,6 +89,8 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy6.tfm
 OUTPUT Tesi.toc
 INPUT capitoli/introduzione.tex
 INPUT capitoli/introduzione.tex
+INPUT capitoli/Capitolo1.tex
+INPUT capitoli/Capitolo1.tex
 INPUT capitoli/Capitolo2.tex
 INPUT capitoli/Capitolo2.tex
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
