@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1506425646 "Tesi.tex" "Tesi.pdf" "Tesi" 1506425647
+["pdflatex"] 1506425785 "Tesi.tex" "Tesi.pdf" "Tesi" 1506425785
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmcsc10.tfm" 1136768653 1300 63a6111ee6274895728663cf4b4e7e81 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -44,19 +44,19 @@
   "C:/Program Files/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty" 1463135581 57049 34128738f682d033422ca125f82e5d62 ""
   "C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map" 1506425497 80423 3cfba73105275d3ad410701d89fbdf7a ""
   "C:/Users/ricki/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1496913310 4052705 874681d590c76cbeda3e545a548296d6 ""
-  "Tesi.aux" 1506425647 1656 40c18fc55f86a73c4141db0fc4b24625 ""
-  "Tesi.out" 1506425647 205 c009f5e1b170f6a263a1ea7521eea4df ""
+  "Tesi.aux" 1506425785 1689 3cf13ded6cfd91f7d1772f594d84e6f9 ""
+  "Tesi.out" 1506425785 205 c009f5e1b170f6a263a1ea7521eea4df ""
   "Tesi.tex" 1506425404 607 c52353ced606aeee6886fb996cf69acb ""
-  "Tesi.toc" 1506425647 252 7489f6dd25e52aff48c09e3295cf8166 ""
-  "bibliografia/bibliografia.tex" 1506425616 973 ce13b0a13f80613509c72278bbc2a946 ""
+  "Tesi.toc" 1506425785 252 7489f6dd25e52aff48c09e3295cf8166 ""
+  "bibliografia/bibliografia.tex" 1506425708 1060 e0cbf95ee9236e09f2098f8dfd9fb8ee ""
   "capitoli/Abstract.tex" 1506072088 1019 b6787ab9683f8904fa372381e07b6e3c ""
-  "capitoli/Capitolo2.tex" 1506425643 1686 26fdfe527d07706df932eec80f023b26 ""
+  "capitoli/Capitolo2.tex" 1506425737 1696 48b5d3d8a0d3438af8c4e77a63f806f8 ""
   "capitoli/introduzione.tex" 1506074362 191 9d18a2059ac874e9308ffca639347596 ""
   "frontespizio/frontespizio.tex" 1506072100 600 0344b8904dd489e7c8405c0d1d0be566 ""
   "indice/indice.tex" 1505989156 18 0c5a26266c0e749458a271cd3687582e ""
   (generated)
-  "Tesi.log"
   "Tesi.toc"
   "Tesi.out"
   "Tesi.pdf"
+  "Tesi.log"
   "Tesi.aux"
