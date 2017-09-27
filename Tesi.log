@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  26 SEP 2017 15:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.8)  27 SEP 2017 15:38
 entering extended mode
 **./Tesi.tex
 (Tesi.tex
@@ -186,6 +186,32 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2017/05/19 3.10 The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-italian\italian.ldf"
+Language: italian 2015/03/26 v1.3n Italian support from the babel system
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2017/05/19 3.10 Babel common definitions
+\babel@savecnt=\count107
+\U@D=\dimen111
+)
+\it@lettering=\count108
+\it@doublequoteactive=\count109
+\it@ISOcompliance=\count110
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count111
 ) (Tesi.aux)
 \openout1 = `Tesi.aux'.
 
@@ -212,7 +238,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count107
+\c@section@level=\count112
 )
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
@@ -222,123 +248,127 @@ LaTeX Info: Redefining \nameref on input line 6.
 \@outlinefile=\write3
 \openout3 = `Tesi.out'.
 
-\c@lstlisting=\count108
+\c@lstlisting=\count113
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
-\scratchdimen=\dimen111
+\scratchcounter=\count114
+\scratchdimen=\dimen112
 \scratchbox=\box29
-\nofMPsegments=\count110
-\nofMParguments=\count111
+\nofMPsegments=\count115
+\nofMParguments=\count116
 \everyMPshowfont=\toks16
-\MPscratchCnt=\count112
-\MPscratchDim=\dimen112
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen113
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
 \everyMPtoPDFconversion=\toks17
-) (frontespizio/frontespizio.tex [1
+)
+LaTeX Info: Redefining \it@ocap on input line 6.
+LaTeX Info: Redefining \it@ccap on input line 6.
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]) (capitoli/Abstract.tex
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ¹ in font cmr12!
-)pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.21 \newpage
-              [1
+File italian.ldf warning: 
+italian.ldf    With OT1 encoding guillemets are poorly faked
+italian.ldf    Use T1 encoding
+italian.ldf    or specify a font with command \CaporaliFrom
+italian.ldf    See the documentation concerning the babel-italian typesetting 
+italian.ldf    on input line 6.
 
-] (indice/indice.tex (Tesi.toc
+(frontespizio/frontespizio.tex [1
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]) (indice/indice.tex (Tesi
+.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 4.
+(Font)              <12> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 4.
+(Font)              <8> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 4.
+(Font)              <6> on input line 6.
 )
 \tf@toc=\write4
 \openout4 = `Tesi.toc'.
 
-) [2
+)pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \newpage
+              [1
 
-] (capitoli/introduzione.tex) [3
-
-] (capitoli/Capitolo1.tex
-Chapter 1.
+] (capitoli/Abstract.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¹ in font cmr12!
+) [2
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--11
+] (capitoli/introduzione.tex)
+[3
+
+] (capitoli/Capitolo1.tex
+Capitolo 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--10
 
  []
 
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
-[4
+) [4
 
-]) [5] (capitoli/Capitolo2.tex
-Chapter 2.
+] (capitoli/Capitolo2.tex
+Capitolo 2.
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ¨ in font cmr12!
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no   in font cmr12!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+ [5
 
-Overfull \hbox (50.77321pt too wide) in paragraph at lines 19--22
-[]\OT1/cmr/m/n/12 Il pack-age.json, un file JSON, che deve con-tenere al-meno i
-l nome dell'applicazione,
- []
-
-
-Overfull \hbox (104.67389pt too wide) in paragraph at lines 26--27
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
+]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no   in font cmr12!
-[6
-
-]) [7] (bibliografia/bibliografia.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+ [6]) [7]
+(bibliografia/bibliografia.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
  [8
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
  (Tesi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 3156F99A270A24C6DE471AFFA92C6913;413.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
+(rerunfilecheck)             Checksum: 0C24BF6A72590E3743A91DEBDD57EFCC;524.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 32.
  ) 
 Here is how much of TeX's memory you used:
- 6537 strings out of 493323
- 94898 string characters out of 3139066
- 186876 words of memory out of 3000000
- 10001 multiletter control sequences out of 15000+200000
+ 7340 strings out of 493323
+ 104818 string characters out of 3146420
+ 209993 words of memory out of 3000000
+ 10776 multiletter control sequences out of 15000+200000
  8964 words of font info for 32 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,6n,35p,203b,978s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,5n,35p,904b,979s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Tesi.pdf (9 pages, 88621 bytes).
+Output written on Tesi.pdf (9 pages, 93124 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 37 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 174 PDF objects out of 1000 (max. 8388607)
+ 42 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

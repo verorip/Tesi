@@ -1,7 +1,11 @@
-\contentsline {chapter}{Abstract}{I}{chapter*.1}
+\select@language {italian}
+\select@language {italian}
+\contentsline {chapter}{Abstract}{II}{chapter*.2}
 \contentsline {chapter}{Introduzione}{III}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Scopi e Problemi}{IV}{chapter.1}
 \contentsline {section}{\numberline {1.1}Moduli del MagicMirror}{IV}{section.1.1}
 \contentsline {section}{\numberline {1.2}Interfaccia di controllo del MagicMirror}{IV}{section.1.2}
-\contentsline {chapter}{\numberline {2}Tecnologie Implicate}{VI}{chapter.2}
-\contentsline {section}{\numberline {2.1}Electron}{VI}{section.2.1}
+\contentsline {chapter}{\numberline {2}Tecnologie Implicate}{V}{chapter.2}
+\contentsline {section}{\numberline {2.1}Raspberry}{V}{section.2.1}
+\contentsline {section}{\numberline {2.2}Raspbian}{VI}{section.2.2}
+\contentsline {section}{\numberline {2.3}Electron}{VI}{section.2.3}

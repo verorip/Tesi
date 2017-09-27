@@ -1,8 +1,8 @@
 \documentclass[a4paper, 12pt, oneside]{book}
 \usepackage{hyperref}
 \usepackage{listings,xcolor}
+\usepackage[italian]{babel}
 \pagestyle{plain}
-
 \begin{document}
 \lstset{
     string=[s]{"}{"},
@@ -16,12 +16,10 @@
 \input{frontespizio/frontespizio}
 \newpage
 %%Indice
-
-\input{capitoli/Abstract}
-\newpage
 \input{indice/indice}
 \newpage
-
+\input{capitoli/Abstract}
+\newpage
 %%Capitoli
 \input{capitoli/introduzione}
 \newpage
