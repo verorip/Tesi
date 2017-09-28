@@ -1,11 +1,12 @@
 \select@language {italian}
 \select@language {italian}
 \contentsline {chapter}{Abstract}{II}{chapter*.2}
-\contentsline {chapter}{Introduzione}{III}{chapter*.3}
-\contentsline {chapter}{\numberline {1}Scopi e Problemi}{IV}{chapter.1}
-\contentsline {section}{\numberline {1.1}Moduli del MagicMirror}{IV}{section.1.1}
-\contentsline {section}{\numberline {1.2}Interfaccia di controllo del MagicMirror}{IV}{section.1.2}
-\contentsline {chapter}{\numberline {2}Tecnologie Implicate}{V}{chapter.2}
-\contentsline {section}{\numberline {2.1}Raspberry}{V}{section.2.1}
-\contentsline {section}{\numberline {2.2}Raspbian}{VI}{section.2.2}
-\contentsline {section}{\numberline {2.3}Electron}{VI}{section.2.3}
+\contentsline {chapter}{\numberline {1}Scopi e Problemi}{III}{chapter.1}
+\contentsline {section}{\numberline {1.1}Moduli del MagicMirror}{III}{section.1.1}
+\contentsline {section}{\numberline {1.2}Interfaccia di controllo del MagicMirror}{III}{section.1.2}
+\contentsline {chapter}{\numberline {2}Tecnologie Implicate}{IV}{chapter.2}
+\contentsline {section}{\numberline {2.1}Raspberry}{IV}{section.2.1}
+\contentsline {section}{\numberline {2.2}Raspbian}{V}{section.2.2}
+\contentsline {section}{\numberline {2.3}Electron}{V}{section.2.3}
+\contentsline {section}{\numberline {2.4}OpenCV}{VI}{section.2.4}
+\contentsline {section}{\numberline {2.5}GoogleSpeechRecognition}{VI}{section.2.5}

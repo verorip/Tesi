@@ -1,9 +1,10 @@
 \BOOKMARK [0][-]{chapter*.2}{Abstract}{}% 1
-\BOOKMARK [0][-]{chapter*.3}{Introduzione}{}% 2
-\BOOKMARK [0][-]{chapter.1}{Scopi e Problemi}{}% 3
-\BOOKMARK [1][-]{section.1.1}{Moduli del MagicMirror}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.2}{Interfaccia di controllo del MagicMirror}{chapter.1}% 5
-\BOOKMARK [0][-]{chapter.2}{Tecnologie Implicate}{}% 6
-\BOOKMARK [1][-]{section.2.1}{Raspberry}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.2}{Raspbian}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.3}{Electron}{chapter.2}% 9
+\BOOKMARK [0][-]{chapter.1}{Scopi e Problemi}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Moduli del MagicMirror}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Interfaccia di controllo del MagicMirror}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Tecnologie Implicate}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Raspberry}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Raspbian}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Electron}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.4}{OpenCV}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.5}{GoogleSpeechRecognition}{chapter.2}% 10
