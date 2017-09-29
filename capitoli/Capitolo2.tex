@@ -11,11 +11,11 @@ diversi linguaggi di programmazione (JavaScript \cite{JavaScript}, Python \cite{
 e tecnologie per visionare e condividere codici (GitLab \cite{git-website}).
 
 \section{Raspberry}
-RaspberryPi è un calcolatore elettronico, montato su una singola scheda elettornica, a basso costo
+RaspberryPi \'e un calcolatore elettronico, montato su una singola scheda elettornica, a basso costo
 dal consumo ridotto e alta portabilit\'a.
 Rilasciato per la prima volta intorno al 2012 \'e diventato un prodotto utilizzato per una moltitudine
 di progetti sia aziendali che casalinghi.
-Il modello usato nello stage è RaspberryPi 3 model B e monta:
+Il modello usato nello stage \'e RaspberryPi 3 model B e monta:
 \begin{itemize}
 \item una porta HDMI
 \item porta LAN
@@ -40,10 +40,10 @@ La prima versione venne rilasciata nel 2012.
 
 
 \section{Electron}
-Electron è un Framework open source rilasciato per la prima volta nel 2013, ma la prima versione
-stabile è uscita di recente. \'E disponibile sui sistemi operativi Window, MacOS e Linux ed è scritto
+Electron \'e un Framework open source rilasciato per la prima volta nel 2013, ma la prima versione
+stabile \'e uscita di recente. \'E disponibile sui sistemi operativi Window, MacOS e Linux ed \'e scritto
 in C++ e Javascript. Il framework permette la creazione di interfacce grafiche (GUI) per
-applicazioni cross platform, utilizzando teconologie già esistenti per lo sviluppo del backend e del frontend
+applicazioni cross platform, utilizzando teconologie gi\'e esistenti per lo sviluppo del backend e del frontend
 (Javascript, NodeJS, V8 \cite{V8}).
 All'avvio Electron inizializza una pagina in Chromium, che renderizza una pagina web, e un server
 NodeJs che si occupa di trasmettere e interagire con il frontend.
@@ -66,18 +66,18 @@ rendering della pagina, ecc...
 \end{itemize}
 
 \section{OpenCV}
-OpenCV (Open Source Computer Vision Library) è una libreria software sviluppata intorno al 2000
+OpenCV (Open Source Computer Vision Library) \'e una libreria software sviluppata intorno al 2000
 utilizzata nell'abito della visione in tempo reale
 da parte di una macchia per mezzo di input digitali, ottenuti tramite telecamera o fotocamera ad esempio.\\
-La librearia è supportata per i linguaggi C++(linguaggio in cui \'e scritta e dunque di cui ha l'interfaccia primaria), C, Python e Java e
+La librearia \'e supportata per i linguaggi C++(linguaggio in cui \'e scritta e dunque di cui ha l'interfaccia primaria), C, Python e Java e
 per diversi sistemi operativi, anche mobile.\\
 OpenCV prede in input un'immagine o uno stream (come un video o una serie di immagini) e, utilizzando algoritmi
 di visioning implementati al suo interno, riconosce oggetti o specifiche forme, inoltre se ne può aumentare l'efficienza
 applicando algoritmi di Machine Learning per individuare e riconoscere oggetti specifici.
 
-\section{GoogleSpeechRecognition}
+\section{Google Speech Recognition}
 Negli ultimi anni Google ha ampliato sempre di più il suo catalogo per quanto rigarda
-i servizi cloud e le web API. Google Speech To Text (o Google Speech Recognition) è un
+i servizi cloud e le web API. Google Speech To Text (o Google Speech Recognition) \'e un
 servizio che, ricevendo in input un file audio o uno stream, ottenuto per mezzo di un
 dispositivo di audio input, traduce il parlato in testo scritto.\\
 L'API supporta oltre 110 lingue, e le librerie sono disponibili nei linguaggi C\#, GO, Java, Node.JS,
@@ -86,3 +86,32 @@ PhP, Python e Ruby, inoltre dispone di varianti:
 \item Una con interfaccia REpresentational State Transfer(REST), che comunica per mezzo di URI
 \item Una con gRPC, un sistema di chiamata di procedura remota
 \end{itemize}
+
+\section{NodeJS}
+NodeJS \'e una piattaforma open source, utilizzata per progettare il backend di un server web, sfruttando
+il motore JavaScript V8 sviluppato da Google.\\
+NodeJS esegue delle operazioni al verificarsi di uno specifico evento, che pu\'o essere un accesso ad una porta
+del server, la richiesta di una pagina o l'invio di un form data.
+Per gestire i pacchetti di questo linguaggio viene utilizzato NPM\cite{NPM}, una linea di comando che permette
+di scaricare ed installare librerie private o pubbliche salvate su un database.
+Durante lo stage \'e stata utlizzato il pattern architetturale Model-View-Controller(MVC), usando Express
+come middleware, Mustache come Sistema di Template e MySQL come Database.
+
+\subsection{Express}
+Express \'e un framework per NodeJS che permette di creare applicazioni Web e API in JavaScript.
+Il software viene usato per progettare il middleware di un server, che è composto di 3 parti importanti:
+\begin{itemize}
+\item il Routing, utilizzato per determinare come il server debba rispondere ad un determinato metodo di richiesta,
+ricevuta sottoforma di URI.
+\item i Modelli, creati per ogni entit\'a-oggetto che esiste all'interno del server, ad ognuno dei quali viene associato
+un controller.
+\item il Controller, che riceve la richiesta inoltrata dal Routing, nel quale sono descritte le operazioni da eseguire
+(in base al modello cui fa riferimento) e la risposta da ritornare. Inoltre, il controller accede al database per apportare 
+le modifiche ai Modelli.
+\end{itemize}
+
+
+
+
+\section{JavaScript}
+Inzialmente usato per il client-side
