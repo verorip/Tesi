@@ -53,6 +53,16 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/babel-italian/italian.ldf
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/babel/babel.def
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/etoolbox/etoolbox.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/etoolbox/etoolbox.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphics.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphics.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/trig.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/trig.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics-cfg/graphics.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics-cfg/graphics.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/float/float.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/float/float.sty
 INPUT Tesi.aux
 INPUT Tesi.aux
 OUTPUT Tesi.aux
@@ -70,6 +80,10 @@ INPUT ./Tesi.out
 OUTPUT Tesi.out
 INPUT C:/Program Files/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
 INPUT C:/Program Files/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
 INPUT frontespizio/frontespizio.tex
 INPUT frontespizio/frontespizio.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmcsc10.tfm
@@ -102,7 +116,17 @@ INPUT capitoli/Capitolo2.tex
 INPUT capitoli/Capitolo2.tex
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
+INPUT immagini/mvc.png
+INPUT ./immagini/mvc.png
+INPUT ./immagini/mvc.png
+INPUT ./immagini/mvc.png
+INPUT ./immagini/mvc.png
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT immagini/callbackhell.jpg
+INPUT ./immagini/callbackhell.jpg
+INPUT ./immagini/callbackhell.jpg
+INPUT ./immagini/callbackhell.jpg
+INPUT ./immagini/callbackhell.jpg
 INPUT bibliografia/bibliografia.tex
 INPUT bibliografia/bibliografia.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmtt12.tfm

@@ -1,16 +1,18 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {chapter}{Abstract}{II}{chapter*.2}
-\contentsline {chapter}{\numberline {1}Scopi e Problemi}{III}{chapter.1}
-\contentsline {section}{\numberline {1.1}Moduli del MagicMirror}{III}{section.1.1}
-\contentsline {section}{\numberline {1.2}Interfaccia di controllo del MagicMirror}{III}{section.1.2}
-\contentsline {chapter}{\numberline {2}Tecnologie Implicate}{IV}{chapter.2}
-\contentsline {section}{\numberline {2.1}Raspberry}{IV}{section.2.1}
-\contentsline {section}{\numberline {2.2}Raspbian}{V}{section.2.2}
-\contentsline {section}{\numberline {2.3}Periferiche}{V}{section.2.3}
-\contentsline {section}{\numberline {2.4}Electron}{V}{section.2.4}
-\contentsline {section}{\numberline {2.5}OpenCV}{VI}{section.2.5}
-\contentsline {section}{\numberline {2.6}Google Speech Recognition}{VI}{section.2.6}
-\contentsline {section}{\numberline {2.7}NodeJS}{VII}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Express}{VII}{subsection.2.7.1}
-\contentsline {section}{\numberline {2.8}JavaScript}{VII}{section.2.8}
+\contentsline {chapter}{Abstract}{2}{chapter*.2}
+\contentsline {chapter}{\numberline {1}Scopi e Problemi}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Moduli del MagicMirror}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Interfaccia di controllo del MagicMirror}{3}{section.1.2}
+\contentsline {chapter}{\numberline {2}Tecnologie Implicate}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Raspberry}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Raspbian}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Periferiche}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Electron}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}OpenCV}{7}{section.2.5}
+\contentsline {section}{\numberline {2.6}Google Speech Recognition}{7}{section.2.6}
+\contentsline {section}{\numberline {2.7}Model-View-Design}{8}{section.2.7}
+\contentsline {section}{\numberline {2.8}NodeJS}{9}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Express}{9}{subsection.2.8.1}
+\contentsline {section}{\numberline {2.9}JavaScript}{10}{section.2.9}
+\contentsline {section}{\numberline {2.10}Python}{12}{section.2.10}

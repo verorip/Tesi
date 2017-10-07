@@ -15,7 +15,7 @@ RaspberryPi \'e un calcolatore elettronico, montato su una singola scheda eletto
 dal consumo ridotto e alta portabilit\'a.
 Rilasciato per la prima volta intorno al 2012 \'e diventato un prodotto utilizzato per una moltitudine
 di progetti sia aziendali che casalinghi.
-Il modello usato nello stage \'e RaspberryPi 3 model B e monta:
+Il modello usato durante lo stage \'e RaspberryPi 3 model B e monta:
 \begin{itemize}
 \item una porta HDMI
 \item porta LAN
@@ -77,20 +77,40 @@ da parte di una macchia per mezzo di input digitali, ottenuti tramite telecamera
 La librearia \'e supportata per i linguaggi C++(linguaggio in cui \'e scritta e dunque di cui ha l'interfaccia primaria), C, Python e Java e
 per diversi sistemi operativi, anche mobile.\\
 OpenCV prede in input un'immagine o uno stream (come un video o una serie di immagini) e, utilizzando algoritmi
-di visioning implementati al suo interno, riconosce oggetti o specifiche forme, inoltre se ne può aumentare l'efficienza
+di visioning implementati al suo interno, riconosce oggetti o specifiche forme, inoltre se ne pu\'o aumentare l'efficienza
 applicando algoritmi di Machine Learning per individuare e riconoscere oggetti specifici.
 
 \section{Google Speech Recognition}
-Negli ultimi anni Google ha ampliato sempre di più il suo catalogo per quanto rigarda
-i servizi cloud e le web API. Google Speech To Text (o Google Speech Recognition) \'e un
-servizio che, ricevendo in input un file audio o uno stream, ottenuto per mezzo di un
-dispositivo di audio input, traduce il parlato in testo scritto.\\
-L'API supporta oltre 110 lingue, e le librerie sono disponibili nei linguaggi C\#, GO, Java, Node.JS,
-PhP, Python e Ruby, inoltre dispone di varianti:
+Negli ultimi anni Google ha ampliato sempre di pi\'u il suo catalogo per quanto rigarda
+i servizi cloud e web API.
+Tra questi si pu\'o individuare anche Google Speech To Text (o Google Speech Recognition), il quale \'e un
+servizio che, ricevendo in input un file o uno stream audio, ottenuto per mezzo di un
+dispositivo di audio input, traduce il parlato in testo scritto tramite algoritmi avanzati
+di riconoscimento della voce.\\
+L'API supporta oltre 110 lingue e si possono usare su diverse piattaforme dato che
+le librerie sono disponibili nei linguaggi C\#, GO, Java, Node.JS, PhP, Python e Ruby.
+Inoltre Google Speech To Text dispone di alcune varianti:
 \begin{itemize}
 \item Una con interfaccia REpresentational State Transfer(REST), che comunica per mezzo di URI
 \item Una con gRPC, un sistema di chiamata di procedura remota
 \end{itemize}
+
+\section{Model-View-Design}
+Il Model-View-Design (MVC) \'e un pattern architetturale che suddivide lo sviluppo di un'applicazione web in 3 parti:
+\begin{itemize}
+\item Model(Modello), sono oggetti che rappresentano lo stato dell'applicazione e operazioni logiche da eseguire sul primo. Di solito
+lo stato del modello viene estratto, manipolato per mezzo di operazioni e salvato da un database con cui comunicano,
+oppure passato al controller.
+\item Controller, \'e un'interfaccia che comunica tra il Model, la View e l'Utente. Il suo compito \'e di gestire le richieste dell'utente,
+il quale comunica tramite input ed interazioni, utilizzando il modello che rientra nel dominio
+dei dati inerente alla richiesta e selezionando una View per il rendering dell'interfaccia utente.
+\item View(Visualizzazione), ha il compito di far visualizzare all'utente i dati estratti tramite un'interfaccia grafica, che viene creata
+partendo da un modello HTML.\\[2\baselineskip]
+\end{itemize}
+\begin{figure}[H]
+    \includegraphics[width=0.9\textwidth]{mvc}
+    \caption{MVC Pattern}
+\end{figure}
 
 \section{NodeJS}
 NodeJS \'e una piattaforma open source, utilizzata per progettare il backend di un server web, sfruttando
@@ -101,18 +121,57 @@ Per gestire i pacchetti di questo linguaggio viene utilizzato NPM\cite{NPM}, una
 di scaricare ed installare librerie private o pubbliche salvate su un database.
 Durante lo stage \'e stata utlizzato il pattern architetturale Model-View-Controller(MVC), usando Express
 come middleware, Mustache come Sistema di Template e MySQL come Database.
-
+\\[1\baselineskip]
 \subsection{Express}
 Express \'e un framework per NodeJS che permette di creare applicazioni Web e API in JavaScript.
-Il software viene usato per progettare il middleware di un server, che è composto di 3 parti importanti:
+Il software viene usato per progettare il middleware di un server, che \'e composto di 3 entit\'a importanti:
 \begin{itemize}
 \item il Routing, utilizzato per determinare come il server debba rispondere ad un determinato metodo di richiesta,
-ricevuta sottoforma di URI.
+ricevuta sottoforma di URI, inoltrando la richiesta al controller del modello a cui fa rifermento.
 \item i Modelli, creati per ogni entit\'a-oggetto che esiste all'interno del server, ad ognuno dei quali viene associato
-un controller. Inoltre, tramite i modelli si accede al databse per apportare le modifiche.
+un controller. Inoltre, tramite i modelli si accede al databse per estrarre i dati e spedirli al controller per
+la manipolazione, ricevendoli successivamente modificati e salvandoli di nuovo se necessario.
 \item il Controller, che riceve la richiesta inoltrata dal Routing, nel quale sono descritte le operazioni da eseguire
 (in base al modello cui fa riferimento) e la risposta da ritornare.
+\\[2\baselineskip]
 \end{itemize}
 
 \section{JavaScript}
-Inzialmente usato per il client-side
+Javascript \'e un linguaggio di programmazione di alto livello per oggetti ed eventi, che \'e stato supportato da tutti i browser
+per lo scripting delle pagine web.
+Inzialmente usato per il client-side ha subito un'evoluzione che lo ha portato ad essere utilizzato per lo sviluppo di backend e web app,
+permettendo di usare il linguaggio sia per programmazione proceduale sia per programmazione orientata ad oggetti.
+Gli oggetti in Javascript vengono creati a livello di codice collegando metodi e propriet\'a ad altri oggetti, anche vuoti, a tempo
+di esecuzione.
+Java
+\\[2\baselineskip]
+ECMAJavascript(ES) \'e lo standard di Javascript che negli ultimi anni ha sviluppato ed evoluto il linguaggio in diverse verisoni.
+In tutte il problema pi\'u trattato \'e il fatto che Javascript \'e asincrono, ovvero non attende il completamento di alcune
+operazioni prima di eseguire le funzioni successive. QUesto avviene perch\'e le chiamate di funzioni non vengono fatte direttamente, ma vengono
+fatte via messaggi, i quali vengono salvati in una coda di messaggi e vengono spediti sequenzialmente ad uno stack di chiamata dove
+viene salvata la corrispondente funzione per l'esecuzione. Questo metodo rende il linguaggio asincorno perch\'e le funzioni e gli eventi
+vengono eseguiti in successione senza attendere il termine dalla precedente.
+\\[1\baselineskip]Le soluzioni adottate in ECMA Javascrit 5 (ES5), sono l'utilizzo delle callback,
+funzioni passate come parametro alla funzione principale che a loro volta avevano come paramentro il risultato, in modo da poter eseguire le operazioni
+solo dopo che la funzione chiamante avesse prodotto l'output. Il problema di questo approccio \'e stato il fenomeno "Callback Hell", ovvero Callback che chiamano a loro volta
+altre Callback creando funzioni annidate pi\'u volte.
+\\[1\baselineskip]
+In ECMA Javascript 6 (ES6) sono state introdotte le Promises, ovvero al posto di far tornare una funzione Callback, ritorna una Promise(Promessa),
+la quale garantisce che una variabile/oggetto avr\'a un ritorno, mettendo cosi la funzione in attesa fino al ricevimento del valore o di un errore.
+Sono tutt'ora in via di sviluppo nuove versioni di Javascript.
+\\[2\baselineskip]
+\begin{figure}[h]
+    \includegraphics[width=1\textwidth, height=0.4\textheight]{callbackhell}
+    \caption{Esempio di Callback Hell}
+\end{figure}
+
+\section{Python}
+Python è un linguaggio di programmazione open source, ad alto livello con semantica dinamica, orientato ad oggetti, usato
+per sviluppo di applicazioni, scripting e per collegare componenti tra di loro.\\[1\baselineskip]
+Come molti altri linguaggi supporta moduli e pacchetti anche sviluppati da terzi, salvati in una repository pubblica,
+attraverso un suo gestore di pacchetti Pip Installs Packages o Pip Installs Python (pip, acronimo ricorsivo).
+\\[1\baselineskip]
+Inoltre Python dispone di virtualenv uno strumento per creare ambienti virtuali (virtual enviroments), che consistono in ambianti Python
+isolati per l'utilizzo di pacchetti e moduli senza doverli installare all'interno del sistema.
+Python è stato un linguaggio particolarmente utile per l'interfacciamento con la telecamera, avendo una libreria
+apposita per gestirla.
