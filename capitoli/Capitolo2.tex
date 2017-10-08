@@ -166,12 +166,28 @@ Sono tutt'ora in via di sviluppo nuove versioni di Javascript.
 \end{figure}
 
 \section{Python}
-Python è un linguaggio di programmazione open source, ad alto livello con semantica dinamica, orientato ad oggetti, usato
+Python \'e un linguaggio di programmazione open source, ad alto livello con semantica dinamica, orientato ad oggetti, usato
 per sviluppo di applicazioni, scripting e per collegare componenti tra di loro.\\[1\baselineskip]
 Come molti altri linguaggi supporta moduli e pacchetti anche sviluppati da terzi, salvati in una repository pubblica,
 attraverso un suo gestore di pacchetti Pip Installs Packages o Pip Installs Python (pip, acronimo ricorsivo).
 \\[1\baselineskip]
 Inoltre Python dispone di virtualenv uno strumento per creare ambienti virtuali (virtual enviroments), che consistono in ambianti Python
 isolati per l'utilizzo di pacchetti e moduli senza doverli installare all'interno del sistema.
-Python è stato un linguaggio particolarmente utile per l'interfacciamento con la telecamera, avendo una libreria
+Python \'e stato un linguaggio particolarmente utile per l'interfacciamento con la telecamera, avendo una libreria
 apposita per gestirla.
+\\[2\baselineskip]
+
+\section{GitLab}
+Per poter comprendere il funzionamento di GitLab occore prima conoscere come funziona Git. Quest'ultimo \'e stato
+creato da da Linus Torvalds nel 2005 per la gestione del versionamento del codice in Linux.
+Git \'e, in sostanza, un grafo diretto aciclico di oggetti, ognuno con un'identificativo univoco, ed \'e composto da 4 parti principali:
+\begin{itemize}
+\item i Blob, insieme di bytes che contengono i dati all'inteno dei files.
+\item i Trees, sono, in sostanza, le cartelle che contengono all'intrno un lista di files con alcuni bit al quale fanno riferimento al
+rispettivo blob o ad un'altro Tree.
+\item i Tag, sono etichette con dati aggiuntivi per identificare e gestire i nodi.
+\item i Commit, collegano pi\'u oggetti Tree ad uno storico nel quela sono salvati anche i nomi di tutti i commits parenti.
+\end{itemize}
+GitLab, in sostanza, \'e un web repository sostituivo al software Git, con implementati altri
+servizi tra i quali la possibilit\'a di creare wiki, e un servizio di issue tracking, utile
+per dividere i lavori e controllarne lo stato di sviluppo in team composti da pi\'u persone.
