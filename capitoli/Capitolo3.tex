@@ -22,12 +22,14 @@ e allo stesso tempo riesce a vedere le scritte o le immagini trasmesse dal monit
 \section{Avvio ed Escuzione}
 Il Magic Mirror viene avviato tramite riga di comando di una shell: npm start, che va a ricercare
 il file javascript principale indicato dal package.json.
-All'avvio viene eseguito il codice di Electron che ha il compito di creare ed avviare un server per il backend,
+All'avvio viene eseguito il codice di Electron, che si occupa della creazione di una nuova finestra, che è l'interfaccia contenente il browser
+usato per contenere i DOM e di stampare la relativa pagina HTML, e il codice dell'applicazione, ovvero il corpo principale dello specchio.
+Quest'ultima crea e avvia un server per il backend,
 il cui compito è di caricare tutte le strtture dati dello specchio:
 \begin{itemize}
 \item i Moduli, che sono le entità che permettono di creare e configurare applicazioni da agganciare al software principale.
-\item i Node Helper, file "speciali" che servono come supporto esterno ai moduli, per mezzo dei quali si possono interfacciare le api di servizi
-esterni al Magic Mirror.
-\item ggg\\[2\baselineskip]
+\item i Node Helper, strutture "speciali", opzionali, che servono come supporto esterno ai moduli, per mezzo dei quali si possono interfacciare le api di servizi
+esterni al Magic Mirror. Ogni modulo ha il proprio Node Helper con cui può comunicare tramite messaggi in modo simile a come comunicano i moduli tra di loro.
+\item un Socket, entità principale che permette lo scambio dei messaggi tra i moduli e i rispettivi Node Helper.
+\item un Logger, implementato per tenere i log dell'applicazione e degli evenutali errori. Usato pricipalemnte per il debugging.\\[2\baselineskip]
 \end{itemize}
-ed una finestra di chromium per il fron end.
