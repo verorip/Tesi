@@ -1,40 +1,52 @@
 \chapter*{Introduzione}
 \addcontentsline{toc}{chapter}{Introduzione}
 
-Nello stage che ho svolto presso Lab121 è stato studiato il Magic Mirror, un software sviluppato da Michael Teeuw,
-che gira sul calcolatore RaspberryPi, sul quale si sono svolte due principali attività:\\
--Lo sviluppo di applicazioni (o moduli) che si interfacciano con periferiche esterne o con api (italic)\\
--Lo sviluppo di un'interfaccia web che potesse modificare la configurazione del software senza dover accedere
-
-
-
-
-Nel corso degli ultimi decenni con il perfezionamento delle teconologie e l'evoluzione dei
-calcolatori, \'e risultato sempre pi\'u facile, sia dal punto di vista economico che dello spazio fisico,
-ottenere dispositivi elettronici dall'alta portabilit\'a e dalla buona efficenza, di cui
-alcuni hanno permesso anche lo sviluppo di molti progetti fatti in casa.
-Questa evoluzione ha portato sempre di pi\'u alla "fusione" con le macchine, poterle controllare senza
-dover necessariamente dover digitare dei caratteri o premere tasti,
-basti guardare buona parte degli Smartphone moderni che permettono lo sblocco dello schermo con
-il volto, oppure l'interazione con esso tramite sintesi vocale.
-Al giorno d'oggi molti software di questo ambito relazione tra uomo-macchina
-sono open source per permettere agli utenti di poterli evolvere e perfezionarli sempre di pi\'u.\\
-Nella prima parte dello stage sono stati sviluppati dei moduli per il Magic Mirror, un software
-di terze parti scritto in Javascript che gira su electron e NodeJS,
-in diversi linguaggi di programmazione, che permettono l'interazione tra uomo-macchina per
-mezzo di periferiche esterne.
-Tra i moduli sviluppati vi sono il supporto per l'impartizione di comandi
-tramite movimenti delle dita su una scheda TouchPad e un supporto per il riconoscimento vocale,
-ovvero l'impartizione di comandi specifici per mezzo di un microfono.
+Nello stage che ho svolto presso Lab121 ho stato studiato il Magic Mirror, un software di domotica sviluppato da Michael Teeuw,
+che gira sul calcolatore portatile RaspberryPi, sul quale ho svolto due principali attività:\\
+\begin{itemize}
+\item Lo sviluppo di applicazioni (o moduli) che si interfacciano con periferiche esterne, o con api (italic), e il software
+principale.
+\item Lo sviluppo di un'interfaccia web che permette di modificarne la configurazione senza dover accedere
+a file potenzialmente critici ed eliminarne parti essenziali ad opera di utenti non esperti.\\[1\baselineskip]
+\end{itemize}
+Per la prima parte dello stage sono state create applicazioni mirate al controllo del
+Magic Mirror tramite l'impartizione di comandi vocali o input trasmessi dal movimento delle dita su
+una periferica touchpad.\\
+Questa scelta \`e stata presa prendendo che nel corso
+degli ultimi decenni, con il perfezionamento delle teconologie e dei software, ha fatto nascere
+una tendenza a controllare macchine o dispositivi con metodi sempre meno "diretti".
+Per esempio si possono osservare la maggior parte degli Smartphone moderni che permettono lo sblocco dello schermo con
+il riconoscimento del volto, oppure l'interazione con esso tramite sintesi vocale.
+Inoltre, con lo sviluppo di calcolatori e periferiche sempre più piccoli ed economici ha permesso
+la nascita di una moltitudine di progetti casalinghi con questo fine, contribuendo così
+alla crescita dei software in ambito relazione uomo-machcina, che al giorno d'oggi se ne possono trovare
+una moltitudine open source.
 \\[2\baselineskip]
-Un altro aspetto che si \'e evoluto soprattuto negli ultimi anni nel campo
-delle applicazioni e delle web app \'e l'implementazione di interfacce di gestione sempre pi\'u
-intuitive e facili da comprendere. Capita spesso, infatti, che un'applicazione
-venga utilizzata da terzi, anche senza che questi abbiano conoscenze informatiche,
-se non vengono servite delle astrazioni a livello applicativo un utente, senza
-tali conoscenze, non pu\'o gestire o configurare un'applicazione.
-Nella seconda parte dello stage,
-\'e stata sviluppata un'interfaccia web, la quale implementava un pannello di configurazione
-il compito \'e di permettere di modificare la configurazione
-dei moduli (anche quelli creati da terzi e inseriti successivamente) senza dover andare a modificare il
-file in locale rendendo pi\'u facile aggiornare le features del dispositivo.
+%e l'evoluzione dei
+%calcolatori, \`e risultato sempre pi\`u facile, sia dal punto di vista economico che dello spazio fisico,
+%ottenere dispositivi elettronici dall'alta portabilit\`a e dalla buona efficenza, di cui
+%alcuni hanno permesso anche lo sviluppo di molti progetti fatti in casa.
+%Questa evoluzione ha portato sempre di pi\`u alla "fusione" con le macchine, poterle controllare senza
+%dover necessariamente dover digitare dei caratteri o premere tasti,
+%basti guardare buona parte degli Smartphone moderni che permettono lo sblocco dello schermo con
+%il volto, oppure l'interazione con esso tramite sintesi vocale.
+%Al giorno d'oggi molti software di questo ambito relazione tra uomo-macchina
+%sono open source per permettere agli utenti di poterli evolvere e perfezionarli sempre di pi\`u.\\
+%Nella prima parte dello stage sono stati sviluppati dei moduli per il Magic Mirror, un software
+%di terze parti scritto in Javascript che gira su electron e NodeJS,
+%in diversi linguaggi di programmazione, che permettono l'interazione tra uomo-macchina per
+%mezzo di periferiche esterne.
+%Tra i moduli sviluppati vi sono il supporto per l'impartizione di comandi
+%tramite movimenti delle dita su una scheda TouchPad e un supporto per il riconoscimento vocale,
+%ovvero l'impartizione di comandi specifici per mezzo di un microfono.
+Un altro aspetto che si \`e evoluto soprattuto negli ultimi anni nel campo
+delle applicazioni e delle Applicazioni Web (chiamate anche webb app)
+\`e l'implementazione di interfacce grafiche di gestione sempre pi\`u
+intuitive e facili da comprendere. Capita spesso che un'applicazione
+venga utilizzata da utenti privi di consocenze informatiche, i quali, se mancasse
+l'interfaccia di gestione, dovrebbero accedere direttamente ai file di configurazione
+per modificarli, e potrebbero causare potenziali danni.\\
+A tal fine, nella seconda parte dello stage,
+\`e stata sviluppata un'interfaccia grafica web, la quale mostra un pannello di configurazione
+il compito \`e di permettere la corretta modifica dei file di configurazione delle applicazioni
+e del Magic Mirror.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  13 OCT 2017 13:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  14 OCT 2017 11:10
 entering extended mode
 **./Tesi.tex
 (Tesi.tex
@@ -312,11 +312,18 @@ italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
 italian.ldf    on input line 9.
 
-(frontespizio/frontespizio.tex [1
+(frontespizio/frontespizio.tex
+<immagini/logo.png, id=83, 825.0825pt x 290.08376pt>
+File: immagini/logo.png Graphic file (type png)
+ <use immagini/logo.png>
+Package pdftex.def Info: immagini/logo.png used on input line 3.
+(pdftex.def)             Requested size: 233.99269pt x 88.79631pt.
+
+[1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]) (indice/indice.tex (Tesi
-.toc
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./immagini/logo.png>])
+(indice/indice.tex (Tesi.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -336,7 +343,30 @@ Missing character: There is no ¨ in font cmr12!
 l.23 \newpage
               [1
 
-] (capitoli/Introduzione.tex) [2
+] (capitoli/Introduzione.tex
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no   in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¹ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¬ in font cmr12!
+) [2
 
 ] [3] (capitoli/Capitolo1.tex
 Capitolo 1.
@@ -357,20 +387,14 @@ Missing character: There is no ¨ in font cmr12!
 
 ] [5] (capitoli/Capitolo2.tex
 Capitolo 2.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
- [6
+[6
 
 ] [7] [8]
 Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
-<immagini/mvc.png, id=182, 684.30656pt x 505.89pt>
+<immagini/mvc.png, id=185, 684.30656pt x 505.89pt>
 File: immagini/mvc.png Graphic file (type png)
  <use immagini/mvc.png>
 Package pdftex.def Info: immagini/mvc.png used on input line 111.
@@ -397,7 +421,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--137
 
  []
 
-<immagini/callbackhell.jpg, id=194, 640.3925pt x 480.79625pt>
+<immagini/callbackhell.jpg, id=196, 640.3925pt x 480.79625pt>
 File: immagini/callbackhell.jpg Graphic file (type jpg)
 
 <use immagini/callbackhell.jpg>
@@ -441,7 +465,7 @@ Missing character: There is no Ã in font cmbx12!
 Missing character: There is no ¨ in font cmbx12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
-<immagini/magic_mirror.jpg, id=209, 1550.79375pt x 1304.875pt>
+<immagini/magic_mirror.jpg, id=211, 1550.79375pt x 1304.875pt>
 File: immagini/magic_mirror.jpg Graphic file (type jpg)
 
 <use immagini/magic_mirror.jpg>
@@ -501,21 +525,21 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
  ) 
 Here is how much of TeX's memory you used:
- 7719 strings out of 493323
- 110357 string characters out of 3139066
+ 7725 strings out of 493323
+ 110463 string characters out of 3139066
  216850 words of memory out of 3000000
- 11105 multiletter control sequences out of 15000+200000
- 9271 words of font info for 33 fonts, out of 3000000 for 9000
+ 11111 multiletter control sequences out of 15000+200000
+ 9275 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,7n,35p,908b,979s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Tesi.pdf (18 pages, 471224 bytes).
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Tesi.pdf (18 pages, 596928 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
+ 280 PDF objects out of 1000 (max. 8388607)
  65 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
