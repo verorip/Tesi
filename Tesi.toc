@@ -12,7 +12,7 @@
 \contentsline {subsection}{\numberline {2.2.1}Raspbian}{7}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Electron}{7}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}OpenCV}{8}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Google Speech Recognition}{8}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.4}Google Speech API}{8}{subsection.2.2.4}
 \contentsline {subsection}{\numberline {2.2.5}NodeJS}{9}{subsection.2.2.5}
 \contentsline {subsubsection}{Express}{9}{section*.3}
 \contentsline {subsection}{\numberline {2.2.6}JavaScript}{10}{subsection.2.2.6}
