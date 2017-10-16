@@ -1,29 +1,29 @@
 \chapter{Scopi e Problemi Affrontati}
 
-\section{Moduli del MagicMirror}
-Nello sviluppo dei moduli del MagicMirror si \'e dovuto affrontare il problema di far comunicare
-i diversi dispositivi hardware (tra cui microfono e telecamera) con il calcolatore principale, utilizzando tecnologie,
-software e linguaggi diversi tra loro, scelti in base alle loro caratteristiche e ai loro punti di forza.
-Inoltre era necessario che i moduli comunicassero tra di loro perchè si potessero coordinare, o sempicemente
-perchè un modulo, in base a degli input ricevuti, doveva controllarne un altro.
-Un'altro problema rilevante era la corretta scelta e gestione degli input, essendo che sia con il microfono sia
-con la telecamera c'erano più soluzioni di acquisizione, che potevano essere in tempo reale (stream)
-o tramite una registrazione avvenuta precedentemente.\\
-Lo scopo dei moduli \'e di permettere l'interazione tra il software principale
-e l'essere umano, e di poter controllare le funzioni della macchina senza dover utilizzare
-i tradizionali metodi di input (mouse e tastiera), e accedere ai diversi servizi che si possono implementare.
+\section{Applicazioni del MagicMirror}
+Il Magic Mirror \`e un software che implementa api, le quali permettono
+l'integrazione di applicazioni sviluppate da terzi e forniscono strumenti per la comunicazione, gestione
+ed organizzazione tra di esse.
+Lo scopo nello sviluppo delle applicazioni, durante lo stage, \`e stato
+di creare programmi che permettessero l'interazione tra il software principale
+e l'essere umano. Nello specifico si \`e voluto implementare la possibilit\`a, da parte di un utente,
+di controllare le applicazioni attive sul Magic Mirror tramite l'impartizione di comandi vocali
+o da movimenti delle dita su una scheda touchpad.
+In questa parte si \`e dovuto affrontare il problema di far comunicare
+i diversi dispositivi hardware con il calcolatore principale, e di programmare
+le applicazioni con linguaggi diversi, a seconda della compatibilit\`a di un linguaggio
+e delle librerie a disposizione di una determinata periferica.
 \\[2\baselineskip]
 \section{Interfaccia di controllo del MagicMirror}
-Nello sviluppo della pagina Web di controllo si \'e affrontato il problema di dover
-implementare un'altrazione che permettesse di modificare
-il documento di configurazione del software principale da un'interfaccia senza eliminarne parti essenziali
-o modificarlo in un formato sbagliato (gestito tramite validatore).
-Lo scambio dei messaggi tra il Backend ed il Frontend avviene in formato JSON, lo stesso formato
-con cui \'e stipulato il file di configurazione del Magic Mirror e dei suoi moduli.\\
-Lo scopo dell'interfaccia è di permettere ad un qualsiasi utente (con i permessi) di gestire
-i diversi moduli implementati nel software modificandone il JSON, senza accedere fisicamente alla macchina.
-La pagina, inoltre, permette di configurare moduli creati anche da terzi: inserendoli
-semplicemente nella directory del dispositivo il Backend li cerca e li indicizza nell'interfaccia,
-da dove possono essere attivati.
-\\[2\baselineskip]
-Nei cpaitoli successivi verrà spiegata la struttura del Magic Mirror 
+Nella seconda parte dello stage si \`e svolto la progettazione di un'interfaccia Web di configurazione remota
+il cui scopo \`e di permettere ad un utente autenticato di gestire
+le configurazioni delle applicazioni implementate nel software da una pagina web,
+senza dover accedere fisicamente alla macchina.
+Quest'ultima permette anche di disattivare (o attivare) le applicazioni presenti nel Magic Mirror,
+la cui procedura, prima, richiedeva di aggiungere manualmente un pezzo di codice nella
+configurazione del software princiapale.
+Nello sviluppo dell'interfaccia si \`e affrontato il problema di dover modificare
+il documento di configurazione del software principale senza eliminarne parti essenziali
+o modificarlo in un formato sbagliato.
+Lo scambio dei messaggi tra il Magic Mirror e la pagina web avviene in formato JSON, lo stesso formato
+usato per il suo file di configurazione e delle sue applicazioni.\\

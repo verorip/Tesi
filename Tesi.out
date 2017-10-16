@@ -1,20 +1,20 @@
 \BOOKMARK [0][-]{chapter*.2}{Introduzione}{}% 1
 \BOOKMARK [0][-]{chapter.1}{Scopi e Problemi Affrontati}{}% 2
-\BOOKMARK [1][-]{section.1.1}{Moduli del MagicMirror}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.1}{Applicazioni del MagicMirror}{chapter.1}% 3
 \BOOKMARK [1][-]{section.1.2}{Interfaccia di controllo del MagicMirror}{chapter.1}% 4
 \BOOKMARK [0][-]{chapter.2}{Tecnologie Implicate}{}% 5
-\BOOKMARK [1][-]{section.2.1}{Raspberry}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.2}{Raspbian}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.3}{Periferiche}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.4}{Electron}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.5}{OpenCV}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.6}{Google Speech Recognition}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.7}{Model-View-Design}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.8}{NodeJS}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.8.1}{Express}{section.2.8}% 14
-\BOOKMARK [1][-]{section.2.9}{JavaScript}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.10}{Python}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.11}{GitLab}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.1}{Hardware}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.1.1}{RasperryPi}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.2}{Periferiche}{section.2.1}% 8
+\BOOKMARK [1][-]{section.2.2}{Software}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.1}{Raspbian}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.2}{Electron}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.3}{OpenCV}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.4}{Google Speech Recognition}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.5}{NodeJS}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.6}{JavaScript}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.7}{Python}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.8}{GitLab}{section.2.2}% 17
 \BOOKMARK [0][-]{chapter.3}{Struttra del Magic Mirror}{}% 18
 \BOOKMARK [1][-]{section.3.1}{Perchè Magic Mirror?}{chapter.3}% 19
 \BOOKMARK [1][-]{section.3.2}{Avvio ed Escuzione}{chapter.3}% 20

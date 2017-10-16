@@ -1,36 +1,44 @@
 \chapter{Tecnologie Implicate}
 
 Lo sviluppo del progetto \'e stato svolto nell'ambiente Raspbian\cite{Raspbian}
-una distribuzione Debian\cite{Debian} che gira sul dispositivo Rasperry\cite{Raspberry}.
+una distribuzione Debian\cite{Debian} che gira sul dispositivo RasperryPi\cite{Raspberry}.
 Inoltre sono state adottate diverse tecnologie, recenti
-e non, nel campo della creazione di un'applicazione e dei relativi moduli(Electron \cite{Electron-website},
-OpenCV \cite{OpenCV-website}, GoogleSpeechRecognition \cite{GoogleSTT-website})
-e di web server (NodeJS \cite{NodeJS-website},  Model-View-Controller Architecture \cite{MVC-Architecture},
-Express \cite{Express-website}, MySQL \cite{MySQL}, Mustache \cite{Mustache}),
-diversi linguaggi di programmazione (JavaScript \cite{JavaScript}, Python \cite{Python})
-e tecnologie per visionare e condividere codici (GitLab \cite{git-website}).
+e non, nel campo della creazione di applicazioni(Electron \cite{Electron-website},
+OpenCV \cite{OpenCV-website}, GoogleSpeechRecognition \cite{GoogleSTT-website}),
+dei web server (NodeJS \cite{NodeJS-website}, Express \cite{Express-website}, Mustache \cite{Mustache}),
+della gestione dati (MySQL \cite{MySQL}).
+Inoltre sono stati adottati diversi linguaggi di programmazione (JavaScript \cite{JavaScript}, Python \cite{Python})
+e piattaforme per la gestione distribuita di progetti softwave (GitLab \cite{git-website}).
 
-\section{Raspberry}
-RaspberryPi \'e un calcolatore elettronico, montato su una singola scheda elettornica, a basso costo
-dal consumo ridotto e alta portabilit\'a.
-Rilasciato per la prima volta intorno al 2012 \'e diventato un prodotto utilizzato per una moltitudine
+\section{Hardware}
+\subsection{RasperryPi}
+RaspberryPi \'e un calcolatore elettronico, montato su una singola scheda elettornica,
+caratterizzato dal basso costo, dal consumo energetico ridotto e, per le sue
+dimensioni ridotte, dalla facile portabilità.
+Rilasciato per la prima volta nel 2012 \'e diventato un prodotto utilizzato per una moltitudine
 di progetti sia aziendali che casalinghi.
 Il modello usato durante lo stage \'e RaspberryPi 3 model B e monta:
 \begin{itemize}
-\item una porta HDMI
-\item porta LAN
-\item uscita Aux
+\item 1 porta HDMI
+\item 1 porta LAN
+\item 1 uscita Aux
 \item 4 porte USB
-\item 40 General Purpose Input/Output(GPIO)
-\item Scheda di rete wirless
+\item 40 pin General Purpose Input/Output(GPIO)
+\item 1 scheda di rete wirless
 \item Alimentazione microUSB 5V
-\item un bus camera serial interface(CSI)
-\item ingesso per microSD
+\item un bus camera serial interface(CSI), ovvero una porta per telecamere con Flexible flat cable(FFC)
+\item ingresso per microSD
 \end{itemize}
 Il sistema operativo per Raspberry deve essere installato su una miscroSD opportunamente formattata
-e configurata con il corretto Master Boot Record (MBR).
+e configurata con un Master Boot Record (MBR).
 
-\section{Raspbian}
+\subsection{Periferiche}
+Nella creazione delle applicazioni per il Magic Mirror sono stati usati diverse periferiche, tra cui un microfono
+USB, per catturare la voce in input e un componente Skydriver Touch Board (94mm x 122mm) di Piromoni collegabile tramite
+i 40 pin GPIO del calcolatore principale, per catturare input fisici tramite il movimento delle dita sulla scheda.
+
+\section{Software}
+\subsection{Raspbian}
 Raspbian \'e un sistema operativo multi-architettura della distribuzione Debian, completamente libero,
 ottimizzato per Raspberry.
 F\'u sviluppato da Mike Thompson e Peter Green come progetto non affiliato alla compagnia Raspberry Pi
@@ -38,13 +46,7 @@ Fundation, pensato apposta per le basse prestazioni dei processori Advanced RISC
 dispostivo.
 La prima versione venne rilasciata nel 2012.
 
-\section{Periferiche}
-Nell'implementazione dei moduli del software sono stati usati diverse periferiche, tra cui una telecamera
-compatibile per il RaspberryPi (collegata tramite interfaccia Bus) per catturare immagini o uno stream,
-un microfono USB per catturare la voce e un componente Skydriver Touch Board di Piromoni collegabile tramite
-i 20pin del calcolatore principale, per catturare input fisici tramite il movimento delle dita sulla scheda.
-
-\section{Electron}
+\subsection{Electron}
 Electron \'e un Framework open source rilasciato per la prima volta nel 2013, ma la prima versione
 stabile \'e uscita di recente. \'E disponibile sui sistemi operativi Window, MacOS e Linux ed \'e scritto
 in C++ e Javascript. Il framework permette la creazione di interfacce grafiche (GUI) per
@@ -70,7 +72,7 @@ la versione dell'applicazione creata, la descrizione di quest'ultima e il
 rendering della pagina, ecc...
 \end{itemize}
 
-\section{OpenCV}
+\subsection{OpenCV}
 OpenCV (Open Source Computer Vision Library) \'e una libreria software sviluppata intorno al 2000
 utilizzata nell'abito della visione in tempo reale
 da parte di una macchia per mezzo di input digitali, ottenuti tramite telecamera o fotocamera ad esempio.\\
@@ -80,7 +82,7 @@ OpenCV prede in input un'immagine o uno stream (come un video o una serie di imm
 di visioning implementati al suo interno, riconosce oggetti o specifiche forme, inoltre se ne pu\'o aumentare l'efficienza
 applicando algoritmi di Machine Learning per individuare e riconoscere oggetti specifici.
 
-\section{Google Speech Recognition}
+\subsection{Google Speech Recognition}
 Negli ultimi anni Google ha ampliato sempre di pi\'u il suo catalogo per quanto rigarda
 i servizi cloud e web API.
 Tra questi si pu\'o individuare anche Google Speech To Text (o Google Speech Recognition), il quale \'e un
@@ -95,6 +97,7 @@ Inoltre Google Speech To Text dispone di alcune varianti:
 \item Una con gRPC, un sistema di chiamata di procedura remota
 \end{itemize}
 
+\iffalse
 \section{Model-View-Design}
 Il Model-View-Design (MVC) \'e un pattern architetturale che suddivide lo sviluppo di un'applicazione web in 3 parti:
 \begin{itemize}
@@ -111,8 +114,9 @@ partendo da un modello HTML.\\[2\baselineskip]
     \includegraphics[width=0.9\textwidth]{mvc}
     \caption{MVC Pattern}
 \end{figure}
+\fi
 
-\section{NodeJS}
+\subsection{NodeJS}
 NodeJS \'e una piattaforma open source, utilizzata per progettare il backend di un server web, sfruttando
 il motore JavaScript V8 sviluppato da Google.\\
 NodeJS esegue delle operazioni al verificarsi di uno specifico evento, che pu\'o essere un accesso ad una porta
@@ -122,7 +126,8 @@ di scaricare ed installare librerie private o pubbliche salvate su un database.
 Durante lo stage \'e stata utlizzato il pattern architetturale Model-View-Controller(MVC), usando Express
 come middleware, Mustache come Sistema di Template e MySQL come Database.
 \\[1\baselineskip]
-\subsection{Express}
+
+\subsubsection{Express}
 Express \'e un framework per NodeJS che permette di creare applicazioni Web e API in JavaScript.
 Il software viene usato per progettare il middleware di un server, che \'e composto di 3 entit\'a importanti:
 \begin{itemize}
@@ -136,7 +141,7 @@ la manipolazione, ricevendoli successivamente modificati e salvandoli di nuovo s
 \\[2\baselineskip]
 \end{itemize}
 
-\section{JavaScript}
+\subsection{JavaScript}
 Javascript \'e un linguaggio di programmazione di alto livello per oggetti ed eventi, che \'e stato supportato da tutti i browser
 per lo scripting delle pagine web.
 Inzialmente usato per il client-side ha subito un'evoluzione che lo ha portato ad essere utilizzato per lo sviluppo di backend e web app,
@@ -165,7 +170,7 @@ Sono tutt'ora in via di sviluppo nuove versioni di Javascript.
     \caption{Esempio di Callback Hell}
 \end{figure}
 
-\section{Python}
+\subsection{Python}
 Python \'e un linguaggio di programmazione open source, ad alto livello con semantica dinamica, orientato ad oggetti, usato
 per sviluppo di applicazioni, scripting e per collegare componenti tra di loro.\\[1\baselineskip]
 Come molti altri linguaggi supporta moduli e pacchetti anche sviluppati da terzi, salvati in una repository pubblica,
@@ -177,7 +182,7 @@ Python \'e stato un linguaggio particolarmente utile per l'interfacciamento con 
 apposita per gestirla.
 \\[2\baselineskip]
 
-\section{GitLab}
+\subsection{GitLab}
 Per poter comprendere il funzionamento di GitLab occore prima conoscere come funziona Git. Quest'ultimo \'e stato
 creato da da Linus Torvalds nel 2005 per la gestione del versionamento del codice in Linux.
 Git \'e, in sostanza, un grafo diretto aciclico di oggetti, ognuno con un'identificativo univoco, ed \'e composto da 4 parti principali:

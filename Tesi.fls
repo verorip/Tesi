@@ -121,11 +121,6 @@ INPUT capitoli/Capitolo1.tex
 INPUT capitoli/Capitolo1.tex
 INPUT capitoli/Capitolo2.tex
 INPUT capitoli/Capitolo2.tex
-INPUT immagini/mvc.png
-INPUT ./immagini/mvc.png
-INPUT ./immagini/mvc.png
-INPUT ./immagini/mvc.png
-INPUT ./immagini/mvc.png
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
 INPUT immagini/callbackhell.jpg
 INPUT ./immagini/callbackhell.jpg
