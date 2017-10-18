@@ -1,12 +1,13 @@
 \chapter{Struttra del Magic Mirror}
 
-Il Magic Mirror è un progetto ideato e sviluppato da Michael Teeuw, successivamente esteso nelle sue funzionalità da una moltitudine di utenti su GitHub.
-Una prima versione è stata scritta completamente in Python, in seguito è stata creata una seconda versione nella quale si è preferito l'utilizzo di Electron,
-che ha comportato una variazione di linguaggio, a favore di Javascript. In questo modo è stato possibile implementare un'interfaccia esteticamente più gradevole
-ed è stato possibile implementare un sistema per far comunicare i moduli fra di loro.
+Il Magic Mirror \`e un progetto ideato e sviluppato da Michael Teeuw, successivamente esteso nelle sue funzionalit\`a da una moltitudine di utenti su GitHub.
+Una prima versione \`e stata scritta completamente in Python, mentre, in seguito, \`e stata creata una seconda versione nella quale si \`e preferito l'utilizzo di Electron,
+che ha comportato una variazione di linguaggio, a favore di Javascript. In questo modo \`e stato possibile implementare un'interfaccia esteticamente pi\`u gradevole
+e api pi\`u intuitive.
 \\[2\baselineskip]
-\section{Perchè Magic Mirror?}
-L'idea dell'autore è nata rifacendosi allo specchio magico dell'omonima fiaba
+
+\section{Perch\`e Magic Mirror?}
+L'idea dell'autore \`e nata rifacendosi allo specchio magico dell'omonima fiaba
 scritta dai fratelli Grimm, La Bella Addormentata.\\
 Il software viene mostrato attraverso un
 comune monitor, trasmettendo immagini poste su uno sfondo completamente nero. Applicando sopra
@@ -20,16 +21,66 @@ e allo stesso tempo riesce a vedere le scritte o le immagini trasmesse dal monit
 \end{figure}
 
 \section{Avvio ed Escuzione}
-Il Magic Mirror viene avviato tramite riga di comando di una shell: npm start, che va a ricercare
-il file javascript principale indicato dal package.json.
-All'avvio viene eseguito il codice di Electron, che si occupa della creazione di una nuova finestra, che è l'interfaccia contenente il browser
-usato per contenere i DOM e di stampare la relativa pagina HTML, e il codice dell'applicazione, ovvero il corpo principale dello specchio.
-Quest'ultima crea e avvia un server per il backend,
-il cui compito è di caricare tutte le strtture dati dello specchio:
+Il Magic Mirror viene avviato tramite riga di comando di una shell: npm start, che va a ad eseguire
+il codice di un file javascript indicato dal file package.json.
+Il primo contiene il codice di Electron, che si occupa della creazione di una nuova finestra, che rappresenta l'interfaccia contenente il browser
+contetente i Document Object Model(DOM), e il codice dell'applicazione, ovvero il corpo principale dello specchio.
+Quest'ultima carica tutte le strutture dello specchio:
 \begin{itemize}
-\item i Moduli, che sono le entità che permettono di creare e configurare applicazioni da agganciare al software principale.
-\item i Node Helper, strutture "speciali", opzionali, che servono come supporto esterno ai moduli, per mezzo dei quali si possono interfacciare le api di servizi
-esterni al Magic Mirror. Ogni modulo ha il proprio Node Helper con cui può comunicare tramite messaggi in modo simile a come comunicano i moduli tra di loro.
-\item un Socket, entità principale che permette lo scambio dei messaggi tra i moduli e i rispettivi Node Helper.
-\item un Logger, implementato per tenere i log dell'applicazione e degli evenutali errori. Usato pricipalemnte per il debugging.\\[2\baselineskip]
+\item le api per le applicazioni, che sono le interfacce usate per leggere e caricare le applicazioni inserite nel Magic Mirror.
+\item le api per i Node Helper, interfacce per i Node Helper di una applicazione, sono strutture opzionali usate per collegamenti
+esterni al Magic Mirror(per esempio con api di un servizio cloud). Ogni applicazione ha il proprio Node Helper con cui pu\`o comunicare tramite messaggi in modo
+simile a come comunicano le applicazioni tra di loro.
+\item un "Socket", entit\`a principale che definisce le funzioni e le metodologie per lo scambio dei messaggi tra le applicazioni e i rispettivi Node Helper.
+\item un Logger, implementato per tenere i log dell'applicazione e degli evenutali errori. Usato pricipalemnte per il debugging.
+\item un file Config, un file di configurazione dello specchio, nel quale sono segnate il nome e le coordinate per la posizione all'inteno della pagina\\[2\baselineskip]
 \end{itemize}
+Inoltre viene inzializzato un server il quale ha il compito di trasmettere la pagina renderizzata sulla base
+degli output delle varie applicazioni al browser avviato inizialmente.
+
+\subsection{Il file di Configurazione}
+Come già menzionato il Magic Mirror carica un file di configurazione, il quale ha al suo inteno:
+\begin{itemize}
+\item la porta del server
+\item una whitelist ovvero un ip oppure un range di ip che possono collegarsi allo specchio
+\item la lingua principale del sistema
+\item il formato del timer (12h o 24h)
+\item unità di misura usata (per esmepio metrica)
+\item una lista di applicazioni (in formato JSON) da caricare con la relativa posizione nella pagina. Necessarimaente per ogni applicazione deve comparire il
+nome e la posizione, opzionalmente si possono inserire un campo header e un campo config specifico per l'applicazione:
+\begin{lstlisting}
+{
+	"module": 'nome dell'applicazione',
+	"position": 'la posizione dell'applicazione',
+	"header": 'stampa sopra all'applicazione',
+	"config": { opzioni varie in formato JSON }
+}
+\end{lstlisting}
+\end{itemize}
+La lingua, il formato del timer e l'unità di misura usata sono strumenti che possono essere utilizzati nella creazione di un'applicazione
+(per esempio il display di un orologio).
+
+\section{Specifiche delle applicazioni}
+La modifica del file di configurazione, appena descritta, del Magic Mirror serve per notificare la presenza delle applicazioni a quest'ultimo,
+ma perchè possano funzionare è necessario che si trovino in una specifica cartella e rispettino delle specifiche regole.
+Per inserire il codice dell'applicazione all'interno dello specchio è necessario creare una cartella con uno nome identificativo dell'applicazione
+nella directory "Modules".
+Dentro la cartella appena creata devono essere inseriti:
+\begin{itemize}
+\item 1 file Javascript(JS), il documento principale con lo stesso nome della cartella appena creata, contiene il codice il codice dell'applicaizone, il quale
+conterrà ance il codice per la creazione dei DOM
+\item 1 file Cascading Style Sheets(CSS), opzionale, per modificare l'esetica del DOM della relativa applicazione
+\item 1 file node\_helper.js, opzionale, che è il Node Helper associato alla specifica applicazione
+\item Altri file necessari all'applicazione (file.js)
+\end{itemize}
+Il file javascript principale viene caricato dal Magic Mirror, ed è composto dalla chiamata una funzione passando due parametri:
+\begin{lstlisting}[language=JavaScript]
+{
+	Module.register("Nome del Modulo", { /* varie funzioni passate in formato json */});
+}
+\end{lstlisting}
+Il primo parametro è una stringa che rappresenta il nome del modulo, il quale deve essere necessariamente uguale a quello della cartella e del file Javascript,
+mentre il secondo è un file JSON contenente una lista di parametri di cui alcuni definiti.
+
+\section{Messaggistica del MM}
+adasd

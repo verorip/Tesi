@@ -19,5 +19,8 @@
 \contentsline {subsection}{\numberline {2.2.7}Python}{11}{subsection.2.2.7}
 \contentsline {subsection}{\numberline {2.2.8}GitLab}{12}{subsection.2.2.8}
 \contentsline {chapter}{\numberline {3}Struttra del Magic Mirror}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Perchè Magic Mirror?}{13}{section.3.1}
+\contentsline {section}{\numberline {3.1}Perch\`e Magic Mirror?}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}Avvio ed Escuzione}{14}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Il file di Configurazione}{15}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Specifiche delle applicazioni}{16}{section.3.3}
+\contentsline {section}{\numberline {3.4}Messaggistica del MM}{17}{section.3.4}
