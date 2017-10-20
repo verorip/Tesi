@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1508425000 "Tesi.tex" "Tesi.pdf" "Tesi" 1508425001
+["pdflatex"] 1508489376 "Tesi.tex" "Tesi.pdf" "Tesi" 1508489377
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -57,14 +57,14 @@
   "C:/Program Files/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty" 1463135581 57049 34128738f682d033422ca125f82e5d62 ""
   "C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map" 1505552091 83721 56dfc66f96b4bc7777806d83f0266370 ""
   "C:/Users/ricki/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1505551016 4060059 3610f49585e71a0d3beba304ead2b33a ""
-  "Tesi.aux" 1508425001 4616 c77abb9a3257d49c91d2b390cea20f82 ""
-  "Tesi.out" 1508425001 1500 ff7c7ff0d48463e900cf0ee8b0bb8d15 ""
+  "Tesi.aux" 1508489377 4622 e847f1bd49541cc7a76f6380fbce0c38 ""
+  "Tesi.out" 1508489377 1506 0e157491ce1050462b2d2b7ce57e15d3 ""
   "Tesi.tex" 1508340497 1236 2af0e46e67f8b77a50ebefda36ebe60c ""
-  "Tesi.toc" 1508425001 1950 0d9a2b8a7d767b9f50c5a75186e5518b ""
+  "Tesi.toc" 1508489377 1956 84a32108dbabe82e12442ccaff2edc5c ""
   "bibliografia/bibliografia.tex" 1508169657 1452 899235d8ddd48289cd055f29e79cd657 ""
   "capitoli/Capitolo1.tex" 1508335345 1968 66c3d77e0ec311250f60aaa4e3002fe6 ""
   "capitoli/Capitolo2.tex" 1508335654 12681 5fb2e5ee4068fb40e99aeac33d6ea4fb ""
-  "capitoli/Capitolo3.tex" 1508424961 9729 fa5eb5212bec1f282e38a0a0771ec920 ""
+  "capitoli/Capitolo3.tex" 1508489371 9761 39f5f2a731b3b086ce227916a155631b ""
   "capitoli/Introduzione.tex" 1508424987 3868 d9891f24f066bf988ab765214ea15d0e ""
   "frontespizio/frontespizio.tex" 1507971018 752 0ed133c07889e19e02c03c35bdc3a4a9 ""
   "immagini/callbackhell.jpg" 1507368877 41787 71fe3151e2a12b57b9e7ae46535b075d ""
@@ -72,8 +72,8 @@
   "immagini/magic_mirror.jpg" 1507888474 211981 339d65681d57adee73e7c1fe64156d1e ""
   "indice/indice.tex" 1506006416 17 0c5a26266c0e749458a271cd3687582e ""
   (generated)
+  "Tesi.out"
   "Tesi.aux"
   "Tesi.log"
-  "Tesi.out"
   "Tesi.toc"
   "Tesi.pdf"
