@@ -119,14 +119,14 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
 INPUT capitoli/Capitolo1.tex
 INPUT capitoli/Capitolo1.tex
-INPUT capitoli/Capitolo2.tex
-INPUT capitoli/Capitolo2.tex
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
 INPUT immagini/callbackhell.jpg
 INPUT ./immagini/callbackhell.jpg
 INPUT ./immagini/callbackhell.jpg
 INPUT ./immagini/callbackhell.jpg
 INPUT ./immagini/callbackhell.jpg
+INPUT capitoli/Capitolo2.tex
+INPUT capitoli/Capitolo2.tex
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
 INPUT capitoli/Capitolo3.tex
 INPUT capitoli/Capitolo3.tex
 INPUT immagini/magic_mirror.jpg

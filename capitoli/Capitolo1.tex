@@ -27,3 +27,16 @@ il documento di configurazione del software principale senza eliminarne parti es
 o modificarlo in un formato sbagliato.
 Lo scambio dei messaggi tra il Magic Mirror e la pagina web avviene in formato JSON, lo stesso formato
 usato per il suo file di configurazione e delle sue applicazioni.\\
+Un altro problema riscontrato in questa parte è stata la difficoltà dell'utilizzo di Javascript
+perchè \`e un linguaggio asincrono, ovvero alcune funzioni venivano eseguite senza attendere
+il risulato della precedente. Il linguaggio, per poter sincronizzare la funzioni, mette a disposizione
+le callback: funzioni passate come parametro alla funzione principale che a loro volta avevano come paramentro il risultato,
+in modo da poter eseguire le operazioni solo dopo che la funzione chiamante avesse prodotto l'output.
+Il problema di questo approccio \`e stato il fenomeno "Callback Hell", ovvero Callback che chiamano a loro volta
+altre Callback creando funzioni annidate pi\`u volte, come mostrato in figura \ref{fig:hell}.
+\\[2\baselineskip]
+\begin{figure}[h]
+    \includegraphics[width=1\textwidth, height=0.4\textheight]{callbackhell}
+    \caption{Esempio di Callback Hell}
+    \label{fig:hell}
+\end{figure}

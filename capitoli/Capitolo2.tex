@@ -154,19 +154,16 @@ operazioni prima di eseguire le funzioni successive. Questo avviene perch\`e le 
 fatte via messaggi, i quali vengono salvati in una coda di messaggi e vengono spediti sequenzialmente ad uno stack di chiamata dove
 viene salvata la corrispondente funzione per l'esecuzione. Questo metodo rende il linguaggio asincorno perch\`e le funzioni e gli eventi
 vengono eseguiti in successione senza attendere il termine della precedente.
-\\[1\baselineskip]Le soluzioni adottate in ECMA Javascrit 5 (ES5), sono l'utilizzo delle callback,
-funzioni passate come parametro alla funzione principale che a loro volta avevano come paramentro il risultato, in modo da poter eseguire le operazioni
-solo dopo che la funzione chiamante avesse prodotto l'output. Il problema di questo approccio \`e stato il fenomeno "Callback Hell", ovvero Callback che chiamano a loro volta
-altre Callback creando funzioni annidate pi\`u volte.
+\\[1\baselineskip]Le soluzioni adottate in ECMA Javascrit 5 (ES5), la versione usata durante lo
+stage, sono l'utilizzo delle callback già discusse nel cpaitolo precedente.
 \\[1\baselineskip]
 In ECMA Javascript 6 (ES6) sono state introdotte le Promises, ovvero al posto di far tornare una funzione Callback, ritorna una Promise(Promessa),
 la quale garantisce che una variabile/oggetto avr\`a un ritorno, mettendo cosi la funzione in attesa fino al ricevimento del valore o di un errore.
 Sono tutt'ora in via di sviluppo nuove versioni di Javascript.
-\\[2\baselineskip]
-\begin{figure}[h]
-    \includegraphics[width=1\textwidth, height=0.4\textheight]{callbackhell}
-    \caption{Esempio di Callback Hell}
-\end{figure}
+
+%funzioni passate come parametro alla funzione principale che a loro volta avevano come paramentro il risultato, in modo da poter eseguire le operazioni
+%solo dopo che la funzione chiamante avesse prodotto l'output. Il problema di questo approccio \`e stato il fenomeno "Callback Hell", ovvero Callback che chiamano a loro volta
+%altre Callback creando funzioni annidate pi\`u volte.
 
 \subsection{Python}
 Python \`e un linguaggio di programmazione open source, ad alto livello con semantica dinamica, orientato ad oggetti, usato
@@ -181,7 +178,7 @@ apposite per gestirle.
 \\[2\baselineskip]
 
 \subsection{GitLab}
-GitLab \`e un web repository che implementa le funzionalit\`a offerte dal software Git e altri
+GitLab \`e una piattaforma web implementa le funzionalit\`a offerte dal software Git e altri
 servizi tra i quali la possibilit\`a di creare wiki e un servizio di issue tracking, utile per tenere traccia
 di evenutali richieste o problemi.
 Il software Git \`e stato creato da da Linus Torvalds nel 2005 per la gestione e il versionamento del codice in Linux.
