@@ -1,4 +1,49 @@
 \chapter{Applicazioni per il MM}
 
-\section{Applicazione per comandi vocali}
-Per la costruzione
+\section{Modulo per comandi vocali}
+La prima applicazione implementata, come è stato accennato nell'introduzione, è
+stata il controllo del Magic Mirror tramite comandi vocali.
+Nello specifico l'applicazione doveva, tramite delle specifiche frasi,
+gestire le altre applicazioni presenti nel Magic Mirror.\\
+Il compito di trasformare da parlato a testo scritto e l'elaborazione delle frasi è stato
+lasciato a carico di Google Speech API.
+Prima di spiegare il codice ci sono alcune dipendenze da spiegare.
+
+\subsection{Sound eXchange (SoX)}
+Per permettere al microfono di catturare ed elaborare correttamente l'audio nell'ambiente
+Raspbian è necessario installare Sound eXchange (SoX), un software per la manipolazione
+dell'audio, utile per effettuare uno streaming dell'audio.
+Per installarlo correttamente è necessario avere il Sistema Operativo aggiornato,
+usando il seguente comando da Shell:
+\begin{lstlisting}[language=bash]
+  $ sudo apt-get update
+\end{lstlisting}
+Il comando \textit{sudo} è un controllo speciale che permette di eseguire i comandi in modalità
+Super User, un utente speciale che ha i privilegi di amministrazione all'interno del sistema.
+\textit{apt-get} è uno strumento da riga di comando che permette di usare l'APT (Advanced Packaging Tool),
+un gestore di pacchetti dei sistemi Debian.
+Il parametro \textit{get} indica l'operazione da eseguire con \textit{apt}, in questo caso scaricare
+un pacchetto.
+\textit{update} indica l'obbiettivo di cercare aggiornamenti del S.O.
+Una volta completato si può installare il software sempre tramite comando da Shell:
+\begin{lstlisting}[language=bash]
+  $ sudo apt-get install sox
+\end{lstlisting}
+Il parametro \textit{install} serve ad indicare di installare il pacchetot oltre a scaricarlo, mentre \textit{sox}
+è il nome del pacchetto che si vuole cercare.
+Al termine del processo è necessario collegare il driver audio di Raspbian ALSA (Advanced Linux Sound Architecture)
+a SoX e indicare a quest'ultimo a quale periferica interfacciarsi, tramite i comandi:
+\begin{lstlisting}[language=bash]
+  $ export AUDIODEV=hw:1,0
+  $ export AUDIODRIVER=alsa
+\end{lstlisting}
+\textit{export} è un comando Linux usato per assegnare valori a Variabili d'Ambiente.
+\textit{AUDIODEV} è la variabile d'ambiente che identifica il dispositivo audio di Default, mentre
+\textit{hw:1,0} indica l'assegnamento della periferica 0 presente sulla scheda 1.
+il comando \textit{export AUDIODRIVER=alsa} è opzionale, perchè assegna alla variabile d'ambiente
+\textit{AUDIODRIVER}, la varibiale che fa riferiemnto al driver audio del sistema, ALSA,
+il quale dovrebbe essere già quello predefinito.
+
+\subsection{Autenticazione Google API}
+Per poter usufruire dell'API di Google è necessario fornire un'autenticazione a livello
+di sistema.

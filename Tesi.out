@@ -21,3 +21,6 @@
 \BOOKMARK [2][-]{subsection.3.2.1}{Il file di Configurazione}{section.3.2}% 21
 \BOOKMARK [1][-]{section.3.3}{Implementazione di un'applicazione}{chapter.3}% 22
 \BOOKMARK [1][-]{section.3.4}{Messaggistica del MM}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Applicazioni per il MM}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Modulo per comandi vocali}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.1.1}{Sound eXchange \(SoX\)}{section.4.1}% 26

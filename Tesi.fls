@@ -135,6 +135,12 @@ INPUT ./immagini/magic_mirror.jpg
 INPUT ./immagini/magic_mirror.jpg
 INPUT ./immagini/magic_mirror.jpg
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmti12.tfm
+INPUT capitoli/Capitolo4.tex
+INPUT capitoli/Capitolo4.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
 INPUT bibliografia/bibliografia.tex
 INPUT bibliografia/bibliografia.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmtt12.tfm

@@ -24,3 +24,6 @@
 \contentsline {subsection}{\numberline {3.2.1}Il file di Configurazione}{14}{subsection.3.2.1}
 \contentsline {section}{\numberline {3.3}Implementazione di un'applicazione}{15}{section.3.3}
 \contentsline {section}{\numberline {3.4}Messaggistica del MM}{17}{section.3.4}
+\contentsline {chapter}{\numberline {4}Applicazioni per il MM}{18}{chapter.4}
+\contentsline {section}{\numberline {4.1}Modulo per comandi vocali}{18}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Sound eXchange (SoX)}{18}{subsection.4.1.1}
