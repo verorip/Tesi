@@ -141,6 +141,8 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omlcmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omlcmr.fd
 INPUT bibliografia/bibliografia.tex
 INPUT bibliografia/bibliografia.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmtt12.tfm
@@ -149,6 +151,8 @@ INPUT ./Tesi.out
 INPUT ./Tesi.out
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb

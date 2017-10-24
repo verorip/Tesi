@@ -47,3 +47,68 @@ il quale dovrebbe essere già quello predefinito.
 \subsection{Autenticazione Google API}
 Per poter usufruire dell'API di Google è necessario fornire un'autenticazione a livello
 di sistema.
+Per poterlo fare è necessario ottenere delle credenziali di sicurezza per un account Google,
+attivabili tramite Google Cloud Platform Console.
+Le credenziali consistono in un username, la mail dell'account google, e una chiave di sicurezza unica,
+entrambi sono contenuti in un file JSON che può essere scaricato e salvato in locale.
+Per poter permettere al sistema di utilizzare l'API bisogna fare in modo che le credenziali siano
+raggiungibili, inserendole in una Variabile d'Ambiente con il comando:
+\begin{lstlisting}[language=bash]
+  $ export GOOGLE_APPLICATION_CREDENTIALS='Percorso del JSON'
+\end{lstlisting}
+
+\subsection{Node Heloer dell'applicazione}
+Il node Helper dell'applicazione si occupa di gestire lo streaming con L'API e
+di mandare i risultati (o gli errori) all'applicazione tramite le funzioni messe
+a disposizione dal Magic Mirror mostrate precedentemente.
+
+\begin{lstlisting}[language=Javascript]
+  var NodeHelper = require("node_helper");
+  const record = require('node-record-lpcm16');
+  const Speech = require('@google-cloud/speech');
+  const speech = Speech();
+  const request = {
+    config: {
+      encoding: encoding /*(Es. LINEAR16)*/,
+      sampleRateHertz: sampleRateHertz /*(Es. 16000)*/,
+      languageCode: languageCode /*(Es. it-IT)*/
+    },
+    interimResults: false /*usato se si vuole conoscere l'output prima dell'elaborazione*/
+  };
+
+module.exports = NodeHelper.create({
+  start: function () {
+        console.log("Starting Node Helper of module: " +this.name);
+    },
+
+    socketNotificationReceived: function(notification, payload) {
+        var self = this;
+        if (notification === "ready") {
+            listen();
+        }
+    },
+
+    listen: function(){
+      // Create a recognize stream
+      const recognizeStream = speech.streamingRecognize(request)
+        .on('error', sendSocketNotification("recognizerror"))
+        .on('data', (data) =>
+          if(Transcription: ${data.results[0].alternatives[0].transcript}\n)
+            sendSocketNotification('limit_reached')
+          else
+            sendSocketNotification('response', data.results[0])
+
+      // Start recording and send the microphone input to the Speech API
+      record
+        .start({
+          sampleRateHertz: 1600,
+          threshold: 0,
+          verbose: false,
+          recordProgram: 'sox',
+          silence: '20.0'
+        })
+        .on('error', sendSocketNotification('recorderror'))
+        .pipe(recognizeStream);
+    }
+})
+\end{lstlisting}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  23 OCT 2017 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  24 OCT 2017 17:33
 entering extended mode
 **./Tesi.tex
 (Tesi.tex
@@ -313,7 +313,7 @@ italian.ldf    See the documentation concerning the babel-italian typesetting
 italian.ldf    on input line 9.
 
 (frontespizio/frontespizio.tex
-<immagini/logo.png, id=107, 825.0825pt x 290.08376pt>
+<immagini/logo.png, id=115, 825.0825pt x 290.08376pt>
 File: immagini/logo.png Graphic file (type png)
  <use immagini/logo.png>
 Package pdftex.def Info: immagini/logo.png used on input line 3.
@@ -341,7 +341,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 l.38 \newpage
               [1
 
-] (capitoli/Introduzione.tex
+] [2] (capitoli/Introduzione.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
@@ -359,9 +359,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no   in font cmr12!
-) [2
+) [3
 
-] [3] (capitoli/Capitolo1.tex
+] [4] (capitoli/Capitolo1.tex
 Capitolo 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--17
@@ -374,15 +374,15 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no   in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
-<immagini/callbackhell.jpg, id=160, 640.3925pt x 480.79625pt>
+<immagini/callbackhell.jpg, id=174, 640.3925pt x 480.79625pt>
 File: immagini/callbackhell.jpg Graphic file (type jpg)
 
 <use immagini/callbackhell.jpg>
 Package pdftex.def Info: immagini/callbackhell.jpg used on input line 39.
 (pdftex.def)             Requested size: 390.0037pt x 236.8027pt.
-) [4
+) [5
 
-] [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+] [6pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -390,9 +390,9 @@ Package pdftex.def Info: immagini/callbackhell.jpg used on input line 39.
 l.43 \newpage
               <./immagini/callbackhell.jpg>] (capitoli/Capitolo2.tex
 Capitolo 2.
-[6
+[7
 
-] [7] [8]
+] [8] [9]
 Underfull \hbox (badness 10000) in paragraph at lines 121--130
 
  []
@@ -402,7 +402,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--142
 
  []
 
-[9]
+[10]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no   in font cmr12!
 
@@ -410,14 +410,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--179
 
  []
 
-[10]) [11] (capitoli/Capitolo3.tex
+[11]) [12] (capitoli/Capitolo3.tex
 Capitolo 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-<immagini/magic_mirror.jpg, id=235, 1550.79375pt x 1304.875pt>
+<immagini/magic_mirror.jpg, id=250, 1550.79375pt x 1304.875pt>
 File: immagini/magic_mirror.jpg Graphic file (type jpg)
 
 <use immagini/magic_mirror.jpg>
@@ -433,9 +433,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--23
 
  []
 
-[12
+[13
 
-] [13pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+] [14pdfTeX warning (ext4): destination with the same identifier (name{figure.3
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -449,12 +449,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
-[14]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-[15]
+[16]
 Overfull \hbox (11.78055pt too wide) in paragraph at lines 95--97
 []\OT1/cmr/m/n/12 getTranslations: func-tion()  re-turn en: "trans-la-tion-s/en
 .json", de: "trans-
@@ -465,12 +465,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[16]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
-) [17] (capitoli/Capitolo4.tex
+) [18] (capitoli/Capitolo4.tex
 Capitolo 4.
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
@@ -496,13 +496,13 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ² in font cmr12!
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ¨ in font cmr12!
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ¨ in font cmr12!
- [18
+ [19
 
 ]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
 Missing character: There is no Ã in font cmr12!
@@ -513,10 +513,24 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no   in font cmr12!
-) [19]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ² in font cmr12!
+ [20]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 91.
+ [21]) [22]
 (bibliografia/bibliografia.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
- [20
+ [23
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
@@ -524,26 +538,27 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 3D9DF15EA29E701C02EC30AFA5BC7EF1;1715.
+(rerunfilecheck)             Checksum: 665EDF56FCE9B60F56663E9F58917B59;1879.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 52.
  ) 
 Here is how much of TeX's memory you used:
- 7968 strings out of 493323
- 113547 string characters out of 3139066
- 262579 words of memory out of 3000000
- 11307 multiletter control sequences out of 15000+200000
+ 8079 strings out of 493323
+ 115247 string characters out of 3139066
+ 302649 words of memory out of 3000000
+ 11359 multiletter control sequences out of 15000+200000
  9622 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,7n,47p,908b,1707s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,7n,47p,908b,1721s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmtt12.pfb>
-Output written on Tesi.pdf (21 pages, 540317 bytes).
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmtt12.pfb>
+Output written on Tesi.pdf (24 pages, 562750 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 103 named destinations out of 1000 (max. 500000)
- 224 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 456 PDF objects out of 1000 (max. 8388607)
+ 159 named destinations out of 1000 (max. 500000)
+ 240 words of extra memory for PDF output out of 10000 (max. 10000000)
 
