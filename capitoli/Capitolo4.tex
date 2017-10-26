@@ -91,7 +91,7 @@ module.exports = NodeHelper.create({
     listen: function(){
       // Create a recognize stream
       const recognizeStream = speech.streamingRecognize(request)
-        .on('error', sendSocketNotification("recognizerror"))
+        .on('error', sendSocketNotification("error"))
         .on('data', (data) =>
           if(Transcription: ${data.results[0].alternatives[0].transcript}\n)
             sendSocketNotification('limit_reached')
@@ -107,8 +107,104 @@ module.exports = NodeHelper.create({
           recordProgram: 'sox',
           silence: '20.0'
         })
-        .on('error', sendSocketNotification('recorderror'))
+        .on('error', sendSocketNotification('error'))
         .pipe(recognizeStream);
     }
 })
+\end{lstlisting}
+
+\subsection{Il Main}
+Il main dell'applicazione gestisce le risposte ricevute dal NodeHelper ed esegue i comandi
+impartiti da esse.
+Inoltre si occupa di mostrare a schermo quando il programma è "in ascolto".
+\begin{lstlisting}[language=Javascript]
+Module.register("voicecontrol",{
+// Default module config.
+defaults: {
+  rosso: "modules/voicecontrol/icons/redpin.png",
+  verde: "modules/voicecontrol/icons/greenpin.png",
+  ready: false,
+  modules: [],
+  current: "",
+}
+
+start:function(){
+  console.log("module"+ this.name+"started");
+}
+
+getDom: function(){
+  var wrapper = document.createElement("div");
+  var containerled = document.createElement("div");
+  var containerlist=document.createElement("div");
+  var list=document.createElement("ul");
+  var led=document.createElement("span");
+  led.className="ledcontainer";
+  var imag = document.createElement("img");
+  if(!this.config.ready){
+    imag.src=this.config.rosso;
+    led.innerHTML="Not Listening...";
+  }
+  else
+    imag.src=this.config.verde;
+    led.innerHTML="On Air";
+  }
+  imag.style.height = '30px';
+  imag.style.width = '30px';
+  for(var i=0; i<this.config.modules.length; i++){
+    var option=document.createElement("li");
+    if(modules[i]==current)
+      option.style.color = 'red';
+    option.innerHTML=modules[i];
+    list.appendChild(option)
+  }
+  led.appendChild(imag);
+  containerled.appendChild(led);
+  containerlist.appendChild(list);
+  wrapper.appendChild(containerled);
+  wrapper.appendChild(containerlist);
+  return wrapper;
+}
+
+notificationReceived: function(notification, payload, sender) {
+		if (notification === 'ALL_MODULES_STARTED') {
+			MM.getModules().exceptModule(this).enumerate(function(module) {
+				this.config.modules.push(module.name);
+        module.hide(1000, function() {
+					//Module hidden.
+				});
+				});
+		  });
+	  }
+  if (notification === 'DOM_OBJECTS_CREATED') {
+    this.sendSocketNotification('ready');
+    this.config.ready=true;
+    this.updateDom();
+  }
+},
+
+socketNotificationReceived: function(notification, payload) {
+    if (notification === 'limit_reached') {
+      this.config.ready=false;
+      this.updateDom();
+    }
+    else if(notification === 'error'){
+      this.config.ready=false;
+      this.updateDom();
+    }
+    else if(notification === 'response'){
+      for(var j=0; j<this.config.modules.length; j++){
+        if(payload===modules[j]){
+          this.config.current=true;
+        }
+      MM.getModules().exceptModule(this).enumerate(function(module) {
+				if(module.name==this.config.current)
+          module.show(1000, function() {
+  					//Module show.
+  				});
+				});
+		  });
+      this.updateDom();
+    }
+  }
+}
 \end{lstlisting}
