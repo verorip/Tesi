@@ -115,6 +115,7 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy6.tfm
 OUTPUT Tesi.toc
 INPUT capitoli/Introduzione.tex
 INPUT capitoli/Introduzione.tex
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmti12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
 INPUT capitoli/Capitolo1.tex
@@ -134,7 +135,6 @@ INPUT ./immagini/magic_mirror.jpg
 INPUT ./immagini/magic_mirror.jpg
 INPUT ./immagini/magic_mirror.jpg
 INPUT ./immagini/magic_mirror.jpg
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmti12.tfm
 INPUT capitoli/Capitolo4.tex
 INPUT capitoli/Capitolo4.tex
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty

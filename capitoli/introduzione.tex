@@ -1,53 +1,37 @@
 \chapter*{Introduzione}
 \addcontentsline{toc}{chapter}{Introduzione}
 
-Nello stage che ho svolto presso Lab121 ho stato studiato il Magic Mirror, un software di domotica sviluppato da Michael Teeuw,
+Nello stage che ho svolto presso Lab121 ho esteso il Magic Mirror (abbreviato in \emph{MM}), un software di domotica sviluppato da Michael Teeuw,
 che gira sul calcolatore portatile RaspberryPi\cite{Raspberry}, sul quale ho svolto due principali attivit\`a:\\
 \begin{itemize}
-\item Lo sviluppo di applicazioni (detti anche moduli) che si interfacciano con periferiche esterne, o con api (italic), e il software
-principale.
-\item Lo sviluppo di un'interfaccia web che permette di modificarne la configurazione senza dover accedere
-a file potenzialmente critici ed eliminarne parti essenziali ad opera di utenti non esperti.\\[1\baselineskip]
-\end{itemize}
-Per la prima parte dello stage sono state create applicazioni mirate al controllo del
-Magic Mirror tramite l'impartizione di comandi vocali o input trasmessi dal movimento delle dita su
+\item Lo sviluppo di applicazioni (detti anche \emph{Moduli}) mirate al controllo del
+MagicMirror tramite l'impartizione di comandi vocali o input trasmessi dal movimento delle dita su
 una periferica touchpad.\\
-Questa scelta \`e stata presa prendendo atto che nel corso
-degli ultimi decenni, con il perfezionamento delle teconologie e dei software, ha fatto nascere
-una tendenza a controllare macchine o dispositivi con metodi sempre meno "diretti".
+La scelta dello sviluppo di queste applicazioni è stata presa con l'obbiettivo di dotare il
+MagicMirror di un'interfaccia uomo-macchina avanzata. Infatti, negli ultimi decenni, con lo sviluppo
+di nuove teconologie, sono stati sviluppati ed evoluti metodi non tradizionali per il controllo di dispositivi.\\
 Per esempio si possono osservare la maggior parte degli Smartphone moderni che permettono lo sblocco dello schermo con
-il riconoscimento del volto, oppure l'interazione con esso tramite sintesi vocale.
-Inoltre, lo sviluppo dei calcolatori e delle periferiche sempre pi\`u piccoli ed economici ha permesso
-la nascita di una moltitudine di progetti casalinghi con questo fine, contribuendo cos\'i
-alla crescita dei software in ambito relazione uomo-machcina, oggi reperibili in quantità anche open source.
-\\[2\baselineskip]
-%e l'evoluzione dei
-%calcolatori, \`e risultato sempre pi\`u facile, sia dal punto di vista economico che dello spazio fisico,
-%ottenere dispositivi elettronici dall'alta portabilit\`a e dalla buona efficenza, di cui
-%alcuni hanno permesso anche lo sviluppo di molti progetti fatti in casa.
-%Questa evoluzione ha portato sempre di pi\`u alla "fusione" con le macchine, poterle controllare senza
-%dover necessariamente dover digitare dei caratteri o premere tasti,
-%basti guardare buona parte degli Smartphone moderni che permettono lo sblocco dello schermo con
-%il volto, oppure l'interazione con esso tramite sintesi vocale.
-%Al giorno d'oggi molti software di questo ambito relazione tra uomo-macchina
-%sono open source per permettere agli utenti di poterli evolvere e perfezionarli sempre di pi\`u.\\
-%Nella prima parte dello stage sono stati sviluppati dei moduli per il Magic Mirror, un software
-%di terze parti scritto in Javascript che gira su electron e NodeJS,
-%in diversi linguaggi di programmazione, che permettono l'interazione tra uomo-macchina per
-%mezzo di periferiche esterne.
-%Tra i moduli sviluppati vi sono il supporto per l'impartizione di comandi
-%tramite movimenti delle dita su una scheda TouchPad e un supporto per il riconoscimento vocale,
-%ovvero l'impartizione di comandi specifici per mezzo di un microfono.
-Un altro aspetto che si \`e evoluto soprattutto negli ultimi anni nel campo
-delle applicazioni e delle Applicazioni Web (chiamate anche webb app)
-\`e l'implementazione di interfacce grafiche di gestione sempre pi\`u
-intuitive e facili da comprendere. Capita spesso che un'applicazione
-venga utilizzata da utenti privi di conoscenze informatiche, i quali, se mancasse
-l'interfaccia di gestione, dovrebbero accedere direttamente ai file di configurazione
-per modificarli, e potrebbero causare potenziali danni.\\
-A tal fine, nella seconda parte dello stage,
-\`e stata sviluppata un'interfaccia grafica web, la quale mostra un pannello di configurazione:
-il compito \`e di permettere la corretta modifica dei file di configurazione delle applicazioni
-e del Magic Mirror.
-\\[2\baselineskip]
-Nel capitolo 3 verr\`a spiegata la struttura del Magic Mirror.
+il riconoscimento del volto oppure l'interazione con esso tramite sintesi vocale,
+invece dell'utilizzo di tastiere analogie o digitali.
+Inoltre con il progresso tecnolgico di calcolatori e periferiche sempre pi\`u piccoli ed economici, ha permesso
+la nascita di una moltitudine di progetti casalinghi in ambito interazione uomo-macchina, contribuendo
+alla crescita dei software di questo tipo, oggi reperibili in quantit\` anche open source.\\[1\baselineskip]
+\item Lo sviluppo di un'interfaccia grafica web, la quale, tramite un pannello di amministrazione,
+ permette di modificare il file di configurazione del MM e delle applicazioni che si appoggiano su di esso,
+evitando così di dover accedere
+a file potenzialmente critici ed eliminarne parti essenziali ad opera di utenti non esperti.
+Infatti, oltre alle teconologie, un altro aspetto che si \`e evoluto negli ultimi anni
+nel campo delle Applicazioni Web è l'implementazione di interfacce grafiche di di amministrazione
+ad alto livello sempre pi\`u intuitive e facili da comprendere.
+Capita spesso che, in assenza di queste interfacce più evolute, un untente inesperto sia
+costretto ad utilizzare interfacce a basso livello (come strumenti di linea di comando o file
+di configurazione), con il rischio di causare potenziali danni.\\[2\baselineskip]
+\end{itemize}
+
+Nei prossimi capitoli:
+\begin{itemize}
+\item Capitolo 1 (label) verranno trattati scopi e problemi affrontati nello stage
+\item Capitolo 2 (label) verranno elencate e spiegate le teconologie che sono state utilizzate
+dutante lo stage
+\item Capitolo 3 (label) verr\`a spiegata la struttura del Magic Mirror
+\end{itemize}
