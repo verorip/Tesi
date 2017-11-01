@@ -1,5 +1,6 @@
 \chapter{Struttura del Magic Mirror}
-
+In questo capitolo verrà spiegata la struttura generale del MagicMirror, come funziona e di come veengono implementati i
+moduli e il sistema di messaggistica.
 Il Magic Mirror \`e un progetto ideato e sviluppato da Michael Teeuw, successivamente esteso nelle sue funzionalit\`a da una moltitudine di utenti su GitHub.
 Una prima versione \`e stata scritta completamente in Python, mentre successivamente \`e stata creata una seconda versione nella quale si \`e preferito l'utilizzo di Electron,
 che ha comportato una variazione di linguaggio, a favore di Javascript. In questo modo \`e stato possibile implementare un'interfaccia esteticamente pi\`u gradevole
@@ -49,34 +50,35 @@ Le strutture principali caricate dal MM sono le seguenti:
 \item gli end-point delle API per i Node Helper, per la gestione dei questi ultimi. Sono strutture opzionali usate per collegamenti
 esterni al Magic Mirror (per esempio, con API di un servizio cloud). Ogni applicazione ha il proprio Node Helper con cui pu\`o comunicare tramite messaggi in modo
 simile a come comunicano le applicazioni tra di loro.
-\item un "Socket" e un "Socket-Client", entit\`a principali che definiscono le funzioni e le metodologie per lo scambio dei messaggi tra le applicazioni e i rispettivi Node Helper.
+\item un "Socket" e un "Socket-Client", entit\`a principali che definiscono le funzioni per lo scambio dei messaggi tra le applicazioni e i rispettivi Node Helper.
 \item un Logger, implementato per tenere i log dell'applicazione e degli evenutali errori. Usato pricipalmente per il debugging.
-\item un file di configurazione, nel quale sono segnate il nome e le coordinate per la posizione dei vari moduli
-all'interno della pagina\\[2\baselineskip]
+\item un file di configurazione, nel quale sono specificati il nome e le coordinate per la posizione dei vari moduli
+all'interno della pagina.\\[2\baselineskip]
 \end{itemize}
-Inoltre viene inizializzato un server, il cui compito \`e quello di trasmettere la pagina renderizzata, con gli output delle varie applicazioni,
+Inoltre viene inizializzato un server, il cui compito \`e quello di trasmettere la pagina resa, con gli output delle varie applicazioni,
 al browser precedentemente avviato.
 
 \subsection{Il file di Configurazione}
-Come gi\`a menzionato, il Magic Mirror carica un file di configurazione, che è composto dai seguenti campi:
+Come discusso nella sezione \ref{cap:Config}, il Magic Mirror carica un file di configurazione, che è composto dai seguenti campi:
 \begin{itemize}
 \item la porta del server
 \item una whitelist, ovvero un IP oppure un range di IP che possono collegarsi allo specchio
 \item la lingua principale del sistema
-\item il formato del timer (12h o 24h)
-\item unit\`a di misura usata (ad esempio, metrica)
+\item il formato dell'ora (12h o 24h)
+\item unit\`a di misura usata (ad esempio, metrica), usata per gestire la distanza dei DOM
 \item una lista di applicazioni (in formato JSON) da caricare con la relativa posizione nella pagina. Per ogni applicazione deve necessariamente comparire il
-nome e la posizione; opzionalmente si possono inserire un campo  \textit{header} e un campo \textit{config} specifico per l'applicazione.
-\begin{lstlisting}
+nome e la posizione; opzionalmente si possono inserire un campo  \textit{header} e un campo \textit{config} specifico per l'applicazione, come mostrato
+nell'esempio in figura.\ref{code:configapp}
+\begin{lstlisting}[label={code:configapp}]
 {
 	"module": 'nome dell'applicazione',
 	"position": 'la posizione dell'applicazione all'intenro dello specchio',
-	"header": 'stampa sopra all'applicazione',
+	"header": 'una stringa che viene stampata sopra all'applicazione',
 	"config": { opzioni varie in formato JSON }
 }
 \end{lstlisting}
 \end{itemize}
-La lingua, il formato del timer e l'unit\`a di misura usata sono strumenti messi a disposizione dal sistema per la creazione di un'applicazione
+La lingua, il formato dell'ora e l'unit\`a di misura usata sono parametri messi a disposizione dal sistema per la creazione di un'applicazione
 (ad esempio, il display di un orologio).
 
 \section{Implementazione di un'applicazione}
@@ -92,14 +94,15 @@ conterr\`a a sua volta il codice per la creazione dei DOM
 \item 1 file node\_helper.js, che \`e il Node Helper associato alla specifica applicazione (opzionale)
 \item Altri file necessari all'applicazione (immagini, JSON, etc)\\[1\baselineskip]
 \end{itemize}
-Il file Javascript principale dell'applicazione viene caricato per primo dal Magic Mirror, e consiste in una chiamata di funzione con i seguenti due parametri:
-\begin{lstlisting}[language=JavaScript]
-{
-	Module.register("Nome dell'applicazione", { /* lista JSON di oggetti contenenti funzioni o variabili */});
-}
-\end{lstlisting}
-Il primo parametro \`e una stringa contenente il nome dell'applicazione: quest'ultimo deve essere necessariamente uguale al nome della cartella e al nome
-del file Javascript. Il secondo parametro, invece, \`e una lista JSON contenente funzioni o variabili (come in figura *da inserire*).
+%Il file Javascript principale dell'applicazione viene caricato per primo dal Magic Mirror, e consiste in una chiamata di funzione con i seguenti due parametri:
+%\begin{lstlisting}[language=JavaScript]
+%{
+%	Module.register("Nome dell'applicazione", { /* lista JSON di oggetti contenenti funzioni o variabili */});
+%}
+%\end{lstlisting}
+%Il primo parametro \`e una stringa contenente il nome dell'applicazione: quest'ultimo deve essere necessariamente uguale al nome della cartella e al nome
+%del file Javascript. Il secondo parametro, invece, \`e una lista JSON contenente funzioni o variabili (come in figura *da inserire*).
+\iffalse
 Le funzioni offerte dalle API sono:
 \begin{itemize}
 \item defaults: {}, una lista di variabili che possono essere richiamate all'interno di una qualsiasi funzione tramite il comando \textit{this.config.variabile}.
@@ -132,7 +135,7 @@ A differenza del file Javascript principale, l'unica funzione messa a disposizio
 }
 \end{lstlisting}
 mentre \`e possibile implementare le proprie funzioni con la stessa sintassi.
-
+\fi
 \section{Messaggistica del MM}
 In precedenza \`e stato gi\`a accennato che il Magic Mirror implementa un meccanismo di messaggistica sfruttando un sistema di socket integrato,
 utile per l'organizzazione e la moderazione delle applicazioni tramite l'utilizzo di funzioni messe a disposizione dall'API.
