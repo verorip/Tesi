@@ -1,12 +1,14 @@
 \chapter{Tecnologie Implicate}
+In questo capitolo verranno discusse le teconologie che sono state studiate ed utilizzate durante le attività di stage.
+In particolare il capitolo è diviso tra teconologie hardware e tecnologie software.
 
+\section{Prefazione}
 Lo sviluppo del progetto \`e stato svolto nell'ambiente Raspbian\cite{Raspbian}
 una distribuzione Debian\cite{Debian} che gira sul dispositivo RasperryPi\cite{Raspberry}.
-Inoltre sono state adottate diverse tecnologie, recenti
-e non, nel campo della creazione di applicazioni(Electron \cite{Electron-website},
-OpenCV \cite{OpenCV-website}, GoogleSpeechRecognition \cite{GoogleSTT-website}),
-dei web server (NodeJS \cite{NodeJS-website}, Express \cite{Express-website}, Mustache \cite{Mustache}),
-della gestione dati (MySQL \cite{MySQL}).
+Inoltre sono state adottate diverse tecnologie nel campo del riconoscimento vocale e di
+immagini (OpenCV \cite{OpenCV-website} e Google Speech API \cite{GoogleSTT-website}),
+nello sviluppo di applicazioni web (Electron \cite{Electron-website}, NodeJS \cite{NodeJS-website},
+Express \cite{Express-website}, Mustache \cite{Mustache}), della gestione dati (MySQL \cite{MySQL}).
 Inoltre sono stati adottati diversi linguaggi di programmazione (JavaScript \cite{JavaScript}, Python \cite{Python})
 e piattaforme per la gestione distribuita di progetti softwave (GitLab \cite{git-website}).
 
@@ -19,12 +21,13 @@ Rilasciato per la prima volta nel 2012 \`e diventato un prodotto utilizzato per 
 di progetti sia aziendali che casalinghi.
 Il modello usato durante lo stage \`e RaspberryPi 3 model B e monta:
 \begin{itemize}
+\item CPU con architettura ARM (Advanced RISC Machine)
 \item 1 porta HDMI
 \item 1 porta LAN
 \item 1 uscita Aux
 \item 4 porte USB
 \item 40 pin General Purpose Input/Output(GPIO)
-\item 1 scheda di rete wirless
+\item 1 scheda di rete wireless
 \item Alimentazione microUSB 5V
 \item un bus camera serial interface(CSI), ovvero una porta per telecamere con Flexible flat cable(FFC)
 \item ingresso per microSD
@@ -35,30 +38,30 @@ e configurata con un Master Boot Record (MBR).
 \subsection{Periferiche}
 Nella creazione delle applicazioni per il Magic Mirror sono state usate diverse periferiche, tra cui un microfono
 USB, per catturare la voce in input e un componente Skydriver Touch Board (94mm x 122mm) di Piromoni collegabile tramite
-i 40 pin GPIO del calcolatore principale, per catturare input fisici tramite il movimento delle dita sulla scheda.
+i 40 pin GPIO del calcolatore principale, per catturare input fisici tramite il movimento delle dita sulla Touch Board.
 
 \section{Software}
 \subsection{Raspbian}
-Raspbian \`e una distribuzione del sistema operativo Debian, completamente libero,
-ottimizzato per Raspberry.
-Fu sviluppato da Mike Thompson e Peter Green come progetto non affiliato alla compagnia RaspberryPi
-fundation, pensato apposta per la bassa potenza dei processori Advanced RISC Machine(ARM) montati sul
-dispostivo.
+Raspbian \`e una distribuzione del sistema operativo Linux derivata da Debian, completamente libera,
+ottimizzata per Raspberry.
+Fu sviluppata da Mike Thompson e Peter Green come progetto non affiliato alla compagnia RaspberryPi
+Fundation, per tenere in considerazione la limitata capacità di calcolo dei processori ARM.
 La prima versione venne rilasciata nel 2012.
 
-\subsection{Electron}
-Electron \`e un Framework open source rilasciato per la prima volta nel 2013, ma la prima versione
-stabile \`e uscita solo di recente. \`E disponibile sui sistemi operativi Window, MacOS e Linux ed \`e scritto
-in C++ e Javascript. Il framework permette la creazione di interfacce grafiche (GUI) per
-applicazioni multi-piattaforma, utilizzando teconologie gi\`a esistenti per lo sviluppo
+\subsection{Electron}\label{cap:Electron}
+Electron \`e un framework open source rilasciato per la prima volta nel 2013, ma la prima versione
+stabile \`e uscita durante giugno 2017. \`E disponibile per i sistemi operativi Windows, MacOS e Linux ed \`e scritto
+in C++ e Javascript. Il framework permette la creazione di applicazioni multipiattaforma
+utilizzando teconologie gi\`a esistenti per lo sviluppo
 del lato client e del lato server (Javascript, NodeJS, V8 \cite{V8}).
-All'avvio di Electron viene inizializza una pagina con Chromium \cite{Chromium}(il quale viene installato con l'applicazione)
-nel quale viene mostrata una pagina web, e un server in NodeJS che si occupa di trasmettere e interagire con il primo.
-Un'applicazione Electorn ha bisongo di 3 componenti principali:
+All'avvio di Electron viene inizializzata una pagina con Chromium \cite{Chromium}(un web browser installato insieme all'applicazione)
+nel quale viene mostrata una pagina web, e un server in NodeJS.
+Un'applicazione sviluppata con Electorn ha bisongo di 3 componenti principali:
 \begin{itemize}
 \item Il package.json, un file JSON, che deve contenere almeno il nome dell'applicazione,
 la versione dell'applicazione creata, la descrizione di quest'ultima e il
- nome del file principale dell'applicazione (necessaria per l'avvio)
+ nome del file principale dell'applicazione (necessaria per l'avvio), come mostrato nella
+ seguente immagine:
 \begin{lstlisting}
 {
   "name": "magicmirror",
@@ -67,28 +70,29 @@ la versione dell'applicazione creata, la descrizione di quest'ultima e il
   "main": "js/electron.js"
 }
 \end{lstlisting}
-\item Un file HTML che contiene il template della pagina mostrata dall'applicazione
+Name è il campo che assegna il nome dell'applicazione, version è il cmapo che assegna la versione
+dell'applicazione, description è una stringa che descrive il programma, main è il cmapo che punta al file
+Javascript eseguibile
+\item Un file HTML che contiene il template della pagina generata dall'applicazione
 \item Un file JavaScript che contiene il codice di esecuzione dell'applicazione come ad esempio la
 creazione di una finestra o la visualizzazione di una pagina.
 \end{itemize}
 
 \subsection{OpenCV}
 OpenCV (Open Source Computer Vision Library) \`e una libreria software sviluppata intorno al 2000
-utilizzata nell'ambito della visione in tempo reale
+utilizzata nell'ambito della visione artificiale per l'acquisizione e il riconoscimento di immagini
 da parte di una macchina per mezzo di input digitali, ottenuti tramite telecamera o fotocamera.\\
-La libreria \`e disponibile per i linguaggi C++(linguaggio in cui \`e scritta e dunque di cui ha l'interfaccia primaria), C, Python e Java e
+La libreria \`e disponibile per i linguaggi C++(linguaggio in cui \`e scritta), C, Python e Java e
 per diversi sistemi operativi, compresi quelli specifici per i dispositivi mobili.\\
-OpenCV prende in input un'immagine o uno stream (come un video o una serie di immagini) e, utilizzando algoritmi
- implementati al suo interno, riconosce oggetti o specifiche forme.
-Inoltre si pu\`o aumentarne la capacit\`a
-applicando algoritmi di Machine Learning per individuare e riconoscere oggetti specifici.
+OpenCV prende in input un'immagine o uno stream (come un video o una serie di immagini) e, l'utilizzo di
+specifici algoritmi di Machine Learning per individuare e riconoscere oggetti specifici.
 
 \subsection{Google Speech API}
-Negli ultimi anni Google ha ampliato sempre di pi\`u il suo catalogo per quanto rigarda
+Negli ultimi anni Google ha ampliato sempre di pi\`u il suo catalogo per quanto riguarda
 i servizi cloud e web API.
 Tra questi si pu\`o individuare anche Google Speech API, il quale \`e un
-servizio che, ricevendo in input un file o uno stream audio, ottenuto per mezzo di un
-dispositivo di audio input, traduce il parlato in testo scritto tramite algoritmi avanzati
+servizio che, ricevendo in input un file o uno stream audio, ottenuto per mezzo di un'acquisizione
+da un dispositivo di audio input, traduce il parlato in testo scritto tramite algoritmi avanzati
 di riconoscimento della voce.\\
 L'API supporta oltre 110 lingue e si possono usare su diverse piattaforme dato che
 le librerie sono disponibili nei linguaggi C\#, GO, Java, Node.JS, PhP, Python e Ruby.
@@ -117,76 +121,91 @@ partendo da un modello HTML.\\[2\baselineskip]
 \end{figure}
 \fi
 
-\subsection{NodeJS}
-NodeJS \`e una piattaforma open source, utilizzata per progettare il backend di un server web, ovvero
-la parte del sistema che contiene applicazioni e programmi con cui l'utente non interagisce e
-che ne permette l'effettivo funzionamento e, nel caso, la manipolazione e l'elaborazione
-dei dati, sfruttando il motore JavaScript V8 sviluppato da Google.\\
-NodeJS esegue delle operazioni al verificarsi di uno specifico evento, che pu\`o essere un accesso ad una porta
+\subsection{Node.JS}
+Node.JS era già implementato con Electron, ed è stato usato per la creazione del server
+per la gestione dell'interfaccia web per il MM.
+Node.JS \`e una piattaforma open source che permette l'esecuzione del linguaggio Javascript
+anche per il lato server, ovvero
+la parte del sistema che contiene applicazioni e programmi  scritti, in questo caso, in Javascript
+ed eseguiti sfruttando il motore JavaScript V8 sviluppato da Google.
+Il lato server è una parte del sistema che l'utente, di solito, non interagisce direttamente
+e che ne permette l'effettivo funzionamento e, nel caso, la manipolazione e l'elaborazione
+dei dati.\\
+Node.JS esegue delle operazioni al verificarsi di uno specifico evento, che pu\`o essere un accesso ad una porta
 del server o la richiesta di una pagina.
 Per gestire i pacchetti di questo framework viene utilizzato NPM\cite{NPM}, uno strumento che permette
 di scaricare ed installare librerie private o pubbliche salvate su un database.
 \\[1\baselineskip]
 
-\subsubsection{Express}
-Express \`e un framework per NodeJS che permette di creare applicazioni Web e API in JavaScript.
+\subsection{Express}
+Express \`e un framework per Node.JS che permette di creare applicazioni Web e API in JavaScript, offrendo strumenti e pacchetti
+che implementano più facilmente tutti i servizi (e anche di più) offerti da Node.JS.
 Il software viene usato per creare e gestire il backend di un server, che \`e composto di 3 entit\`a importanti:
 \begin{itemize}
+\item il Controller, che definisce le funzioni associate ad un determinato modello.
 \item il Routing, utilizzato per determinare come il server debba rispondere ad un determinato metodo di richiesta,
 ricevuta sottoforma di URI, inoltrando la richiesta alla funzione del controller del modello a cui fa rifermento.
 \item i Modelli, creati per ogni entit\`a-oggetto che esiste all'interno del server, ad ognuno dei quali viene associato
 un controller. Inoltre, tramite i modelli si accede al databse per estrarre i dati e spedirli al controller per
 la manipolazione, ricevendoli successivamente modificati e salvandoli, se necessario.
-\item il Controller, che definisce le funzioni associate ad un determinato modello.
 \\[2\baselineskip]
 \end{itemize}
 
+\subsection{Mustache}
+Mustache è un motore di template disponibile per molti linguaggi tra cui Javascript.
+\`E stato usato come motore di template per l'interfaccia web di configurazione
+del MagicMirror.
+Mustache è un sistema logic-less perchè è privo di istruzioni per il controllo del flusso
+(come ad esempio l'if e l'else), quindi tutti i controllli di questo tipo vengono fatti
+attraverso programmazione data-driven.
+Il nome di questo motore è dovuto all'utilizzo delle parentesi graffe, usate spesso
+all'intero della sua sintassi, che, se viste da una certa angolatura, assomigliano
+a un paio di baffi.
+
+\subsection{MySQL}
+MySQL è stato usato durante lo stage per l'archiviazione di utenti con i permessi accedere all'interfaccia web del MM.
+MySQL è uno tra i più famosi database open source sviluppato da Oracle, più precisamente
+è sistema per la gestione di basi di dati basato sul modello relazionale.
+MySQL è composto da una semplice riga di comando e un server web, ma sono implementati anche programmi
+per l'amministrazione del database (come ad esempio il famoso phpMyAdmin).
+La prima versione fu rilasciata nel maggio del 1995 Sviluppato da Oracle e di proprietà di MySQL AB,
+distribuito sia con licenza commerciale sia con licenza libera.
+
 \subsection{JavaScript}
-Javascript \`e un linguaggio di programmazione di alto livello per oggetti ed eventi, che \`e supportato da tutti i browser
-per lo scripting delle pagine web, conosciuto per l'utilizzo in programmazione procedurale e per la programmazione orientata ad oggetti.
+Javascript \`e un linguaggio di programmazione ad alto livello orientato agli oggetti e ad eventi, che \`e supportato da tutti i browser
+per lo scripting delle pagine web, e che supporta la programmazione procedurale.
 Inizialmente usato per il lato client ha subito un'evoluzione che lo ha portato ad essere utilizzato per lo sviluppo di backend e web app.
-Gli oggetti in Javascript vengono creati a livello di codice collegando metodi e propriet\`a ad altri oggetti, anche vuoti, a tempo
-di esecuzione.
 \\[2\baselineskip]
 ECMAJavascript(ES) \`e lo standard di Javascript che negli ultimi anni ha sviluppato ed evoluto il linguaggio in diverse versioni.
-In tutte il problema pi\`u trattato \`e il fatto che Javascript \`e asincrono, ovvero non attende il completamento di alcune
-operazioni prima di eseguire le funzioni successive. Questo avviene perch\`e le chiamate di funzioni non vengono fatte direttamente, ma vengono
-fatte via messaggi, i quali vengono salvati in una coda di messaggi e vengono spediti sequenzialmente ad uno stack di chiamata dove
+In tutte il problema pi\`u trattato \`e il fatto che Javascript \`e orientato agli eventi,
+ed alcune funzioni necessitano di Callback, che possono degenerare se non vengono
+utilizzati buone pratiche di programmazione. Le callback sono necessarie perch\`e alcune chiamate di funzioni non vengono fatte direttamente, ma vengono
+fatte attraverso messaggi, i quali vengono salvati in una coda di messaggi e vengono spediti sequenzialmente ad uno stack di chiamata dove
 viene salvata la corrispondente funzione per l'esecuzione. Questo metodo rende il linguaggio asincorno perch\`e le funzioni e gli eventi
 vengono eseguiti in successione senza attendere il termine della precedente.
-\\[1\baselineskip]Le soluzioni adottate in ECMA Javascrit 5 (ES5), la versione usata durante lo
-stage, sono l'utilizzo delle callback già discusse nel cpaitolo precedente.
+\\[1\baselineskip]Le soluzioni adottate in ECMA Javascript 5 (ES5), la versione usata durante lo
+stage, sono l'utilizzo delle Callback già discusse nella sezione 1.2 (label).
 \\[1\baselineskip]
 In ECMA Javascript 6 (ES6) sono state introdotte le Promises, ovvero al posto di far tornare una funzione Callback, ritorna una Promise(Promessa),
 la quale garantisce che una variabile/oggetto avr\`a un ritorno, mettendo cosi la funzione in attesa fino al ricevimento del valore o di un errore.
 Sono tutt'ora in via di sviluppo nuove versioni di Javascript.
 
-%funzioni passate come parametro alla funzione principale che a loro volta avevano come paramentro il risultato, in modo da poter eseguire le operazioni
-%solo dopo che la funzione chiamante avesse prodotto l'output. Il problema di questo approccio \`e stato il fenomeno "Callback Hell", ovvero Callback che chiamano a loro volta
-%altre Callback creando funzioni annidate pi\`u volte.
-
 \subsection{Python}
+Questo linguaggio \`e stato particolarmente utile per l'interfacciamento con la telecamera e la Touch Board, essendo a disposizione librerie
+apposite per gestirle.
 Python \`e un linguaggio di programmazione open source, ad alto livello con semantica dinamica, orientato ad oggetti, usato
-per sviluppo di applicazioni, scripting e per collegare componenti tra di loro.\\[1\baselineskip]
-Come molti altri linguaggi supporta moduli e pacchetti anche sviluppati da terzi, salvati in una repository pubblica,
+per sviluppo di applicazioni e scripting.\\[1\baselineskip]
+Come molti altri linguaggi supporta pacchetti anche sviluppati da terzi, salvati in una repository pubblica,
 attraverso un suo gestore di pacchetti Pip Installs Packages o Pip Installs Python (pip, acronimo ricorsivo).
 \\[1\baselineskip]
 Inoltre con Python \`e possibile creare ambienti isolati per l'utilizzo di pacchetti e moduli senza doverli installare all'interno del sistema.
 Per poterlo fare \`e disponibile virtualenv, uno strumento Python che permette, appunto, di creare ambienti virtuali (virtual enviroments).
-Questo linguaggio \`e stato particolarmente utile per l'interfacciamento con la telecamera e la Touch Board, essendo a disposizione librerie
-apposite per gestirle.
 \\[2\baselineskip]
 
 \subsection{GitLab}
-GitLab \`e una piattaforma web implementa le funzionalit\`a offerte dal software Git e altri
+GitLab \`e una piattaforma web che implementa le funzionalit\`a offerte dal software Git e altri
 servizi tra i quali la possibilit\`a di creare wiki e un servizio di issue tracking, utile per tenere traccia
-di evenutali richieste o problemi.
-Il software Git \`e stato creato da da Linus Torvalds nel 2005 per la gestione e il versionamento del codice in Linux.
-Git \`e, in sostanza, un grafo diretto aciclico di oggetti, ognuno con un'identificativo univoco, ed \`e composto da 4 parti principali:
-\begin{itemize}
-\item i Blob, insieme di bytes che contengono i dati all'inteno dei file.
-\item i Trees, sono le cartelle che contengono, all'interno, un lista di file con alcuni bit i quali fanno riferimento al
-rispettivo blob o ad un'altro Tree.
-\item i Tag, sono etichette con dati aggiuntivi per identificare e gestire i nodi.
-\item i Commit, collegano pi\`u oggetti Tree ad uno storico nel quale sono salvati anche i nomi di tutti i commits parenti.
-\end{itemize}
+di eventuali richieste o problemi.
+La comodità di questa piattaforma sta nel poter creare dei Commit, ovvero ad ogni modifica del codice si può
+salvarne lo stato assegnadoli un'etichetta in locale, per poi spedire la versione al remoto del progetto.
+In ogni momento si può tornare ad una versione vecchia tramite gli strumenti di reversering offerti dal servizio.

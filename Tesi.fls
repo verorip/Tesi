@@ -135,6 +135,11 @@ INPUT ./immagini/magic_mirror.jpg
 INPUT ./immagini/magic_mirror.jpg
 INPUT ./immagini/magic_mirror.jpg
 INPUT ./immagini/magic_mirror.jpg
+INPUT immagini/struttMM.png
+INPUT ./immagini/struttMM.png
+INPUT ./immagini/struttMM.png
+INPUT ./immagini/struttMM.png
+INPUT ./immagini/struttMM.png
 INPUT capitoli/Capitolo4.tex
 INPUT capitoli/Capitolo4.tex
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
