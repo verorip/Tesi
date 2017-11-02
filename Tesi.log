@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  1 NOV 2017 12:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  2 NOV 2017 10:29
 entering extended mode
 **./Tesi.tex
 (Tesi.tex
@@ -497,19 +497,21 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ² in font cmr12!
 ) [14] (capitoli/Capitolo3.tex
 Capitolo 3.
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no   in font cmr12!
 <immagini/magic_mirror.jpg, id=283, 1550.79375pt x 1304.875pt>
 File: immagini/magic_mirror.jpg Graphic file (type jpg)
 
 <use immagini/magic_mirror.jpg>
-Package pdftex.def Info: immagini/magic_mirror.jpg used on input line 17.
+Package pdftex.def Info: immagini/magic_mirror.jpg used on input line 18.
 (pdftex.def)             Requested size: 389.99281pt x 355.20802pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--20
+Underfull \hbox (badness 10000) in paragraph at lines 2--21
 
  []
 
@@ -522,10 +524,10 @@ Missing character: There is no ¨ in font cmr12!
 File: immagini/struttMM.png Graphic file (type png)
 
 <use immagini/struttMM.png>
-Package pdftex.def Info: immagini/struttMM.png used on input line 26.
+Package pdftex.def Info: immagini/struttMM.png used on input line 27.
 (pdftex.def)             Requested size: 389.99121pt x 355.20313pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 [][]
  []
 
@@ -534,7 +536,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.31 \item I
+l.32 \item I
             l core, il cuore del MM dove gira il codice principale. <./immagini
 /magic_mirror.jpg>]
 Missing character: There is no Ã in font cmr12!
@@ -546,7 +548,7 @@ Missing character: There is no   in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no   in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
 
  []
 
@@ -555,27 +557,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.38 \end{itemize}
+l.39 \end{itemize}
                    <./immagini/struttMM.png>]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--56
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
 
 
-LaTeX Warning: Reference `cap:Config' on page 18 undefined on input line 61.
+LaTeX Warning: Reference `cap:Config' on page 18 undefined on input line 62.
 
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
 [18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ² in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
 
  []
 
@@ -658,10 +668,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 54.
  ) 
 Here is how much of TeX's memory you used:
- 8216 strings out of 493323
- 117147 string characters out of 3139066
- 308667 words of memory out of 3000000
- 11409 multiletter control sequences out of 15000+200000
+ 8217 strings out of 493323
+ 117159 string characters out of 3139066
+ 308713 words of memory out of 3000000
+ 11410 multiletter control sequences out of 15000+200000
  9622 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,7n,51p,908b,1753s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -672,9 +682,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on Tesi.pdf (28 pages, 622279 bytes).
+Output written on Tesi.pdf (28 pages, 622633 bytes).
 PDF statistics:
- 598 PDF objects out of 1000 (max. 8388607)
+ 599 PDF objects out of 1000 (max. 8388607)
  245 named destinations out of 1000 (max. 500000)
  285 words of extra memory for PDF output out of 10000 (max. 10000000)
 

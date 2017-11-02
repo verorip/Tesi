@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1509534295 "Tesi.tex" "Tesi.pdf" "Tesi" 1509534297
+["pdflatex"] 1509614992 "Tesi.tex" "Tesi.pdf" "Tesi" 1509614993
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -60,14 +60,14 @@
   "C:/Program Files/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty" 1463131981 57049 34128738f682d033422ca125f82e5d62 ""
   "C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map" 1505548491 83721 56dfc66f96b4bc7777806d83f0266370 ""
   "C:/Users/ricki/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1505547416 4060059 3610f49585e71a0d3beba304ead2b33a ""
-  "Tesi.aux" 1509534297 6111 5f2ab8237e4e5348c2933fae42247d61 ""
-  "Tesi.out" 1509534297 2187 960cbbb329d250d3febceb9ae28b755e ""
+  "Tesi.aux" 1509614993 6185 c6f90754df133d4ce7088b4225ddbf11 ""
+  "Tesi.out" 1509614993 2187 960cbbb329d250d3febceb9ae28b755e ""
   "Tesi.tex" 1509199234 1317 0f76896e7af2085138591781dd4880fe ""
-  "Tesi.toc" 1509534297 2744 508a58445acec7c47ea9255af959dd49 ""
+  "Tesi.toc" 1509614993 2744 508a58445acec7c47ea9255af959dd49 ""
   "bibliografia/bibliografia.tex" 1508166057 1452 899235d8ddd48289cd055f29e79cd657 ""
   "capitoli/Capitolo1.tex" 1509304125 3601 883b2f9efdd98f5e928f81eb0cbf05bc ""
   "capitoli/Capitolo2.tex" 1509531401 13739 5106ada320fc013e1abc331c3a4c51a2 ""
-  "capitoli/Capitolo3.tex" 1509534288 11294 5d3d9e6e2b28554d002dc00967a60463 ""
+  "capitoli/Capitolo3.tex" 1509614984 11524 1aa4e4a7e38254920770847e9d57cade ""
   "capitoli/Capitolo4.tex" 1508937702 8166 991fa583ea52de73f62987eaba1b9a71 ""
   "capitoli/Introduzione.tex" 1509304159 2671 0f02eb673fd8c64a4a33c398b0b9b86c ""
   "frontespizio/frontespizio.tex" 1507967418 752 0ed133c07889e19e02c03c35bdc3a4a9 ""
@@ -77,8 +77,8 @@
   "immagini/struttMM.png" 1509379103 48703 e03c8fb3ee8b39c415e39a1254e882e9 ""
   "indice/indice.tex" 1506002816 17 0c5a26266c0e749458a271cd3687582e ""
   (generated)
-  "Tesi.toc"
-  "Tesi.out"
-  "Tesi.pdf"
   "Tesi.log"
+  "Tesi.toc"
+  "Tesi.pdf"
   "Tesi.aux"
+  "Tesi.out"

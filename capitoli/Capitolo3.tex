@@ -20,7 +20,7 @@ come mostrato in figura \ref{fig:MM}.
     \label{fig:MM}
 \end{figure}
 
-\section{Il MM dall'alto livello}
+\section{Il MM dall'alto livello}\label{cap:MMalto}
 Il MM è una applicazione con diverse API e strutture che permettono l'interazione e la comunicazione tra i moduli.
 Si possono individuare alcuni elementi principali rappresentati in figura \ref{fig:struttMM}:
 \begin{figure}[H]
@@ -68,7 +68,7 @@ Come discusso nella sezione \ref{cap:Config}, il Magic Mirror carica un file di 
 \item unit\`a di misura usata (ad esempio, metrica), usata per gestire la distanza dei DOM
 \item una lista di applicazioni (in formato JSON) da caricare con la relativa posizione nella pagina. Per ogni applicazione deve necessariamente comparire il
 nome e la posizione; opzionalmente si possono inserire un campo  \textit{header} e un campo \textit{config} specifico per l'applicazione, come mostrato
-nell'esempio in figura.\ref{code:configapp}
+nell'esempio in figura \ref{code:configapp}.
 \begin{lstlisting}[label={code:configapp}]
 {
 	"module": 'nome dell'applicazione',
@@ -137,17 +137,17 @@ A differenza del file Javascript principale, l'unica funzione messa a disposizio
 mentre \`e possibile implementare le proprie funzioni con la stessa sintassi.
 \fi
 \section{Messaggistica del MM}
-In precedenza \`e stato gi\`a accennato che il Magic Mirror implementa un meccanismo di messaggistica sfruttando un sistema di socket integrato,
+Nella sezione \ref{cap:MMalto} \`e stato gi\`a accennato che il Magic Mirror implementa un meccanismo di messaggistica sfruttando un sistema di socket integrato,
 utile per l'organizzazione e la moderazione delle applicazioni tramite l'utilizzo di funzioni messe a disposizione dall'API.
-Le funzioni usate per ricevere i messaggi, come gi\`a detto precedentemente, sono: \textit{socketNotificationReceived(notification, payload)},
-per la ricezione dei messagi da parte del Node Helper, e \textit{notificationReceived(notification, payload, sender)}, per la ricezione di
-messaggi dalle altre applicazioni.
-Per spedire messaggi vengono chiamate le funzioni \textit{sendSocketNotification(notification, payload)} e \textit{sendNotificationReceived(notification, payload, sender)},
-i cui campi indicano:
+Sono presenti due classi socket:
 \begin{itemize}
-\item notification, l'indentificatore della notifica, una sorta di header al quale si pu\`o assegnare un qualunque oggetto
-\item payload, il corpo del messaggio (opzionale)
-\item sender, usato solo nei messaggi tra i moduli, dove viene riportato l'identificativo dell'applicazione che lo ha mandato\\[1\baselineskip]
+\item Socket, classe che fornisce le funzioni per ricevere e mandare messaggi tra i moduli del MM. Con questo socket quando la spedizione
+del messaggio è in broadcast usando la funzione \textit{sendNotification(notification, payload)}. Il primo parametro è una stringa che identifica
+il messaggio, il secondo parametro è opzionale ed può essere usato per inserire il corpo del messaggio.
+La ricezione del messaggio viene gestita con la funzione \textit{notificationReceived(notification, payload, sender)}, i primi due parametri sono
+uguali a quelli della funzione per spedire, il terzo parametro contiene il nome del
+modulo che ha mandato il messaggio
+\item Socket Client, classe che fornisce le funzioni per ricevere e mandare messaggi tra il modulo e il suo NodeHelper. Per spedire
+i messaggi viene usata la funzione \textit{sendSocketNotification(notification, payload)}, mentre la ricezione viene gestita con la funzione
+ \textit{socketNotificationReceived(notification, payload)}. I campi di queste due funzioni sono gli stessi descritti nel punto precedente.\\[1\baselineskip]
 \end{itemize}
-\textit{sendNotificationReceived} a differenza del suo corrispettivo per il Node Helper, manda il messaggio in broadcast a tutte le applicazioni attive
-sulla macchina, e deve essere filtrato dalle singole applicazioni in base al campo \textit{notification}.
