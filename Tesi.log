@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  3 NOV 2017 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  3 NOV 2017 15:02
 entering extended mode
 **./Tesi.tex
 (Tesi.tex
@@ -313,7 +313,7 @@ italian.ldf    See the documentation concerning the babel-italian typesetting
 italian.ldf    on input line 9.
 
 (frontespizio/frontespizio.tex
-<immagini/logo.png, id=146, 825.0825pt x 290.08376pt>
+<immagini/logo.png, id=143, 825.0825pt x 290.08376pt>
 File: immagini/logo.png Graphic file (type png)
  <use immagini/logo.png>
 Package pdftex.def Info: immagini/logo.png used on input line 3.
@@ -325,16 +325,16 @@ Package pdftex.def Info: immagini/logo.png used on input line 3.
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./immagini/logo.png>])
 (indice/indice.tex (Tesi.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 6.
+(Font)              <12> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 6.
+(Font)              <8> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 6.
+(Font)              <6> on input line 5.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 ... {5}Applicazioni per il MM}{22}{chapter.5}
+l.30 ... {4}Applicazioni per il MM}{22}{chapter.4}
                                                    [1
 
 ])
@@ -343,8 +343,6 @@ l.31 ... {5}Applicazioni per il MM}{22}{chapter.5}
 
 ) [2]
 (capitoli/Introduzione.tex
-Capitolo 1.
-
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
@@ -381,7 +379,7 @@ Missing character: There is no   in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no   in font cmr12!
 ) [4] (capitoli/Capitolo1.tex
-Capitolo 2.
+Capitolo 1.
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no   in font cmr12!
 Missing character: There is no Ã in font cmr12!
@@ -401,7 +399,7 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no   in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
-<immagini/callbackhell.jpg, id=219, 640.3925pt x 480.79625pt>
+<immagini/callbackhell.jpg, id=215, 640.3925pt x 480.79625pt>
 File: immagini/callbackhell.jpg Graphic file (type jpg)
 
 <use immagini/callbackhell.jpg>
@@ -414,14 +412,14 @@ Package pdftex.def Info: immagini/callbackhell.jpg used on input line 48.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [6] (capitoli/Capitolo2.tex [7pdfTeX warning (ext4): destination with the same 
-identifier (name{figure.2.1}) has been already used, duplicate ignored
+identifier (name{figure.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \chapter
             {Tecnologie Implicate}\label{capitolo2} <./immagini/callbackhell.jp
 g>]
-Capitolo 3.
+Capitolo 2.
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no   in font cmr12!
 Missing character: There is no Ã in font cmr12!
@@ -501,10 +499,10 @@ Missing character: There is no ² in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ² in font cmr12!
 ) [14] (capitoli/Capitolo3.tex
-Capitolo 4.
+Capitolo 3.
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no   in font cmr12!
-<immagini/magic_mirror.jpg, id=302, 1550.79375pt x 1304.875pt>
+<immagini/magic_mirror.jpg, id=298, 1550.79375pt x 1304.875pt>
 File: immagini/magic_mirror.jpg Graphic file (type jpg)
 
 <use immagini/magic_mirror.jpg>
@@ -525,7 +523,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--21
 ]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
- <immagini/struttMM.png, id=309, 1927.2pt x 1927.2pt>
+ <immagini/struttMM.png, id=305, 1927.2pt x 1927.2pt>
 File: immagini/struttMM.png Graphic file (type png)
 
 <use immagini/struttMM.png>
@@ -536,7 +534,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 [][]
  []
 
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -557,7 +555,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+[17pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -596,7 +594,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--154
  []
 
 [20]) [21] (capitoli/Capitolo4.tex
-Capitolo 5.
+Capitolo 4.
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
 Missing character: There is no Ã in font cmr12!
@@ -654,20 +652,20 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 91.
- [24] <immagini/skywriter.jpg, id=383, 1027.84pt x 1027.84pt>
+ [24] <immagini/skywriter.jpg, id=379, 1027.84pt x 1027.84pt>
 File: immagini/skywriter.jpg Graphic file (type jpg)
 
 <use immagini/skywriter.jpg>
 Package pdftex.def Info: immagini/skywriter.jpg used on input line 95.
 (pdftex.def)             Requested size: 390.00296pt x 355.20116pt.
-) [25pdfTeX warning (ext4): destination with the same identifier (name{figure.5
+) [25pdfTeX warning (ext4): destination with the same identifier (name{figure.4
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.51 \newpage
               <./immagini/skywriter.jpg>] (capitoli/Capitolo5.tex
-Capitolo 6.
+Capitolo 5.
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
 Missing character: There is no Ã in font cmr12!
@@ -723,7 +721,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: AC5CA6B86C5675B47880AE965F3140C5;2415.
+(rerunfilecheck)             Checksum: F2E864888D07A15A9D18ADE848C2A227;2367.
 
 
 LaTeX Warning: There were undefined references.
@@ -732,7 +730,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
  7925 strings out of 493323
- 113265 string characters out of 3139066
+ 113267 string characters out of 3139066
  234764 words of memory out of 3000000
  11244 multiletter control sequences out of 15000+200000
  9622 words of font info for 34 fonts, out of 3000000 for 9000
@@ -745,9 +743,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on Tesi.pdf (29 pages, 752923 bytes).
+Output written on Tesi.pdf (29 pages, 752457 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
+ 472 PDF objects out of 1000 (max. 8388607)
  121 named destinations out of 1000 (max. 500000)
- 314 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 306 words of extra memory for PDF output out of 10000 (max. 10000000)
 
