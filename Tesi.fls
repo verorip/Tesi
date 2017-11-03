@@ -142,12 +142,15 @@ INPUT ./immagini/struttMM.png
 INPUT ./immagini/struttMM.png
 INPUT capitoli/Capitolo4.tex
 INPUT capitoli/Capitolo4.tex
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omlcmr.fd
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omlcmr.fd
+INPUT immagini/skywriter.jpg
+INPUT ./immagini/skywriter.jpg
+INPUT ./immagini/skywriter.jpg
+INPUT ./immagini/skywriter.jpg
+INPUT ./immagini/skywriter.jpg
+INPUT capitoli/Capitolo5.tex
+INPUT capitoli/Capitolo5.tex
 INPUT bibliografia/bibliografia.tex
 INPUT bibliografia/bibliografia.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmtt12.tfm

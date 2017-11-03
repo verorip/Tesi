@@ -30,6 +30,7 @@ Si possono individuare alcuni elementi principali rappresentati in figura \ref{f
 \end{figure}
 \begin{itemize}
 \item Il core, il cuore del MM dove gira il codice principale.
+\item Il server, che gira in locale, usato per restituire la pagina html con i dati al browser di Electron
 \item Le API per i moduli, i metodi e funzionalità esposti dla MM per poter itegrare i moduli creati
 \item Le API per i Node Helper, i metodi e funzionalità esposti dla MM per poter itegrare i NodeHelper
 dei relativi moduli
@@ -81,7 +82,7 @@ nell'esempio in figura \ref{code:configapp}.
 La lingua, il formato dell'ora e l'unit\`a di misura usata sono parametri messi a disposizione dal sistema per la creazione di un'applicazione
 (ad esempio, il display di un orologio).
 
-\section{Implementazione di un'applicazione}
+\section{Implementazione di un'applicazione}\label{cap:app}
 La modifica del file di configurazione del Magic Mirror appena descritta serve per "notificare" la presenza delle applicazioni a quest'ultimo,
 ma perch\`e possano funzionare \`e necessario che rispettino alcune specifiche regole.
 Per inserire il codice dell'applicazione all'interno dello specchio \`e necessario creare una cartella con un nome identificativo dell'applicazione
@@ -136,7 +137,7 @@ A differenza del file Javascript principale, l'unica funzione messa a disposizio
 \end{lstlisting}
 mentre \`e possibile implementare le proprie funzioni con la stessa sintassi.
 \fi
-\section{Messaggistica del MM}
+\section{Messaggistica del MM}\label{cap:MMmess}
 Nella sezione \ref{cap:MMalto} \`e stato gi\`a accennato che il Magic Mirror implementa un meccanismo di messaggistica sfruttando un sistema di socket integrato,
 utile per l'organizzazione e la moderazione delle applicazioni tramite l'utilizzo di funzioni messe a disposizione dall'API.
 Sono presenti due classi socket:

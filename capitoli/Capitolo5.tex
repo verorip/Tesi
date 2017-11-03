@@ -1,0 +1,26 @@
+\chapter{Interfaccia web di amministrazione}
+In questo capitolo vengono trattati i metodi per la popolazione dell'interfaccia con i moduli
+presenti nel MM, con i relativi file di configurazione, e come questi vengano mostrati e poi spediti
+al server, in seguito ad una modifica, per poi attuarli.\\[1\baselineskip]
+Al fine di ospitare la pagina web che contiene il pannello di amministrazione è necessario
+creare una nuova classe server oltre a quella già esistente, citata nel capitolo \ref{cap:MMalto}.
+Il server gira su una porta differente, indicata nel file di configurazione del MM, rispetto al primo
+ed inoltre è accessibile da qualsiasi utente all'interno della sottorete.
+La struttura del server viene gestita con Express, spiegato nella sezione \ref{cap:express}, che offre funzioni per gestire
+più facilmente le richieste delle pagine e relative risposte.
+Inoltre all'inizializzazione del server viene passato come parametro il file di configurazione del
+MM.
+
+\section{Individuazione dei moduli}
+Come già detto nella sezione \ref{cap:app} tutti i moduli sono contenuti nella
+cartella \textit{Modules} del MM. Il server tramite la libreria \textit{fs} (File System),
+legge tutte le cartelle contenute all'interno di \textit{Modules}, il cui path è stato passato
+come parametro alla funzione, e li salva
+in una lista, filtrando i file e le cartelle che non si riferisocno a moduli.\\
+La funzione per leggere le directory di \textit{fs} offre un metodo per leggere ed elencare le cartelle in
+modo sincrono, così da non rendere necessario l'utilizzo di callback.
+All'interno di \textit{Modules} è presente una cartella \textit{default}, che contiene
+i moduli standard in dotazione con il MM. Per poter elencare anche questi ultimi è stato necessario utilizzare la funzione
+della libreria \textit{fs} anche su quest'ultima cartella e concatenare, successivamente, le due liste,
+per averne una sola con tutti i moduli.\\
+Per ogni pagina viene creato un file con estensione \textit{mustache} che contiene tutti i moduli e 
