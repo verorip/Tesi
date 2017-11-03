@@ -1,37 +1,38 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {chapter}{Introduzione}{3}{chapter*.2}
-\contentsline {chapter}{\numberline {1}Scopi e Problemi Affrontati}{5}{chapter.1}
-\contentsline {section}{\numberline {1.1}Applicazioni del MagicMirror}{5}{section.1.1}
-\contentsline {section}{\numberline {1.2}Interfaccia di controllo del MagicMirror}{6}{section.1.2}
-\contentsline {chapter}{\numberline {2}Tecnologie Implicate}{8}{chapter.2}
-\contentsline {section}{\numberline {2.1}Prefazione}{8}{section.2.1}
-\contentsline {section}{\numberline {2.2}Hardware}{8}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}RasperryPi}{8}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Periferiche}{9}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Software}{9}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Raspbian}{9}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Electron}{10}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}OpenCV}{10}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Google Speech API}{11}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Node.JS}{11}{subsection.2.3.5}
-\contentsline {subsection}{\numberline {2.3.6}Express}{12}{subsection.2.3.6}
-\contentsline {subsection}{\numberline {2.3.7}Mustache}{12}{subsection.2.3.7}
-\contentsline {subsection}{\numberline {2.3.8}MySQL}{12}{subsection.2.3.8}
-\contentsline {subsection}{\numberline {2.3.9}JavaScript}{13}{subsection.2.3.9}
-\contentsline {subsection}{\numberline {2.3.10}Python}{13}{subsection.2.3.10}
-\contentsline {subsection}{\numberline {2.3.11}GitLab}{14}{subsection.2.3.11}
-\contentsline {chapter}{\numberline {3}Struttura del Magic Mirror}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Il MM dall'alto livello}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}Avvio ed Escuzione}{18}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Il file di Configurazione}{19}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Implementazione di un'applicazione}{20}{section.3.3}
-\contentsline {section}{\numberline {3.4}Messaggistica del MM}{20}{section.3.4}
-\contentsline {chapter}{\numberline {4}Applicazioni per il MM}{22}{chapter.4}
-\contentsline {section}{\numberline {4.1}Modulo per comandi vocali}{22}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Sound eXchange (SoX)}{22}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Autenticazione Google API}{23}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Comunicazione con l'API}{23}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Modulo con Touch Board}{24}{section.4.2}
-\contentsline {chapter}{\numberline {5}Interfaccia web di amministrazione}{26}{chapter.5}
-\contentsline {section}{\numberline {5.1}Individuazione dei moduli}{26}{section.5.1}
+\contentsline {chapter}{\numberline {1}Introduzione}{3}{chapter.1}
+\contentsline {chapter}{Introduzione}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}Scopi e Problemi Affrontati}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Applicazioni del MagicMirror}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Interfaccia di controllo del MagicMirror}{6}{section.2.2}
+\contentsline {chapter}{\numberline {3}Tecnologie Implicate}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Prefazione}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}Hardware}{8}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}RasperryPi}{8}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Periferiche}{9}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Software}{9}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Raspbian}{9}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Electron}{10}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}OpenCV}{10}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Google Speech API}{11}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Node.JS}{11}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Express}{12}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}Mustache}{12}{subsection.3.3.7}
+\contentsline {subsection}{\numberline {3.3.8}MySQL}{12}{subsection.3.3.8}
+\contentsline {subsection}{\numberline {3.3.9}JavaScript}{13}{subsection.3.3.9}
+\contentsline {subsection}{\numberline {3.3.10}Python}{13}{subsection.3.3.10}
+\contentsline {subsection}{\numberline {3.3.11}GitLab}{14}{subsection.3.3.11}
+\contentsline {chapter}{\numberline {4}Struttura del Magic Mirror}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Il MM dall'alto livello}{16}{section.4.1}
+\contentsline {section}{\numberline {4.2}Avvio ed Escuzione}{18}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Il file di Configurazione}{19}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Implementazione di un'applicazione}{20}{section.4.3}
+\contentsline {section}{\numberline {4.4}Messaggistica del MM}{20}{section.4.4}
+\contentsline {chapter}{\numberline {5}Applicazioni per il MM}{22}{chapter.5}
+\contentsline {section}{\numberline {5.1}Modulo per comandi vocali}{22}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Sound eXchange (SoX)}{22}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Autenticazione Google API}{23}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Comunicazione con l'API}{23}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Modulo con Touch Board}{24}{section.5.2}
+\contentsline {chapter}{\numberline {6}Interfaccia web di amministrazione}{26}{chapter.6}
+\contentsline {section}{\numberline {6.1}Individuazione e visualizzazione dei moduli nell'intefaccia}{26}{section.6.1}
