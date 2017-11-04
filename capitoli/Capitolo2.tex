@@ -1,13 +1,13 @@
 \chapter{Tecnologie Implicate}\label{capitolo2}
-In questo capitolo verranno discusse le teconologie che sono state studiate ed utilizzate durante le attività di stage.
-In particolare il capitolo è diviso tra teconologie hardware e tecnologie software.
+In questo capitolo verranno discusse le teconologie che sono state studiate ed utilizzate durante le attivit\`a di stage.
+In particolare il capitolo \`e diviso tra teconologie hardware e tecnologie software.
 
 \section{Prefazione}
 Lo sviluppo del progetto \`e stato svolto nell'ambiente Raspbian\cite{Raspbian}
 una distribuzione Debian\cite{Debian} che gira sul dispositivo RasperryPi\cite{Raspberry}.
 Inoltre sono state adottate diverse tecnologie nel campo del riconoscimento vocale e di
 immagini (OpenCV \cite{OpenCV-website} e Google Speech API \cite{GoogleSTT-website}),
-nello sviluppo di applicazioni web (Electron \cite{Electron-website}, NodeJS \cite{NodeJS-website},
+nello sviluppo di applicazioni web (Electron \cite{Electron-website}, Node.JS \cite{Node.JS-website},
 Express \cite{Express-website}, Mustache \cite{Mustache}), della gestione dati (MySQL \cite{MySQL}).
 Inoltre sono stati adottati diversi linguaggi di programmazione (JavaScript \cite{JavaScript}, Python \cite{Python})
 e piattaforme per la gestione distribuita di progetti softwave (GitLab \cite{git-website}).
@@ -21,7 +21,7 @@ Rilasciato per la prima volta nel 2012 \`e diventato un prodotto utilizzato per 
 di progetti sia aziendali che casalinghi.
 Il modello usato durante lo stage \`e RaspberryPi 3 model B e monta:
 \begin{itemize}
-\item CPU con architettura ARM (Advanced RISC Machine)
+\item CPU con architettura Advanced RISC Machine (ARM)
 \item 1 porta HDMI
 \item 1 porta LAN
 \item 1 uscita Aux
@@ -29,7 +29,7 @@ Il modello usato durante lo stage \`e RaspberryPi 3 model B e monta:
 \item 40 pin General Purpose Input/Output(GPIO)
 \item 1 scheda di rete wireless
 \item Alimentazione microUSB 5V
-\item un bus camera serial interface(CSI), ovvero una porta per telecamere con Flexible flat cable(FFC)
+\item un bus camera serial interface(CSI), ovvero una porta per telecamera con Flexible flat cable(FFC)
 \item ingresso per microSD
 \end{itemize}
 Il sistema operativo per Raspberry deve essere installato su una microSD opportunamente formattata
@@ -45,7 +45,7 @@ i 40 pin GPIO del calcolatore principale, per catturare input fisici tramite il 
 Raspbian \`e una distribuzione del sistema operativo Linux derivata da Debian, completamente libera,
 ottimizzata per Raspberry.
 Fu sviluppata da Mike Thompson e Peter Green come progetto non affiliato alla compagnia RaspberryPi
-Fundation, per tenere in considerazione la limitata capacità di calcolo dei processori ARM.
+Fundation, per tenere in considerazione la limitata capacit\`a di calcolo dei processori ARM.
 La prima versione venne rilasciata nel 2012.
 
 \subsection{Electron}\label{cap:Electron}
@@ -53,9 +53,9 @@ Electron \`e un framework open source rilasciato per la prima volta nel 2013, ma
 stabile \`e uscita durante giugno 2017. \`E disponibile per i sistemi operativi Windows, MacOS e Linux ed \`e scritto
 in C++ e Javascript. Il framework permette la creazione di applicazioni multipiattaforma
 utilizzando teconologie gi\`a esistenti per lo sviluppo
-del lato client e del lato server (Javascript, NodeJS, V8 \cite{V8}).
+del lato client e del lato server (Javascript, Node.JS, V8 \cite{V8}).
 All'avvio di Electron viene inizializzata una pagina con Chromium \cite{Chromium}(un web browser installato insieme all'applicazione)
-nel quale viene mostrata una pagina web, e un server in NodeJS.
+nel quale viene mostrata una pagina web, e un server in Node.JS.
 Un'applicazione sviluppata con Electorn ha bisongo di 3 componenti principali:
 \begin{itemize}
 \item Il package.json, un file JSON, che deve contenere almeno il nome dell'applicazione,
@@ -70,9 +70,9 @@ la versione dell'applicazione creata, la descrizione di quest'ultima e il
   "main": "js/electron.js"
 }
 \end{lstlisting}
-Name è il campo che assegna il nome dell'applicazione, version è il cmapo che assegna la versione
-dell'applicazione, description è una stringa che descrive il programma, main è il cmapo che punta al file
-Javascript eseguibile
+\emph{Name} \`e il campo che assegna il nome dell'applicazione, \emph{version} \`e il campo che assegna la versione
+dell'applicazione, \emph{description} \`e una stringa che descrive il programma, \emph{main} \`e il campo che punta al file
+Javascript eseguibile da eseguire all'avvio.
 \item Un file HTML che contiene il template della pagina generata dall'applicazione
 \item Un file JavaScript che contiene il codice di esecuzione dell'applicazione come ad esempio la
 creazione di una finestra o la visualizzazione di una pagina.
@@ -122,13 +122,13 @@ partendo da un modello HTML.\\[2\baselineskip]
 \fi
 
 \subsection{Node.JS}
-Node.JS era già implementato con Electron, ed è stato usato per la creazione del server
+Node.JS era gi\`a implementato con Electron, ed \`e stato usato per la creazione del server
 per la gestione dell'interfaccia web per il MM.
 Node.JS \`e una piattaforma open source che permette l'esecuzione del linguaggio Javascript
 anche per il lato server, ovvero
 la parte del sistema che contiene applicazioni e programmi  scritti, in questo caso, in Javascript
 ed eseguiti sfruttando il motore JavaScript V8 sviluppato da Google.
-Il lato server è una parte del sistema che l'utente, di solito, non interagisce direttamente
+Il lato server \`e una parte del sistema che l'utente, di solito, non interagisce direttamente
 e che ne permette l'effettivo funzionamento e, nel caso, la manipolazione e l'elaborazione
 dei dati.\\
 Node.JS esegue delle operazioni al verificarsi di uno specifico evento, che pu\`o essere un accesso ad una porta
@@ -139,8 +139,8 @@ di scaricare ed installare librerie private o pubbliche salvate su un database.
 
 \subsection{Express}\label{cap:express}
 Express \`e un framework per Node.JS che permette di creare applicazioni Web e API in JavaScript, offrendo strumenti e pacchetti
-che implementano più facilmente tutti i servizi (e anche di più) offerti da Node.JS.
-Il software viene usato per creare e gestire il backend di un server, che \`e composto di 3 entit\`a importanti:
+che implementano pi\`u facilmente tutte e funzionalità offerte da Node.JS.
+Il software viene usato per creare e gestire il back-end di un server, che \`e composto di 3 entit\`a importanti:
 \begin{itemize}
 \item il Controller, che definisce le funzioni associate ad un determinato modello.
 \item il Routing, utilizzato per determinare come il server debba rispondere ad un determinato metodo di richiesta,
@@ -151,30 +151,32 @@ la manipolazione, ricevendoli successivamente modificati e salvandoli, se necess
 \\[2\baselineskip]
 \end{itemize}
 
-\subsection{Mustache}
-Mustache è un motore di template disponibile per molti linguaggi tra cui Javascript.
-\`E stato usato come motore di template per l'interfaccia web di configurazione
+\subsection{Mustache}\label{cap:mustace}
+Mustache \`e un sistema di template, ovvero un sistema che prendendo in input dati e web templeate
+genera automaticamente pagine web, permettendo così di riutilizzare elementi statici dei template.
+Dal momento che è disponibile in diverse lingue tra cui Javascript \`e stato usato per l'interfaccia web di configurazione
 del MagicMirror.
-Mustache è un sistema logic-less perchè è privo di istruzioni per il controllo del flusso
+Mustache \`e un sistema logic-less perch\`e \`e privo di istruzioni per il controllo del flusso
 (come ad esempio l'if e l'else), quindi tutti i controllli di questo tipo vengono fatti
 attraverso programmazione data-driven.
-Il nome di questo motore è dovuto all'utilizzo delle parentesi graffe, usate spesso
+Il nome di questo motore \`e dovuto all'utilizzo delle parentesi graffe, usate spesso
 all'intero della sua sintassi, che, se viste da una certa angolatura, assomigliano
 a un paio di baffi.
 
 \subsection{MySQL}
-MySQL è stato usato durante lo stage per l'archiviazione di utenti con i permessi accedere all'interfaccia web del MM.
-MySQL è uno tra i più famosi database open source sviluppato da Oracle, più precisamente
-è sistema per la gestione di basi di dati basato sul modello relazionale.
-MySQL è composto da una semplice riga di comando e un server web, ma sono implementati anche programmi
-per l'amministrazione del database (come ad esempio il famoso phpMyAdmin).
-La prima versione fu rilasciata nel maggio del 1995 Sviluppato da Oracle e di proprietà di MySQL AB,
+MySQL \`e stato usato durante lo stage come database per l'archiviazione di account di utenti
+agibili all'autenticazione per accedere all'interfaccia web del MM.\\
+MySQL \`e uno tra i pi\`u famosi database open source sviluppato da Oracle, pi\`u precisamente
+\`e sistema per la gestione di basi di dati basato sul modello relazionale.
+MySQL \`e composto da una semplice riga di comando e un server web, ma sono implementati anche programmi
+per l'amministrazione del databas come, ad esempio, il famoso phpMyAdmin.
+La prima versione fu rilasciata nel maggio del 1995 Sviluppato da Oracle e di propriet\`a di MySQL AB,
 distribuito sia con licenza commerciale sia con licenza libera.
 
 \subsection{JavaScript}
 Javascript \`e un linguaggio di programmazione ad alto livello orientato agli oggetti e ad eventi, che \`e supportato da tutti i browser
 per lo scripting delle pagine web, e che supporta la programmazione procedurale.
-Inizialmente usato per il lato client ha subito un'evoluzione che lo ha portato ad essere utilizzato per lo sviluppo di backend e web app.
+Inizialmente usato per il lato client ha subito un'evoluzione che lo ha portato ad essere utilizzato per lo sviluppo di back-end e web app.
 \\[2\baselineskip]
 ECMAJavascript(ES) \`e lo standard di Javascript che negli ultimi anni ha sviluppato ed evoluto il linguaggio in diverse versioni.
 In tutte il problema pi\`u trattato \`e il fatto che Javascript \`e orientato agli eventi,
@@ -183,10 +185,10 @@ utilizzati buone pratiche di programmazione. Le callback sono necessarie perch\`
 fatte attraverso messaggi, i quali vengono salvati in una coda di messaggi e vengono spediti sequenzialmente ad uno stack di chiamata dove
 viene salvata la corrispondente funzione per l'esecuzione. Questo metodo rende il linguaggio asincorno perch\`e le funzioni e gli eventi
 vengono eseguiti in successione senza attendere il termine della precedente.
-\\[1\baselineskip]Le soluzioni adottate in ECMA Javascript 5 (ES5), la versione usata durante lo
-stage, sono l'utilizzo delle Callback già discusse nella sezione 1.2 (label).
+\\[1\baselineskip]Le pratiche utilizzate per sincronizzare le funzioni in ECMA Javascript 5 (ES5), la versione usata durante lo
+stage, sono l'utilizzo delle Callback gi\`a discusse nella sezione \ref{cap:interfacciaproblemi}.
 \\[1\baselineskip]
-In ECMA Javascript 6 (ES6) sono state introdotte le Promises, ovvero al posto di far tornare una funzione Callback, ritorna una Promise(Promessa),
+In ECMA Javascript 6 (ES6) sono state introdotte le Promises, ovvero al posto di ritornare una funzione Callback, ritorna una Promise(Promessa),
 la quale garantisce che una variabile/oggetto avr\`a un ritorno, mettendo cosi la funzione in attesa fino al ricevimento del valore o di un errore.
 Sono tutt'ora in via di sviluppo nuove versioni di Javascript.
 
@@ -206,6 +208,6 @@ Per poterlo fare \`e disponibile virtualenv, uno strumento Python che permette, 
 GitLab \`e una piattaforma web che implementa le funzionalit\`a offerte dal software Git e altri
 servizi tra i quali la possibilit\`a di creare wiki e un servizio di issue tracking, utile per tenere traccia
 di eventuali richieste o problemi.
-La comodità di questa piattaforma sta nel poter creare dei Commit, ovvero ad ogni modifica del codice si può
-salvarne lo stato assegnadoli un'etichetta in locale, per poi spedire la versione al remoto del progetto.
-In ogni momento si può tornare ad una versione vecchia tramite gli strumenti di reversering offerti dal servizio.
+La comodit\`a di questa piattaforma sta nel poter creare dei Commit, ovvero ad ogni modifica del codice si pu\`o
+salvarne lo stato assegnadoli un'etichetta in locale, per poi spedirlo al respository in remoto del progetto.
+In ogni momento si pu\`o tornare ad una versione vecchia tramite gli strumenti di reversering offerti dal servizio.

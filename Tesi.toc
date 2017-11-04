@@ -19,9 +19,9 @@
 \contentsline {subsection}{\numberline {2.3.7}Mustache}{12}{subsection.2.3.7}
 \contentsline {subsection}{\numberline {2.3.8}MySQL}{12}{subsection.2.3.8}
 \contentsline {subsection}{\numberline {2.3.9}JavaScript}{13}{subsection.2.3.9}
-\contentsline {subsection}{\numberline {2.3.10}Python}{13}{subsection.2.3.10}
+\contentsline {subsection}{\numberline {2.3.10}Python}{14}{subsection.2.3.10}
 \contentsline {subsection}{\numberline {2.3.11}GitLab}{14}{subsection.2.3.11}
-\contentsline {chapter}{\numberline {3}Struttura del Magic Mirror}{15}{chapter.3}
+\contentsline {chapter}{\numberline {3}Struttura del MagicMirror}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Il MM dall'alto livello}{16}{section.3.1}
 \contentsline {section}{\numberline {3.2}Avvio ed Escuzione}{18}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Il file di Configurazione}{19}{subsection.3.2.1}
