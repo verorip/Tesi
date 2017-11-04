@@ -12,7 +12,7 @@ attraverso) si crea un effetto particolare per cui una persona riesce a specchia
 e allo stesso tempo riesce a vedere le scritte o le immagini trasmesse dal monitor,
 come mostrato in figura \ref{fig:MM}.
 In questo capitolo verr\`a spiegata la struttura generale del MagicMirror \ref{cap:MMalto}, le classi principali che vengono caricate
-all'avvio \ref{cap:MMavvio}, la strtuttura del file di configurazione \ref{cap:MMconf}, come viene implementata un'applicazione \ref{cap:app}
+all'avvio \ref{cap:MMavvio}, la struttura del file di configurazione \ref{cap:MMconf}, come viene implementata un'applicazione \ref{cap:app}
 e il funzionamento del sistema di messaggistica \ref{cap:MMmess}.\\[2\baselineskip]
 \begin{figure}[H]
     \includegraphics[width=1\textwidth, height=0.6\textheight]{magic_mirror}
@@ -30,13 +30,13 @@ Si possono individuare alcuni elementi principali rappresentati in figura \ref{f
 \end{figure}
 \begin{itemize}
 \item Il core, il cuore del MM dove gira il codice principale.
-\item Il server, che gira in locale, usato per restituire la pagina html con i dati al browser di Electron
-\item Le API per i moduli, i metodi e funzionalit\`a esposti dla MM per poter itegrare i moduli creati
+\item Il server, che gira in locale, usato per restituire la pagina HTML con i dati al browser di Electron
+\item Le API per i moduli, i metodi e funzionalit\`a esposti dal MM per poter integrare i moduli creati
 \item Le API per i Node Helper, i metodi e funzionalit\`a esposti dla MM per poter itegrare i NodeHelper
 dei relativi moduli
 \item Il Socket, entit\`a che si trova in mezzo alle API e ne fornisce un canale di comunicazione
 \item Il SocketClient, entit\`a che si trova tra le API delle applicazioni e dei Node Helper, e fornisce il canale
-di comunicazione tra questi due\\[2\baselineskip]
+di comunicazione tra questi due.\\[2\baselineskip]
 \end{itemize}
 
 \section{Avvio ed Escuzione}\label{cap:MMavvio}
@@ -44,12 +44,12 @@ Il MagicMirror viene avviato tramite linea di comando, la quale esegue
 il codice di un file Javascript, il cui percorso \`e indicato nel documento \textit{package.json}, descritto nella sezione \ref{cap:Electron}.
 Il file contiene il codice di Electron, che si occupa della creazione di una nuova finestra browser, il cui compito
 \`e di mostrare l'output dei moduli del MM, e l'avvio del codice che rappresenta il core, che carica tutte le strutture princiapli del MM.
-La pagina costruita e l'output dei moduli sono un insieme di Document Object Model (DOM), ovvero oggetti HTML che compongo una pagina web, che vengono mostrati
+La pagina costruita e l'output dei moduli sono un insieme di Document Object Model (DOM), ovvero oggetti HTML che compongono una pagina web, i quali vengono mostrati
 solo dopo l'avvio di tutti i moduli attivi.\\
 Le strutture principali caricate dal MM sono le seguenti:
 \begin{itemize}
 \item gli end-point delle API per le applicazioni, che sono le interfacce usate per leggere e caricare le applicazioni inserite nel MagicMirror.
-\item gli end-point delle API per i Node Helper, per la gestione dei questi ultimi. Sono strutture opzionali usate per collegamenti
+\item gli end-point delle API per i Node Helper, per la gestione di questi ultimi. Sono strutture opzionali usate per collegamenti
 esterni al MagicMirror (per esempio, con API di un servizio cloud). Ogni applicazione ha il proprio Node Helper con cui pu\`o comunicare tramite messaggi in modo
 simile a come comunicano le applicazioni tra di loro.
 \item un "Socket" e un "Socket-Client", entit\`a principali che definiscono le funzioni per lo scambio dei messaggi tra le applicazioni e i rispettivi Node Helper.
@@ -140,9 +140,9 @@ Nella sezione \ref{cap:MMalto} \`e stato gi\`a accennato che il MagicMirror impl
 utile per l'organizzazione e la moderazione delle applicazioni tramite l'utilizzo di funzioni messe a disposizione dall'API.
 Sono presenti due classi socket:
 \begin{itemize}
-\item Socket, classe che fornisce le funzioni per ricevere e mandare messaggi tra i moduli del MM. Con questo socket quando la spedizione
+\item Socket, classe che fornisce le funzioni per ricevere e mandare messaggi tra i moduli del MM. Con questo socket la spedizione
 del messaggio \`e in broadcast usando la funzione \textit{sendNotification(notification, payload)}. Il primo parametro \`e una stringa che identifica
-il messaggio, il secondo parametro \`e opzionale ed pu\`o essere usato per inserire il corpo del messaggio.
+il messaggio, il secondo parametro \`e opzionale e pu\`o essere usato per inserire il corpo del messaggio.
 La ricezione del messaggio viene gestita con la funzione \textit{notificationReceived(notification, payload, sender)}, i primi due parametri sono
 uguali a quelli della funzione per spedire, il terzo parametro contiene il nome del
 modulo che ha mandato il messaggio

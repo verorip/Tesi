@@ -15,9 +15,9 @@ presenti nel MM con i relativi file JSON per poterli inserire in un men\`u later
 pannello di configurazione, come questi vengano mostrati e poi spediti
 al server in seguito ad una modifica \ref{cap:individuazione}.\\[1\baselineskip]
 
-\section{Individuazione e visualizzazione dei moduli nell'intefaccia}\label{cap:individuazione}
+\section{Individuazione e visualizzazione dei moduli nell'interfaccia}\label{cap:individuazione}
 Come gi\`a trattato nel capitolo \ref{cap:app} tutti i moduli sono contenuti nella
-cartella \textit{Modules} del MM. Il server tramite una funzione della libreria \textit{fs} (File System),
+cartella \textit{Modules} del MM. Il server, tramite una funzione della libreria \textit{fs} (File System),
 legge i nomi di tutte le cartelle contenute all'interno di \textit{Modules} il cui percorso \`e stato passato
 come parametro alla funzione. In seguito, salva tutti i nomi dei moduli
 in una lista, filtrando i file e le cartelle che non si riferisocno ad essi.
@@ -35,15 +35,15 @@ contenente la configurazione del modulo selezionato.
 che permette l'implementazione di un'area di testo per la modifica di codici all'interno di una pagina web.\\[1\baselineskip]
 \end{itemize}
 Una pagina web consiste in un file con estensione \textit{mustache} che contiene
-codici HTML e variabili mustache, motore di template esposto nella sezione \ref{cap:mustache}: tutto ci\`o rappresenta lo
+codici HTML e variabili mustache, motore di template esposto nella sezione \ref{cap:mustache} tutto ci\`o rappresenta lo
 scheletro della pagina usato per ogni modulo.
 Il server, alla richiesta di una pagina di uno specifico modulo, ricerca il relativo file JSON all'interno della cartella del modulo stesso e lo
-passa come parametro sottoforma di oggetto JSON alla funzione \textit{render}, necessaria per la creazioen e visualizzazione della pagina.
+passa come parametro sottoforma di oggetto JSON alla funzione \textit{render}, necessaria per la creazione e visualizzazione della pagina.
 Insieme vengono passati i parametri \textit{posizione} ed \textit{header}, trattati nel capitolo \ref{cap:MMconf}, estratti dal file
 di configurazione passato all'inizializzazione del server.
-Durante la creazione della pagina i vari campi passati come parametro vengono inseriti dentro l'area di testo di \textit{CodeMirror}, che permetter\`a di eseguirne
+Durante la creazione della pagina, i vari campi passati come parametro, vengono inseriti dentro l'area di testo di \textit{CodeMirror}, che permetter\`a di eseguirne
 le modifiche. Sotto all'area di testo \`e presente un bottone, che permette di attivare o disattivare il modulo nel MM; tuttavia affinch\`e la modifica
-venga apportata \`e richiesto un riavvio del software. Le modifiche apportate vengono spedite al server che si occupa di salvarle nel file di configuraizone
+venga apportata \`e richiesto un riavvio del software. Le modifiche apportate vengono spedite al server che si occupa di salvarle nel file di configurazione
 principale del MM.
 
 \begin{figure}[H]

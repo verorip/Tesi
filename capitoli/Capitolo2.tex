@@ -50,13 +50,13 @@ La prima versione venne rilasciata nel 2012.
 
 \subsection{Electron}\label{cap:Electron}
 Electron \`e un framework open source rilasciato per la prima volta nel 2013, ma la prima versione
-stabile \`e uscita durante giugno 2017. \`E disponibile per i sistemi operativi Windows, MacOS e Linux ed \`e scritto
+stabile \`e uscita nel giugno 2017. \`E disponibile per i sistemi operativi Windows, MacOS e Linux ed \`e scritto
 in C++ e Javascript. Il framework permette la creazione di applicazioni multipiattaforma
-utilizzando teconologie gi\`a esistenti per lo sviluppo
+utilizzando tecnologie gi\`a esistenti per lo sviluppo
 del lato client e del lato server (Javascript, Node.JS, V8 \cite{V8}).
 All'avvio di Electron viene inizializzata una pagina con Chromium \cite{Chromium}(un web browser installato insieme all'applicazione)
 nel quale viene mostrata una pagina web, e un server in Node.JS.
-Un'applicazione sviluppata con Electorn ha bisongo di 3 componenti principali:
+Un'applicazione sviluppata con Electorn ha bisogno di 3 componenti principali:
 \begin{itemize}
 \item Il package.json, un file JSON, che deve contenere almeno il nome dell'applicazione,
 la versione dell'applicazione creata, la descrizione di quest'ultima e il
@@ -72,7 +72,7 @@ la versione dell'applicazione creata, la descrizione di quest'ultima e il
 \end{lstlisting}
 \emph{Name} \`e il campo che assegna il nome dell'applicazione, \emph{version} \`e il campo che assegna la versione
 dell'applicazione, \emph{description} \`e una stringa che descrive il programma, \emph{main} \`e il campo che punta al file
-Javascript eseguibile da eseguire all'avvio.
+Javascript da eseguire all'avvio.
 \item Un file HTML che contiene il template della pagina generata dall'applicazione
 \item Un file JavaScript che contiene il codice di esecuzione dell'applicazione come ad esempio la
 creazione di una finestra o la visualizzazione di una pagina.
@@ -84,8 +84,8 @@ utilizzata nell'ambito della visione artificiale per l'acquisizione e il riconos
 da parte di una macchina per mezzo di input digitali, ottenuti tramite telecamera o fotocamera.\\
 La libreria \`e disponibile per i linguaggi C++(linguaggio in cui \`e scritta), C, Python e Java e
 per diversi sistemi operativi, compresi quelli specifici per i dispositivi mobili.\\
-OpenCV prende in input un'immagine o uno stream (come un video o una serie di immagini) e, l'utilizzo di
-specifici algoritmi di Machine Learning per individuare e riconoscere oggetti specifici.
+OpenCV prende in input un'immagine o uno stream (come un video o una serie di immagini) e, utilizzando specifici
+algoritmi di Machine Learning, \`e in grado di individuare e riconoscere oggetti specifici.
 
 \subsection{Google Speech API}
 Negli ultimi anni Google ha ampliato sempre di pi\`u il suo catalogo per quanto riguarda
@@ -124,42 +124,39 @@ partendo da un modello HTML.\\[2\baselineskip]
 \subsection{Node.JS}
 Node.JS era gi\`a implementato con Electron, ed \`e stato usato per la creazione del server
 per la gestione dell'interfaccia web per il MM.
-Node.JS \`e una piattaforma open source che permette l'esecuzione del linguaggio Javascript
+Node.JS \`e una piattaforma open source che permette l'esecuzione del linguaggio Javascript, sfruttando il motore JavaScript V8 sviluppato da Google,
 anche per il lato server, ovvero
-la parte del sistema che contiene applicazioni e programmi  scritti, in questo caso, in Javascript
-ed eseguiti sfruttando il motore JavaScript V8 sviluppato da Google.
-Il lato server \`e una parte del sistema che l'utente, di solito, non interagisce direttamente
-e che ne permette l'effettivo funzionamento e, nel caso, la manipolazione e l'elaborazione
-dei dati.\\
+la parte del sistema che \`e adibita alla manipolazione e all'elaborazione
+dei dati in modo completamente trasparente all'utente.\\
 Node.JS esegue delle operazioni al verificarsi di uno specifico evento, che pu\`o essere un accesso ad una porta
-del server o la richiesta di una pagina.
+del server o la richiesta di una pagina.\\
 Per gestire i pacchetti di questo framework viene utilizzato NPM\cite{NPM}, uno strumento che permette
 di scaricare ed installare librerie private o pubbliche salvate su un database.
 \\[1\baselineskip]
 
 \subsection{Express}\label{cap:express}
 Express \`e un framework per Node.JS che permette di creare applicazioni Web e API in JavaScript, offrendo strumenti e pacchetti
-che implementano pi\`u facilmente tutte e funzionalità offerte da Node.JS.
+che implementano pi\`u facilmente tutte le funzionalit\`e offerte da Node.JS.
 Il software viene usato per creare e gestire il back-end di un server, che \`e composto di 3 entit\`a importanti:
 \begin{itemize}
 \item il Controller, che definisce le funzioni associate ad un determinato modello.
 \item il Routing, utilizzato per determinare come il server debba rispondere ad un determinato metodo di richiesta,
-ricevuta sottoforma di URI, inoltrando la richiesta alla funzione del controller del modello a cui fa rifermento.
+ricevuta sottoforma di URI, inoltrando la stessa alla funzione del controller del rispettivo modello a cui fa rifermento.
 \item i Modelli, creati per ogni entit\`a-oggetto che esiste all'interno del server, ad ognuno dei quali viene associato
 un controller. Inoltre, tramite i modelli si accede al databse per estrarre i dati e spedirli al controller per
 la manipolazione, ricevendoli successivamente modificati e salvandoli, se necessario.
 \\[2\baselineskip]
 \end{itemize}
 
-\subsection{Mustache}\label{cap:mustace}
-Mustache \`e un sistema di template, ovvero un sistema che prendendo in input dati e web templeate
-genera automaticamente pagine web, permettendo così di riutilizzare elementi statici dei template.
-Dal momento che è disponibile in diverse lingue tra cui Javascript \`e stato usato per l'interfaccia web di configurazione
+\subsection{Mustache}\label{cap:mustache}
+Mustache \`e un sistema di template, ovvero un sistema che prendendo in input dati e web template
+genera automaticamente pagine web, permettendo cos\`i di riutilizzare elementi statici dei template.
+Dal momento che Mustache \`e disponibile in diverse lingue tra cui Javascript \`e stato usato per l'interfaccia web di configurazione
 del MagicMirror.
 Mustache \`e un sistema logic-less perch\`e \`e privo di istruzioni per il controllo del flusso
 (come ad esempio l'if e l'else), quindi tutti i controllli di questo tipo vengono fatti
-attraverso programmazione data-driven.
-Il nome di questo motore \`e dovuto all'utilizzo delle parentesi graffe, usate spesso
+attraverso programmazione data-driven.\\
+Il nome di questo sistema \`e dovuto all'utilizzo delle parentesi graffe, usate spesso
 all'intero della sua sintassi, che, se viste da una certa angolatura, assomigliano
 a un paio di baffi.
 
@@ -169,8 +166,8 @@ agibili all'autenticazione per accedere all'interfaccia web del MM.\\
 MySQL \`e uno tra i pi\`u famosi database open source sviluppato da Oracle, pi\`u precisamente
 \`e sistema per la gestione di basi di dati basato sul modello relazionale.
 MySQL \`e composto da una semplice riga di comando e un server web, ma sono implementati anche programmi
-per l'amministrazione del databas come, ad esempio, il famoso phpMyAdmin.
-La prima versione fu rilasciata nel maggio del 1995 Sviluppato da Oracle e di propriet\`a di MySQL AB,
+per l'amministrazione del database come, ad esempio, il famoso phpMyAdmin.
+La prima versione fu rilasciata nel maggio del 1995 sviluppata da Oracle e di propriet\`a di MySQL AB,
 distribuito sia con licenza commerciale sia con licenza libera.
 
 \subsection{JavaScript}
@@ -181,15 +178,14 @@ Inizialmente usato per il lato client ha subito un'evoluzione che lo ha portato 
 ECMAJavascript(ES) \`e lo standard di Javascript che negli ultimi anni ha sviluppato ed evoluto il linguaggio in diverse versioni.
 In tutte il problema pi\`u trattato \`e il fatto che Javascript \`e orientato agli eventi,
 ed alcune funzioni necessitano di Callback, che possono degenerare se non vengono
-utilizzati buone pratiche di programmazione. Le callback sono necessarie perch\`e alcune chiamate di funzioni non vengono fatte direttamente, ma vengono
+utilizzate buone pratiche di programmazione. Le callback sono necessarie perch\`e alcune chiamate di funzioni non vengono fatte direttamente, ma vengono
 fatte attraverso messaggi, i quali vengono salvati in una coda di messaggi e vengono spediti sequenzialmente ad uno stack di chiamata dove
-viene salvata la corrispondente funzione per l'esecuzione. Questo metodo rende il linguaggio asincorno perch\`e le funzioni e gli eventi
-vengono eseguiti in successione senza attendere il termine della precedente.
-\\[1\baselineskip]Le pratiche utilizzate per sincronizzare le funzioni in ECMA Javascript 5 (ES5), la versione usata durante lo
-stage, sono l'utilizzo delle Callback gi\`a discusse nella sezione \ref{cap:interfacciaproblemi}.
-\\[1\baselineskip]
-In ECMA Javascript 6 (ES6) sono state introdotte le Promises, ovvero al posto di ritornare una funzione Callback, ritorna una Promise(Promessa),
-la quale garantisce che una variabile/oggetto avr\`a un ritorno, mettendo cosi la funzione in attesa fino al ricevimento del valore o di un errore.
+viene salvata la corrispondente funzione per l'esecuzione. Questo metodo rende il linguaggio asincrono perch\`e le funzioni e gli eventi
+vengono eseguiti in successione senza attendere il termine della precedente.\\[1\baselineskip]
+Le pratiche utilizzate per sincronizzare le funzioni in ECMAJavascript 5 (ES5), la versione usata durante lo
+stage, sono l'utilizzo delle Callback gi\`a discusse nella sezione \ref{cap:interfacciaproblemi}.\\[1\baselineskip]
+In ECMAJavascript 6 (ES6) sono state introdotte le Promises, ovvero al posto di ritornare una funzione Callback, ritorna una Promise(Promessa),
+la quale garantisce che una variabile/oggetto avr\`a un ritorno, mettendo cos\`i la funzione in attesa fino al ricevimento del valore o di un errore.
 Sono tutt'ora in via di sviluppo nuove versioni di Javascript.
 
 \subsection{Python}\label{cap:python}

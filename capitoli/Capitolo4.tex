@@ -1,14 +1,14 @@
 \chapter{Applicazioni per il MM}\label{capitolo4}
 In questo capitolo vengono spiegati i requisiti per i moduli sviluppati durante lo stage e la loro implementazione.
 In particolare verranno esposte le dipendenze per il modulo per i comandi vocali \ref{cap:sox}, le metodologie
-per accere alle APi di Google \ref{cap:google}, come avviene la comunicazione tra l'APi e il programma \ref{cap:api}
+per accedere alle API di Google \ref{cap:google}, come avviene la comunicazione tra l'API e il programma \ref{cap:api}
 e l'implementazione del modulo con Touch Board \ref{cap:touch}.
 
 \section{Modulo per comandi vocali}\label{cap:voce}
 La prima applicazione implementata, come \`e stato accennato nell'introduzione, \`e
 stata il controllo del MagicMirror tramite comandi vocali.
 Nello specifico l'applicazione deve, tramite delle specifiche frasi,
-gestire le altre applicazioni presenti nel MagicMirror, sfruttando funzioni offerte dal MM.\\
+gestire le altre applicazioni presenti nel MagicMirror, sfruttando funzioni offerte dallo stesso.\\
 Il compito di traduzione da parlato a testo scritto e l'elaborazione delle frasi \`e stato
 lasciato a carico di Google Speech API.
 Per poter implemententare l'API \`e necessario installare delle dipendenze.
@@ -30,7 +30,7 @@ Per poter usufruire dell'API di Google \`e necessario fornire un'autenticazione 
 di sistema.
 Per poterlo fare \`e necessario ottenere delle credenziali di sicurezza per un account Google,
 attivabili tramite Google Cloud Platform Console.
-Le credenziali consistono in un username, l'email dell'account google e una chiave di sicurezza unica,
+Le credenziali consistono in un username, l'email dell'account Google e una chiave di sicurezza unica,
  contenuti in un file JSON che pu\`o essere scaricato e salvato in locale.
 Per poter permettere al sistema di utilizzare l'API bisogna fare in modo che il file JSON con le credenziali sia
 raggiungibile all'interno del sistema e per farlo bisogna creare una variabile d'ambiente con assegnato il percorso
@@ -54,9 +54,9 @@ Il seguente codice viene usato per creare un canale streaming con l'API:
 il flusso audio.
 La funzione si mette successivamente in attesa di una risposta dall'API la quale pu\`o essere di due tipi:
 \begin{itemize}
-\item errore, nel caso ci sia stato un errore di connessione, in quel caso viene mandato al modulo un messaggio di errore
-\item dati di risposta, nel caso di risposta senza errori, ma che pu\`o essere divisa uteriormente in altre 2 rispsote. La prima \`e nel caso in cui
-viene raggiunto il limite di parole tradotte (Google mette a disposizione un limite giornaliero per che vuole usufruirne gratuitamente), oppure
+\item errore, nel caso ci sia stato un errore di connessione. In questo caso viene mandato al modulo un messaggio di errore
+\item dati di risposta, nel caso di risposta senza errori, ma che pu\`o essere divisa uteriormente in altre 2 risposte. La prima \`e nel caso in cui
+viene raggiunto il limite di parole tradotte (Google mette a disposizione un limite giornaliero per chi vuole usufruirne gratuitamente), oppure
 la stringa contenente la frase tradotta.\\[1\baselineskip]
 \end{itemize}
 Per passare il flusso audio alla funzione appena descritta bisogna creare una \emph{pipe}, ovvero uno strumento
@@ -84,14 +84,14 @@ passando il flusso audio direttamente alla funzione.
 Nell'implementazione del modulo con la Touch Board \`e necessario aver installato nel sistema
 il linguaggio di programmazione Python, descritto nel capitolo \ref{cap:python}.\\
 La Touch Board si presenta come una scheda con 40 porte I/O, le quali devono essere collegate alle
-GPIO della scheda Raspberry e con un sensore elettrico di prossimit\`a, come mostrato in figura \ref{fig:TouchBoard}, che permette di catturare i movimenti fino a 5cm di distanza.
+GPIO della scheda RaspberryPi e con un sensore elettrico di prossimit\`a, come mostrato in figura \ref{fig:TouchBoard}, che permette di catturare i movimenti fino a 5cm di distanza.
 Le librerie Python in dotazione con la scheda offrono funzioni per catturare i diversi input trasmessi come
 la direzione di spostamento del dito, oppure la cattura di un tocco sulla scheda.\\
 Per poter eseguire un programma Python sul MM \`e necessario usare la libreria Javascript \emph{Python-Shell}, la quale
 permette di avviare una shell di Python in background e avviare, di conseguenza, i programmi.
-La comunicazione tra programma Python e Node-Helper avviene tramite messaggi in JSON, quando la scheda riceve un input
-il programma Python esegue una stampa (\emph{print()}) di un JSON contente il risultato, questa stampa viene catturata dal
-Node-Helper tramite la funzione \emph{pythonshell.on('message', function (message) \{ ... \})} la quale tramite la funzione di callback
+La comunicazione tra programma Python e Node-Helper avviene tramite messaggi in JSON. Quando la scheda riceve un input,
+il programma Python esegue una stampa (\emph{print()}) di un JSON contente il risultato; questa stampa viene catturata dal
+Node-Helper tramite la funzione \emph{pythonshell.on('message', function (message) \{ ... \})} la quale, tramite la funzione di callback,
 gestisce il corpo del messaggio.
 
 \begin{figure}[H]
