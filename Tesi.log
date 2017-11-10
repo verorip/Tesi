@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  4 NOV 2017 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  10 NOV 2017 11:41
 entering extended mode
 **./Tesi.tex
 (Tesi.tex
@@ -313,7 +313,7 @@ italian.ldf    See the documentation concerning the babel-italian typesetting
 italian.ldf    on input line 9.
 
 (frontespizio/frontespizio.tex
-<immagini/logo.png, id=143, 825.0825pt x 290.08376pt>
+<immagini/logo.png, id=139, 825.0825pt x 290.08376pt>
 File: immagini/logo.png Graphic file (type png)
  <use immagini/logo.png>
 Package pdftex.def Info: immagini/logo.png used on input line 3.
@@ -337,7 +337,10 @@ been already used, duplicate ignored
 l.30 ... {4}Applicazioni per il MM}{22}{chapter.4}
                                                    [1
 
-])
+]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no   in font cmr12!
+)
 \tf@toc=\write4
 \openout4 = `Tesi.toc'.
 
@@ -372,7 +375,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--20
 
  []
 
-<immagini/callback.png, id=217, 1286.8075pt x 468.75125pt>
+<immagini/callback.png, id=212, 1286.8075pt x 468.75125pt>
 File: immagini/callback.png Graphic file (type png)
 
 <use immagini/callback.png>
@@ -412,7 +415,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--202
 
 [13]) [14] (capitoli/Capitolo3.tex
 Capitolo 3.
-<immagini/magic_mirror.jpg, id=307, 1550.79375pt x 1304.875pt>
+<immagini/magic_mirror.jpg, id=302, 1550.79375pt x 1304.875pt>
 File: immagini/magic_mirror.jpg Graphic file (type jpg)
 
 <use immagini/magic_mirror.jpg>
@@ -430,7 +433,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--21
 
 [15
 
-] <immagini/struttMM.png, id=314, 1927.2pt x 1927.2pt>
+] <immagini/struttMM.png, id=309, 1927.2pt x 1927.2pt>
 File: immagini/struttMM.png Graphic file (type png)
 
 <use immagini/struttMM.png>
@@ -476,33 +479,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--152
 
 [20]) [21] (capitoli/Capitolo4.tex
 Capitolo 4.
+<immagini/modulovocale.png, id=354, 1445.4pt x 813.0375pt>
+File: immagini/modulovocale.png Graphic file (type png)
+
+<use immagini/modulovocale.png>
+Package pdftex.def Info: immagini/modulovocale.png used on input line 21.
+(pdftex.def)             Requested size: 389.99857pt x 236.79213pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+[][]
+ []
+
 [22
 
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 44.
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 47.
+nput line 31.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 34.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 47.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 34.
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+1}) has been already used, duplicate ignored
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--61
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.43 \begin{itemize}
+                     <./immagini/modulovocale.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 45--48
 
  []
 
-[23]
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no   in font cmbx12!
+[24]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 94.
- [24] <immagini/skywriter.jpg, id=395, 1027.84pt x 1027.84pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
+ <immagini/touchstruct.png, id=396, 1445.4pt x 813.0375pt>
+File: immagini/touchstruct.png Graphic file (type png)
+
+<use immagini/touchstruct.png>
+Package pdftex.def Info: immagini/touchstruct.png used on input line 106.
+(pdftex.def)             Requested size: 389.99857pt x 236.79213pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+[][]
+ []
+
+[25] <immagini/skywriter.jpg, id=402, 1027.84pt x 1027.84pt>
 File: immagini/skywriter.jpg Graphic file (type jpg)
 
 <use immagini/skywriter.jpg>
-Package pdftex.def Info: immagini/skywriter.jpg used on input line 98.
+Package pdftex.def Info: immagini/skywriter.jpg used on input line 112.
 (pdftex.def)             Requested size: 390.00296pt x 355.20116pt.
-) [25pdfTeX warning (ext4): destination with the same identifier (name{figure.4
-.1}) has been already used, duplicate ignored
+) [26pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.51 \newpage
+              <./immagini/touchstruct.png>] [27pdfTeX warning (ext4): destinati
+on with the same identifier (name{figure.4.3}) has been already used, duplicate
+ ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -514,20 +554,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--17
 
  []
 
-[26
+[28
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
 
-<immagini/interfacciamm.png, id=412, 789.70032pt x 574.39594pt>
+<immagini/interfacciamm.png, id=425, 789.70032pt x 574.39594pt>
 File: immagini/interfacciamm.png Graphic file (type png)
 
 <use immagini/interfacciamm.png>
 Package pdftex.def Info: immagini/interfacciamm.png used on input line 50.
 (pdftex.def)             Requested size: 390.00516pt x 296.00563pt.
-) [27] [28pdfTeX warning (ext4): destination with the same identifier (name{fig
+) [29] [30pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -536,7 +576,7 @@ l.53 \newpage
               <./immagini/interfacciamm.png>] (bibliografia/bibliografia.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
 
-[29
+[31
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
@@ -544,14 +584,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: D05B6386063C6A50F282104C1DC3EE82;2367.
+(rerunfilecheck)             Checksum: 2EF58E234A75E086FC279D1BAB01D245;2287.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
- 7944 strings out of 493323
- 113576 string characters out of 3139066
- 236437 words of memory out of 3000000
- 11259 multiletter control sequences out of 15000+200000
+ 7960 strings out of 493323
+ 113896 string characters out of 3139066
+ 236557 words of memory out of 3000000
+ 11268 multiletter control sequences out of 15000+200000
  9622 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,7n,42p,908b,1251s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -562,9 +602,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on Tesi.pdf (30 pages, 821941 bytes).
+Output written on Tesi.pdf (32 pages, 961780 bytes).
 PDF statistics:
- 501 PDF objects out of 1000 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
- 311 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 129 named destinations out of 1000 (max. 500000)
+ 313 words of extra memory for PDF output out of 10000 (max. 10000000)
 
