@@ -30,9 +30,10 @@
 \contentsline {chapter}{\numberline {4}Applicazioni per il MM}{22}{chapter.4}
 \contentsline {section}{\numberline {4.1}Modulo per comandi vocali}{22}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Comunicazione con l'API}{23}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Difficoltà incontrate}{24}{subsection.4.1.2}
-\contentsline {subsubsection}{Sound eXchange (SoX)}{24}{section*.3}
+\contentsline {subsection}{\numberline {4.1.2}Difficolt\`a incontrate}{25}{subsection.4.1.2}
+\contentsline {subsubsection}{Sound eXchange (SoX)}{25}{section*.3}
 \contentsline {subsubsection}{Autenticazione Google API}{25}{section*.4}
 \contentsline {section}{\numberline {4.2}Modulo con Touch Board}{25}{section.4.2}
 \contentsline {chapter}{\numberline {5}Interfaccia web di amministrazione}{28}{chapter.5}
-\contentsline {section}{\numberline {5.1}Individuazione e visualizzazione dei moduli nell'interfaccia}{28}{section.5.1}
+\contentsline {section}{\numberline {5.1}Struttura dell'interfaccia Web di amministrazione}{28}{section.5.1}
+\contentsline {section}{\numberline {5.2}Individuazione e visualizzazione dei moduli nell'interfaccia}{29}{section.5.2}
