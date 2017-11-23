@@ -135,11 +135,11 @@ INPUT ./immagini/magic_mirror.jpg
 INPUT ./immagini/magic_mirror.jpg
 INPUT ./immagini/magic_mirror.jpg
 INPUT ./immagini/magic_mirror.jpg
-INPUT immagini/struttMM.png
-INPUT ./immagini/struttMM.png
-INPUT ./immagini/struttMM.png
-INPUT ./immagini/struttMM.png
-INPUT ./immagini/struttMM.png
+INPUT immagini/strutturaMM.png
+INPUT ./immagini/strutturaMM.png
+INPUT ./immagini/strutturaMM.png
+INPUT ./immagini/strutturaMM.png
+INPUT ./immagini/strutturaMM.png
 INPUT capitoli/Capitolo4.tex
 INPUT capitoli/Capitolo4.tex
 INPUT immagini/modulovocale.png

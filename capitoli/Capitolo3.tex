@@ -24,17 +24,17 @@ e il funzionamento del sistema di messaggistica \ref{cap:MMmess}.\\[2\baselinesk
 Il MM \`e una applicazione con diverse API e strutture che ne permettono il funzionamento.
 Si possono individuare alcuni elementi principali rappresentati in figura \ref{fig:struttMM}:
 \begin{figure}[H]
-    \includegraphics[width=1\textwidth, height=0.6\textheight]{struttMM}
+    \includegraphics[width=1\textwidth, height=0.4\textheight]{strutturaMM}
     \caption{Struttura MagicMirror}
     \label{fig:struttMM}
 \end{figure}
 \begin{itemize}
 \item Il core, il cuore del MM dove gira il codice principale.
-\item Il server, che gira in locale, usato per restituire la pagina HTML con i dati al browser di Electron
+\item Il server, che gira in locale, usato per restituire la pagina HTML con i dati al browser di Electron e gestisce le API
 \item Le API per i moduli, i metodi e funzionalit\`a esposti dal MM per poter integrare i moduli creati
 \item Le API per i Node Helper, i metodi e funzionalit\`a esposti dla MM per poter itegrare i NodeHelper
 dei relativi moduli
-\item Il Socket, entit\`a che si trova in mezzo alle API e ne fornisce un canale di comunicazione
+\item Il Socket, entit\`a che si trova nell'API dei moduli e fornisce un canale di comunicazione tra questi
 \item Il SocketClient, entit\`a che si trova tra le API delle applicazioni e dei Node Helper, e fornisce il canale
 di comunicazione tra questi due.\\[2\baselineskip]
 \end{itemize}

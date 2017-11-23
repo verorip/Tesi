@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  12 NOV 2017 11:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  13 NOV 2017 17:25
 entering extended mode
 **./Tesi.tex
 (Tesi.tex
@@ -334,7 +334,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 ... {4}Applicazioni per il MM}{22}{chapter.4}
+l.30 ... {4}Applicazioni per il MM}{21}{chapter.4}
                                                    [1
 
 ])
@@ -430,12 +430,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--21
 
 [15
 
-] <immagini/struttMM.png, id=314, 1927.2pt x 1927.2pt>
-File: immagini/struttMM.png Graphic file (type png)
+] <immagini/strutturaMM.png, id=314, 1445.4pt x 813.0375pt>
+File: immagini/strutturaMM.png Graphic file (type png)
 
-<use immagini/struttMM.png>
-Package pdftex.def Info: immagini/struttMM.png used on input line 27.
-(pdftex.def)             Requested size: 389.99121pt x 355.20313pt.
+<use immagini/strutturaMM.png>
+Package pdftex.def Info: immagini/strutturaMM.png used on input line 27.
+(pdftex.def)             Requested size: 389.99857pt x 236.79213pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
 [][]
@@ -458,8 +458,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.40 \end{itemize}
-                   <./immagini/struttMM.png>]
+l.50 \begin{itemize}
+                     <./immagini/strutturaMM.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
@@ -474,11 +474,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--152
 
  []
 
-[20]) [21] (capitoli/Capitolo4.tex
+) [20] (capitoli/Capitolo4.tex
 Capitolo 4.
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¬ in font cmr12!
-<immagini/modulovocale.png, id=359, 1445.4pt x 813.0375pt>
+<immagini/modulovocale.png, id=355, 1445.4pt x 813.0375pt>
 File: immagini/modulovocale.png Graphic file (type png)
 
 <use immagini/modulovocale.png>
@@ -489,7 +489,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 [][]
  []
 
-[22
+[21
 
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
@@ -500,7 +500,7 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 34.
- [23pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [22pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -511,10 +511,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--50
 
  []
 
-[24]
+[23]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ² in font cmr12!
- [25] <immagini/touchstruct.png, id=409, 1445.4pt x 813.0375pt>
+ [24] <immagini/touchstruct.png, id=405, 1445.4pt x 813.0375pt>
 File: immagini/touchstruct.png Graphic file (type png)
 
 <use immagini/touchstruct.png>
@@ -525,19 +525,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--111
 [][]
  []
 
-<immagini/skywriter.jpg, id=410, 1027.84pt x 1027.84pt>
+<immagini/skywriter.jpg, id=406, 1027.84pt x 1027.84pt>
 File: immagini/skywriter.jpg Graphic file (type jpg)
 
 <use immagini/skywriter.jpg>
 Package pdftex.def Info: immagini/skywriter.jpg used on input line 116.
 (pdftex.def)             Requested size: 390.00296pt x 355.20116pt.
-) [26pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+) [25pdfTeX warning (ext4): destination with the same identifier (name{figure.4
 .2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.51 \newpage
-              <./immagini/touchstruct.png>] [27pdfTeX warning (ext4): destinati
+              <./immagini/touchstruct.png>] [26pdfTeX warning (ext4): destinati
 on with the same identifier (name{figure.4.3}) has been already used, duplicate
  ignored
 
@@ -558,9 +558,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--28
 
  []
 
-[28
+[27
 
-] <immagini/interfacciatesi.png, id=430, 1445.4pt x 813.0375pt>
+] <immagini/interfacciatesi.png, id=426, 1445.4pt x 813.0375pt>
 File: immagini/interfacciatesi.png Graphic file (type png)
 
 <use immagini/interfacciatesi.png>
@@ -571,7 +571,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
 [][]
  []
 
-[29pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -582,13 +582,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
-<immagini/interfacciamm.png, id=442, 789.70032pt x 574.39594pt>
+<immagini/interfacciamm.png, id=438, 789.70032pt x 574.39594pt>
 File: immagini/interfacciamm.png Graphic file (type png)
 
 <use immagini/interfacciamm.png>
 Package pdftex.def Info: immagini/interfacciamm.png used on input line 67.
 (pdftex.def)             Requested size: 390.00516pt x 296.00563pt.
-) [30] [31pdfTeX warning (ext4): destination with the same identifier (name{fig
+) [29] [30pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.5.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -597,7 +597,7 @@ l.53 \newpage
               <./immagini/interfacciamm.png>] (bibliografia/bibliografia.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
 
-[32
+[31
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
@@ -609,8 +609,8 @@ Package rerunfilecheck Info: File `Tesi.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
- 7968 strings out of 493323
- 114098 string characters out of 3139066
+ 7967 strings out of 493323
+ 114106 string characters out of 3139066
  236702 words of memory out of 3000000
  11272 multiletter control sequences out of 15000+200000
  9622 words of font info for 34 fonts, out of 3000000 for 9000
@@ -623,9 +623,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on Tesi.pdf (33 pages, 1008435 bytes).
+Output written on Tesi.pdf (32 pages, 975805 bytes).
 PDF statistics:
- 533 PDF objects out of 1000 (max. 8388607)
- 132 named destinations out of 1000 (max. 500000)
+ 529 PDF objects out of 1000 (max. 8388607)
+ 131 named destinations out of 1000 (max. 500000)
  326 words of extra memory for PDF output out of 10000 (max. 10000000)
 
