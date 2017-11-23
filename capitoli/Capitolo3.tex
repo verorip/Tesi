@@ -1,19 +1,22 @@
 \chapter{Struttura del MagicMirror}\label{capitolo3}
-Il MagicMirror \`e un progetto ideato e sviluppato da Michael Teeuw, successivamente esteso nelle sue funzionalit\`a da una moltitudine di utenti su GitHub.
-Una prima versione \`e stata scritta completamente in Python, mentre successivamente \`e stata creata una seconda versione nella quale si \`e preferito l'utilizzo di Electron,
+Il MagicMirror (detto anche \empth{MM}) \`e un progetto ideato e sviluppato da Michael Teeuw, successivamente esteso nelle sue
+funzionalit\`a da una moltitudine di utenti su GitHub.
+La prima versione \`e stata scritta completamente in Python, mentre nella versione successiva \`e stato utilizzato Electron,
 che ha comportato una variazione di linguaggio, a favore di Javascript. In questo modo \`e stato possibile implementare un'interfaccia esteticamente pi\`u gradevole
 e API pi\`u intuitive.
-L'idea dell'autore \`e nata rifacendosi allo specchio magico dell'omonima fiaba
-scritta dai fratelli Grimm, Biancaneve e i Sette Nani.\\
+L'idea dell'autore \`e nata rifacendosi allo specchio magico della rinomata fiaba
+scritta dai fratelli Grimm: Biancaneve e i Sette Nani.\\
 Il software viene mostrato attraverso un
 comune monitor, trasmettendo immagini poste su uno sfondo completamente nero. Applicando sopra
 una semplice pellicola a specchio (la quale da un lato permette di specchiarsi e dall'altro di vedere
 attraverso) si crea un effetto particolare per cui una persona riesce a specchiarsi
 e allo stesso tempo riesce a vedere le scritte o le immagini trasmesse dal monitor,
-come mostrato in figura \ref{fig:MM}.
-In questo capitolo verr\`a spiegata la struttura generale del MagicMirror \ref{cap:MMalto}, le classi principali che vengono caricate
-all'avvio \ref{cap:MMavvio}, la struttura del file di configurazione \ref{cap:MMconf}, come viene implementata un'applicazione \ref{cap:app}
-e il funzionamento del sistema di messaggistica \ref{cap:MMmess}.\\[2\baselineskip]
+come mostrato in figura \ref{fig:MM}. In quest'ultima si pu\`o vedere il MM
+che, oltre alla sua funzione base di specchio, mostra alcune informazioni come l'ora, la temperature, il meteo e un messaggio.
+In questo capitolo verr\`a spiegata la struttura generale del MM (sezione \ref{cap:MMalto}), le classi principali che vengono caricate
+all'avvio (sezione \ref{cap:MMavvio}), la struttura del file di configurazione (sezione \ref{cap:MMconf}),
+come viene implementata un'applicazione (sezione \ref{cap:app})
+e il funzionamento del sistema di messaggistica (sezione \ref{cap:MMmess}).\\[2\baselineskip]
 \begin{figure}[H]
     \includegraphics[width=1\textwidth, height=0.6\textheight]{magic_mirror}
     \caption{MagicMirror by Michael Teeuw}
@@ -21,7 +24,8 @@ e il funzionamento del sistema di messaggistica \ref{cap:MMmess}.\\[2\baselinesk
 \end{figure}
 
 \section{Il MM dall'alto livello}\label{cap:MMalto}
-Il MM \`e una applicazione con diverse API e strutture che ne permettono il funzionamento.
+Il MM \`e una applicazione composta da diversi componenti software con cui \`e possibile
+comunicare attraverso le API messe a disposizione da MM.
 Si possono individuare alcuni elementi principali rappresentati in figura \ref{fig:struttMM}:
 \begin{figure}[H]
     \includegraphics[width=1\textwidth, height=0.4\textheight]{strutturaMM}
@@ -40,38 +44,40 @@ di comunicazione tra questi due.\\[2\baselineskip]
 \end{itemize}
 
 \section{Avvio ed Escuzione}\label{cap:MMavvio}
-Il MagicMirror viene avviato tramite linea di comando, la quale esegue
-il codice di un file Javascript, il cui percorso \`e indicato nel documento \textit{package.json}, descritto nella sezione \ref{cap:Electron}.
-Il file contiene il codice di Electron, che si occupa della creazione di una nuova finestra browser, il cui compito
-\`e di mostrare l'output dei moduli del MM, e l'avvio del codice che rappresenta il core, che carica tutte le strutture princiapli del MM.
-La pagina costruita e l'output dei moduli sono un insieme di Document Object Model (DOM), ovvero oggetti HTML che compongono una pagina web, i quali vengono mostrati
+Il MM viene avviato tramite linea di comando, la quale esegue
+il codice di un file Javascript, il cui percorso \`e indicato nel documento \textit{package.json} di Electron, descritto nella sezione \ref{cap:Electron}.
+Il file contiene il codice di Electron, che si occupa dell'avvio di MM, caricandone tutte le strutture, e della creazione una nuova finestra browser,
+il cui compito \`e di mostrare l'output dei moduli del MM.
+La pagina costruita e l'output dei moduli sono un insieme di Document Object Model (DOM), ovvero oggetti HTML che compongono una pagina web,
+i quali vengono mostrati
 solo dopo l'avvio di tutti i moduli attivi.\\
 Le strutture principali caricate dal MM sono le seguenti:
 \begin{itemize}
-\item gli end-point delle API per le applicazioni, che sono le interfacce usate per leggere e caricare le applicazioni inserite nel MagicMirror.
-\item gli end-point delle API per i Node Helper, per la gestione di questi ultimi. Sono strutture opzionali usate per collegamenti
-esterni al MagicMirror (per esempio, con API di un servizio cloud). Ogni applicazione ha il proprio Node Helper con cui pu\`o comunicare tramite messaggi in modo
+\item gli end-point delle API per le applicazioni, che sono le interfacce usate per leggere e caricare le applicazioni inserite nel MM.
+\item gli end-point delle API per la gestione dei Node Helper. Sono strutture opzionali usate per collegamenti
+esterni al MM (per esempio, con API di un servizio cloud). Ogni applicazione ha il proprio Node Helper con cui pu\`o comunicare tramite messaggi in modo
 simile a come comunicano le applicazioni tra di loro.
-\item un "Socket" e un "Socket-Client", entit\`a principali che definiscono le funzioni per lo scambio dei messaggi tra le applicazioni e i rispettivi Node Helper.
+\item un "Socket" e un "Socket-Client", entit\`a principali che definiscono le funzioni per lo scambio dei messaggi tra le applicazioni e i
+rispettivi Node Helper.
 \item un Logger, implementato per tenere i log dell'applicazione e degli evenutali errori. Usato pricipalmente per il debugging.
 \item un file di configurazione, nel quale sono specificati il nome e le coordinate per la posizione dei vari moduli
 all'interno della pagina.\\[2\baselineskip]
 \end{itemize}
-Inoltre viene inizializzato un server, il cui compito \`e quello di trasmettere la pagina resa, con gli output delle varie applicazioni,
+Inoltre viene inizializzato un server, il cui compito \`e quello di trasmettere la pagina HTML generata, con gli output delle varie applicazioni,
 al browser precedentemente avviato.
 
 \subsection{Il file di Configurazione}\label{cap:MMconf}
-Come discusso nel capitolo \ref{cap:interfacciaproblemi}, il MagicMirror carica un file di configurazione, che \`e composto dai seguenti campi:
+Come discusso nella sezione \ref{cap:interfacciaproblemi}, il MM carica un file di configurazione, che \`e composto dai seguenti campi:
 \begin{itemize}
 \item la porta del server
 \item una whitelist, ovvero un IP oppure un range di IP che possono collegarsi allo specchio
 \item la lingua principale del sistema
 \item il formato dell'ora (12h o 24h)
-\item unit\`a di misura usata (ad esempio, metrica), usata per gestire la distanza dei DOM
+\item unit\`a di misura (ad esempio pixel), usata per gestire la distanza degli oggetti HTML
 \item una lista di applicazioni (in formato JSON) da caricare con la relativa posizione nella pagina. Per ogni applicazione deve necessariamente comparire il
 nome e la posizione; opzionalmente si possono inserire un campo  \textit{header} e un campo \textit{config} specifico per l'applicazione, come mostrato
 nell'esempio in figura \ref{code:configapp}.
-\begin{lstlisting}[label={code:configapp}]
+\begin{lstlisting}[label={code:configapp}, caption={Campi di configurazione di un modulo nel MM}, captionpos=b]
 {
 	"module": 'nome dell'applicazione',
 	"position": 'la posizione dell'applicazione all'intenro dello specchio',
@@ -84,7 +90,7 @@ La lingua, il formato dell'ora e l'unit\`a di misura usata sono parametri messi 
 (ad esempio, il display di un orologio).
 
 \section{Implementazione di un'applicazione}\label{cap:app}
-La modifica del file di configurazione del MagicMirror appena descritta serve per "notificare" la presenza delle applicazioni a quest'ultimo,
+La modifica del file di configurazione del MM appena descritta serve per "notificare" la presenza delle applicazioni a quest'ultimo,
 ma perch\`e possano funzionare \`e necessario che rispettino alcune specifiche regole.
 Per inserire il codice dell'applicazione all'interno dello specchio \`e necessario creare una cartella con un nome identificativo dell'applicazione
 nella directory \textit{Modules}.
@@ -103,7 +109,7 @@ conterr\`a a sua volta il codice per la creazione dei DOM
 Le funzioni offerte dalle API sono:
 \begin{itemize}
 \item defaults: {}, una lista di variabili che possono essere richiamate all'interno di una qualsiasi funzione tramite il comando \textit{this.config.variabile}.
-I valori di queste possono essere sovrascritti modificando il campo \textit{config} del relativo modulo nel file di configurazione del MagicMirror.
+I valori di queste possono essere sovrascritti modificando il campo \textit{config} del relativo modulo nel file di configurazione del MM.
 \item start: function(){}, funzione che viene eseguita quando tutte le applicazioni dello specchio sono state caricate (ovvero quando sono stati creati tutti i relativi DOM)
 \item getDom: function(){}, funzione che deve ritornare un DOM (un oggetto HTML contenente i dati da mostrare a schermo), creato tramite funzioni Javascript
 \item getStyles: function() { return []}, funzione che ritorna un array di file (in formato CSS) usati per l'estetica del DOM. Possono essere nella cartella dell'applicazione
@@ -136,17 +142,17 @@ mentre \`e possibile implementare le proprie funzioni con la stessa sintassi.
 
 
 \section{Messaggistica del MM}\label{cap:MMmess}
-Nella sezione \ref{cap:MMalto} \`e stato gi\`a accennato che il MagicMirror implementa un meccanismo di messaggistica sfruttando un sistema di socket integrato,
+Nella sezione \ref{cap:MMalto} \`e stato gi\`a accennato che il MM implementa un meccanismo di messaggistica sfruttando un sistema di socket integrato,
 utile per l'organizzazione e la moderazione delle applicazioni tramite l'utilizzo di funzioni messe a disposizione dall'API.
 Sono presenti due classi socket:
 \begin{itemize}
 \item Socket, classe che fornisce le funzioni per ricevere e mandare messaggi tra i moduli del MM. Con questo socket la spedizione
-del messaggio \`e in broadcast usando la funzione \textit{sendNotification(notification, payload)}. Il primo parametro \`e una stringa che identifica
+del messaggio \`e in broadcast usando il metodo \textit{sendNotification(notification, payload)}. Il primo parametro \`e una stringa che identifica
 il messaggio, il secondo parametro \`e opzionale e pu\`o essere usato per inserire il corpo del messaggio.
-La ricezione del messaggio viene gestita con la funzione \textit{notificationReceived(notification, payload, sender)}, i primi due parametri sono
+La ricezione del messaggio viene gestita con il metodo \textit{notificationReceived(notification, payload, sender)}, i primi due parametri sono
 uguali a quelli della funzione per spedire, il terzo parametro contiene il nome del
 modulo che ha mandato il messaggio
-\item Socket Client, classe che fornisce le funzioni per ricevere e mandare messaggi tra il modulo e il suo NodeHelper. Per spedire
+\item SocketClient, classe che fornisce le funzioni per ricevere e mandare messaggi tra il modulo e il suo NodeHelper. Per spedire
 i messaggi viene usata la funzione \textit{sendSocketNotification(notification, payload)}, mentre la ricezione viene gestita con la funzione
  \textit{socketNotificationReceived(notification, payload)}. I campi di queste due funzioni sono gli stessi descritti nel punto precedente.\\[1\baselineskip]
 \end{itemize}

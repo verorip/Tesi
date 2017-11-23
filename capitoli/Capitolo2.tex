@@ -1,16 +1,17 @@
 \chapter{Tecnologie Implicate}\label{capitolo2}
-In questo capitolo verranno discusse le teconologie che sono state studiate ed utilizzate durante le attivit\`a di stage.
-In particolare il capitolo \`e diviso tra teconologie hardware e tecnologie software.
+In questo capitolo verranno discusse le tecnologie che sono state studiate ed utilizzate durante le attivit\`a di stage.
+In particolare il capitolo \`e diviso tra tecnologie hardware e tecnologie software.
 
 \section{Prefazione}
-Lo sviluppo del progetto \`e stato svolto nell'ambiente Raspbian\cite{Raspbian}
+Lo sviluppo del progetto di stage \`e stato svolto nell'ambiente Raspbian\cite{Raspbian}
 una distribuzione Debian\cite{Debian} che gira sul dispositivo RasperryPi\cite{Raspberry}.
 Inoltre sono state adottate diverse tecnologie nel campo del riconoscimento vocale e di
 immagini (OpenCV \cite{OpenCV-website} e Google Speech API \cite{GoogleSTT-website}),
 nello sviluppo di applicazioni web (Electron \cite{Electron-website}, Node.JS \cite{Node.JS-website},
-Express \cite{Express-website}, Mustache \cite{Mustache}), della gestione dati (MySQL \cite{MySQL}).
-Inoltre sono stati adottati diversi linguaggi di programmazione (JavaScript \cite{JavaScript}, Python \cite{Python})
-e piattaforme per la gestione distribuita di progetti softwave (GitLab \cite{git-website}).
+Express \cite{Express-website}, Mustache \cite{Mustache}) e della gestione dati (MySQL \cite{MySQL}).
+Inoltre sono stati adottati diversi linguaggi di programmazione (JavaScript \cite{JavaScript}, Python \cite{Python}).
+Inoltre per la gestione distribuita di progetti softwave e di versionamento del cofice \`e
+stata usat la piattaforma GitLab \cite{git-website}.
 
 \section{Hardware}
 \subsection{RasperryPi}
@@ -96,7 +97,7 @@ da un dispositivo di audio input, traduce il parlato in testo scritto tramite al
 di riconoscimento della voce.\\
 L'API supporta oltre 110 lingue e si possono usare su diverse piattaforme dato che
 le librerie sono disponibili nei linguaggi C\#, GO, Java, Node.JS, PhP, Python e Ruby.
-Inoltre Google Speech To Text dispone di alcune varianti:
+Inoltre Google Speech API dispone di alcune varianti:
 \begin{itemize}
 \item Una con interfaccia REpresentational State Transfer(REST), che comunica per mezzo di URI
 \item Una con gRPC, un sistema di chiamata di procedura remota
@@ -122,7 +123,7 @@ partendo da un modello HTML.\\[2\baselineskip]
 \fi
 
 \subsection{Node.JS}
-Node.JS era gi\`a implementato con Electron, ed \`e stato usato per la creazione del server
+Node.JS è gi\`a distribuito con Electron, ed \`e stato usato per la creazione del server
 per la gestione dell'interfaccia web per il MM.
 Node.JS \`e una piattaforma open source che permette l'esecuzione del linguaggio Javascript, sfruttando il motore JavaScript V8 sviluppato da Google,
 anche per il lato server, ovvero
@@ -135,7 +136,7 @@ di scaricare ed installare librerie private o pubbliche salvate su un database.
 \\[1\baselineskip]
 
 \subsection{Express}\label{cap:express}
-Express \`e un framework per Node.JS che permette di creare applicazioni Web e API in JavaScript, offrendo strumenti e pacchetti
+Express \`e un framework per Node.JS che permette di creare applicazioni Web in JavaScript, offrendo strumenti e pacchetti
 che implementano pi\`u facilmente tutte le funzionalit\`e offerte da Node.JS.
 Il software viene usato per creare e gestire il back-end di un server, che \`e composto da 3 entit\`a importanti:
 \begin{itemize}
@@ -143,7 +144,7 @@ Il software viene usato per creare e gestire il back-end di un server, che \`e c
 \item il Routing, utilizzato per determinare come il server debba rispondere ad un determinato metodo di richiesta,
 ricevuta sottoforma di URI, inoltrando la stessa alla funzione del controller del rispettivo modello a cui fa rifermento.
 \item i Modelli, creati per ogni entit\`a-oggetto che esiste all'interno del server, ad ognuno dei quali viene associato
-un controller. Inoltre, tramite i modelli si accede al databse per estrarre i dati e spedirli al controller per
+un controller. Inoltre, tramite i modelli si accede al database per estrarre i dati e spedirli al controller per
 la manipolazione, ricevendoli successivamente modificati e salvandoli, se necessario.
 \\[2\baselineskip]
 \end{itemize}
@@ -151,18 +152,14 @@ la manipolazione, ricevendoli successivamente modificati e salvandoli, se necess
 \subsection{Mustache}\label{cap:mustache}
 Mustache \`e un sistema di template, ovvero un sistema che prendendo in input dati e web template
 genera automaticamente pagine web, permettendo cos\`i di riutilizzare elementi statici dei template.
-Dal momento che Mustache \`e disponibile in diverse lingue tra cui Javascript \`e stato usato per l'interfaccia web di configurazione
+Dal momento che Mustache \`e disponibile in diversi linguaggi tra cui Javascript \`e stato usato per l'interfaccia web di configurazione
 del MagicMirror.
 Mustache \`e un sistema logic-less perch\`e \`e privo di istruzioni per il controllo del flusso
-(come ad esempio l'if e l'else), quindi tutti i controllli di questo tipo vengono fatti
-attraverso programmazione data-driven.\\
-Il nome di questo sistema \`e dovuto all'utilizzo delle parentesi graffe, usate spesso
-all'intero della sua sintassi, che, se viste da una certa angolatura, assomigliano
-a un paio di baffi.
+(come ad esempio l'"if" e l'"else"), quindi tutti i controllli di questo tipo sono data-driven.\\
 
 \subsection{MySQL}
 MySQL \`e stato usato durante lo stage come database per l'archiviazione di account di utenti
-agibili all'autenticazione per accedere all'interfaccia web del MM.\\
+accreditati all'autenticazione per accedere all'interfaccia web di configurazione del MM.\\
 MySQL \`e uno tra i pi\`u famosi database open source sviluppato da Oracle, pi\`u precisamente
 \`e sistema per la gestione di basi di dati basato sul modello relazionale.
 MySQL \`e composto da una semplice riga di comando e un server web, ma sono implementati anche programmi
@@ -171,33 +168,28 @@ La prima versione fu rilasciata nel maggio del 1995 sviluppata da Oracle e di pr
 distribuito sia con licenza commerciale sia con licenza libera.
 
 \subsection{JavaScript}
-Javascript \`e un linguaggio di programmazione ad alto livello orientato agli oggetti e ad eventi, che \`e supportato da tutti i browser
+Javascript \`e un linguaggio di programmazione ad alto livello orientato agli oggetti e ad eventi, che \`e supportato dalla maggior parte dei browser
 per lo scripting delle pagine web, e che supporta la programmazione procedurale.
 Inizialmente usato per il lato client ha subito un'evoluzione che lo ha portato ad essere utilizzato per lo sviluppo di back-end e web app.
 \\[2\baselineskip]
 ECMAJavascript(ES) \`e lo standard di Javascript che negli ultimi anni ha sviluppato ed evoluto il linguaggio in diverse versioni.
-In tutte il problema pi\`u trattato \`e il fatto che Javascript \`e orientato agli eventi,
-ed alcune funzioni necessitano di Callback, che possono degenerare se non vengono
-utilizzate buone pratiche di programmazione. Le callback sono necessarie perch\`e alcune chiamate di funzioni non vengono fatte direttamente, ma vengono
-fatte attraverso messaggi, i quali vengono salvati in una coda di messaggi e vengono spediti sequenzialmente ad uno stack di chiamata dove
-viene salvata la corrispondente funzione per l'esecuzione. Questo metodo rende il linguaggio asincrono perch\`e le funzioni e gli eventi
-vengono eseguiti in successione senza attendere il termine della precedente.\\[1\baselineskip]
-Le pratiche utilizzate per sincronizzare le funzioni in ECMAJavascript 5 (ES5), la versione usata durante lo
-stage, sono l'utilizzo delle Callback gi\`a discusse nella sezione \ref{cap:interfacciaproblemi}.\\[1\baselineskip]
-In ECMAJavascript 6 (ES6) sono state introdotte le Promises, ovvero al posto di ritornare una funzione Callback, ritorna una Promise(Promessa),
+Uno degli aspetti su cui il processo di standardizzazione si è focalizzato \`e la semplificazione della gestione degli eventi e delle funzioni asincrone
+(cioè di quelle che riconsegnano il controllo al chiamante prima della loro terminazione).
+Le pratiche utilizzate per sincronizzare di queste funzioni in ECMAJavascript 5 (ES5), la versione usata durante lo
+stage, sono l'utilizzo delle callback.\\[1\baselineskip]
+In ECMAJavascript 6 (ES6) \`e stato introdotto il concetto di Promises, ovvero al posto di passare una funzione Callback, viene una Promise(Promessa),
 la quale garantisce che una variabile/oggetto avr\`a un ritorno, mettendo cos\`i la funzione in attesa fino al ricevimento del valore o di un errore.
 Sono tutt'ora in via di sviluppo nuove versioni di Javascript.
 
 \subsection{Python}\label{cap:python}
-Questo linguaggio \`e stato particolarmente utile per l'interfacciamento con la telecamera e la Touch Board, essendo a disposizione librerie
-apposite per gestirle.
 Python \`e un linguaggio di programmazione open source, ad alto livello con semantica dinamica, orientato ad oggetti, usato
 per sviluppo di applicazioni e scripting.\\[1\baselineskip]
-Come molti altri linguaggi supporta pacchetti anche sviluppati da terzi, salvati in una repository pubblica,
-attraverso un suo gestore di pacchetti Pip Installs Packages o Pip Installs Python (pip, acronimo ricorsivo).
-\\[1\baselineskip]
-Inoltre con Python \`e possibile creare ambienti isolati per l'utilizzo di pacchetti e moduli senza doverli installare all'interno del sistema.
-Per poterlo fare \`e disponibile virtualenv, uno strumento Python che permette, appunto, di creare ambienti virtuali (virtual enviroments).
+Questo linguaggio \`e stato particolarmente utile per l'interfacciamento con la telecamera e la Touch Board, essendo a disposizione librerie
+apposite per gestirle.\\
+Come molti altri linguaggi supporta pacchetti anche sviluppati da terzi, salvati in una repository pubblica o da
+piattaforme esterne.
+Nel primo caso Python utilizza un suo gestore di pacchetti Pip Installs Packages o Pip Installs Python (pip, acronimo ricorsivo).
+Nel secondo caso i pacchetti possono essere inseriti senza dover utilizzare il gestore di pacchetti appena introdotto.
 \\[2\baselineskip]
 
 \subsection{GitLab}
@@ -206,4 +198,4 @@ servizi tra i quali la possibilit\`a di creare wiki e un servizio di issue track
 di eventuali richieste o problemi.
 La comodit\`a di questa piattaforma sta nel poter creare dei Commit, ovvero ad ogni modifica del codice si pu\`o
 salvarne lo stato assegnadoli un'etichetta in locale, per poi spedirlo al respository in remoto del progetto.
-In ogni momento si pu\`o tornare ad una versione vecchia tramite gli strumenti di reversering offerti dal servizio.
+In ogni momento si pu\`o tornare ad una versione vecchia tramite gli strumenti di versionamento offerti dalla piattaforma web.

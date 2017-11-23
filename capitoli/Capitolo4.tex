@@ -1,19 +1,19 @@
 \chapter{Applicazioni per il MM}\label{capitolo4}
 In questo capitolo vengono spiegati i requisiti dei moduli sviluppati durante lo stage e la loro implementazione.
 In particolare verranno esposte le dipendenze per il modulo dei comandi vocali (sezione \ref{cap:sox}), le metodologie
-per accedere ai sevizi di Google (sezione \ref{cap:google}), come avviene la comunicazione tra l'API e il programma (sezione \ref{cap:api})
+per accedere ai sevizi di Google (sezione \ref{cap:google}), come avviene la comunicazione tra i servizi Google e il programma (sezione \ref{cap:api})
 e l'implementazione del modulo con Touch Board (sezione \ref{cap:touch}).
 
 \section{Modulo per comandi vocali}\label{cap:voce}
 La prima applicazione implementata, come \`e stato accennato nell'introduzione del capitolo \ref{capitolo4}, \`e
-stata il controllo del MagicMirror tramite comandi vocali.
+stata il controllo del MM tramite comandi vocali.
 Nello specifico l'applicazione deve, tramite delle specifiche frasi,
-gestire le altre applicazioni presenti nel MagicMirror, sfruttando funzioni offerte dallo stesso.\\
+gestire le altre applicazioni presenti nel MM, sfruttando funzioni offerte dallo stesso.\\
 Nella figura \ref{fig:modulovocale} \`e rappresentata la struttura e il funzionamento del modulo.
-Il microfono cattura l'audio, che viene elaborato, all'interno del NodeHelper, dal software Sound eXchange (\textit{SoX}), un software per l'elaborazione e la manipolazione
-dell'audio. Successivamente, l'audio così elaborato, viene
-passato all'API Speech To Text, la quale lo inoltra al Servizio Google Speech e si mette in attesa di una risposta.
-Al ritorno di questa, viene passata al modulo che ha il compito di validare il comando e di inoltrarlo ai moduli, se
+Il microfono cattura l'audio, che viene elaborato, all'interno del NodeHelper, dal componente "Elaborazione Audio".
+Successivamente, l'audio cos\`i elaborato, viene
+passato all'API Google Speech, la quale lo inoltra al Servizio Google Speech e si mette in attesa di una risposta.
+Al ritorno di questa, viene passata al modulo che ha il compito di validare il comando e di inoltrarlo in boradcast a tutti i moduli, se
 corretto.
 Per poter utilizzare l'API \`e necessario installare il software SoX e fornire un'autenticazione per i servizi Google.
 
@@ -26,7 +26,7 @@ Per poter utilizzare l'API \`e necessario installare il software SoX e fornire u
 \subsection{Comunicazione con l'API}\label{cap:api}
 Il NodeHelper dell'applicazione si occupa di gestire lo streaming con l'API e
 di mandare i risultati (o gli errori) all'applicazione tramite le funzioni messe
-a disposizione dal MagicMirror, esposte nella sezione \ref{cap:MMmess}.
+a disposizione dal MM, esposte nella sezione \ref{cap:MMmess}.
 Il seguente codice viene usato per creare un canale streaming con l'API:
 \begin{lstlisting}[language=Javascript, caption={Codice per l'inoltro dell'audio al Servizio Google}, captionpos=b]
       const recognizeStream = speech.streamingRecognize(request)
