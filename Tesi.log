@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  13 NOV 2017 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  24 NOV 2017 14:12
 entering extended mode
 **./Tesi.tex
 (Tesi.tex
@@ -372,7 +372,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--20
 
  []
 
-<immagini/callback.png, id=217, 1286.8075pt x 468.75125pt>
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¬ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ² in font cmr12!
+<immagini/callback.png, id=219, 1286.8075pt x 468.75125pt>
 File: immagini/callback.png Graphic file (type png)
 
 <use immagini/callback.png>
@@ -396,48 +400,63 @@ Capitolo 2.
 [8
 
 ] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 125--136
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--137
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 145--149
+Underfull \hbox (badness 10000) in paragraph at lines 146--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--159
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 192--202
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--195
 
  []
 
 [13]) [14] (capitoli/Capitolo3.tex
 Capitolo 3.
-<immagini/magic_mirror.jpg, id=307, 1550.79375pt x 1304.875pt>
+<immagini/magic_mirror.jpg, id=308, 1550.79375pt x 1304.875pt>
 File: immagini/magic_mirror.jpg Graphic file (type jpg)
 
 <use immagini/magic_mirror.jpg>
-Package pdftex.def Info: immagini/magic_mirror.jpg used on input line 18.
+Package pdftex.def Info: immagini/magic_mirror.jpg used on input line 21.
 (pdftex.def)             Requested size: 389.99281pt x 355.20802pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--21
+Underfull \hbox (badness 10000) in paragraph at lines 2--24
 
  []
 
 [15
 
-] <immagini/strutturaMM.png, id=314, 1445.4pt x 813.0375pt>
+] <immagini/strutturaMM.png, id=315, 1445.4pt x 813.0375pt>
 File: immagini/strutturaMM.png Graphic file (type png)
 
 <use immagini/strutturaMM.png>
-Package pdftex.def Info: immagini/strutturaMM.png used on input line 27.
+Package pdftex.def Info: immagini/strutturaMM.png used on input line 31.
 (pdftex.def)             Requested size: 389.99857pt x 236.79213pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 [][]
  []
 
@@ -446,10 +465,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.32 \item I
+l.36 \item I
             l core, il cuore del MM dove gira il codice principale. <./immagini
 /magic_mirror.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no   in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no   in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
@@ -458,93 +482,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.50 \begin{itemize}
+l.53 \begin{itemize}
                      <./immagini/strutturaMM.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
 
  []
 
-[18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+[18]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 78.
+ [19]
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--152
+Underfull \hbox (badness 10000) in paragraph at lines 153--156
 
  []
 
 ) [20] (capitoli/Capitolo4.tex
 Capitolo 4.
 Missing character: There is no Ã in font cmr12!
-Missing character: There is no ¬ in font cmr12!
-<immagini/modulovocale.png, id=355, 1445.4pt x 813.0375pt>
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no   in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+[21
+
+] <immagini/modulovocale.png, id=362, 1445.4pt x 813.0375pt>
 File: immagini/modulovocale.png Graphic file (type png)
 
 <use immagini/modulovocale.png>
-Package pdftex.def Info: immagini/modulovocale.png used on input line 21.
+Package pdftex.def Info: immagini/modulovocale.png used on input line 27.
 (pdftex.def)             Requested size: 389.99857pt x 236.79213pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 [][]
  []
 
-[21
-
-]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 31.
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 34.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 40.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 34.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 40.
  [22pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.43 \begin{itemize}
+l.49 \begin{itemize}
                      <./immagini/modulovocale.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 45--50
+Underfull \hbox (badness 10000) in paragraph at lines 51--56
 
  []
 
 [23]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ² in font cmr12!
- [24] <immagini/touchstruct.png, id=405, 1445.4pt x 813.0375pt>
-File: immagini/touchstruct.png Graphic file (type png)
-
-<use immagini/touchstruct.png>
-Package pdftex.def Info: immagini/touchstruct.png used on input line 110.
-(pdftex.def)             Requested size: 389.99857pt x 236.79213pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-[][]
- []
-
-<immagini/skywriter.jpg, id=406, 1027.84pt x 1027.84pt>
+ <immagini/skywriter.jpg, id=398, 1027.84pt x 1027.84pt>
 File: immagini/skywriter.jpg Graphic file (type jpg)
 
 <use immagini/skywriter.jpg>
-Package pdftex.def Info: immagini/skywriter.jpg used on input line 116.
+Package pdftex.def Info: immagini/skywriter.jpg used on input line 115.
 (pdftex.def)             Requested size: 390.00296pt x 355.20116pt.
+ [24]
+<immagini/touchstruct.png, id=406, 1445.4pt x 813.0375pt>
+File: immagini/touchstruct.png Graphic file (type png)
+
+<use immagini/touchstruct.png>
+Package pdftex.def Info: immagini/touchstruct.png used on input line 121.
+(pdftex.def)             Requested size: 389.99857pt x 236.79213pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+[][]
+ []
+
 ) [25pdfTeX warning (ext4): destination with the same identifier (name{figure.4
 .2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.51 \newpage
-              <./immagini/touchstruct.png>] [26pdfTeX warning (ext4): destinati
-on with the same identifier (name{figure.4.3}) has been already used, duplicate
- ignored
+              <./immagini/skywriter.jpg>] [26pdfTeX warning (ext4): destination
+ with the same identifier (name{figure.4.3}) has been already used, duplicate i
+gnored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.51 \newpage
-              <./immagini/skywriter.jpg>] (capitoli/Capitolo5.tex
+              <./immagini/touchstruct.png>] (capitoli/Capitolo5.tex
 Capitolo 5.
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
@@ -594,25 +623,25 @@ ure.5.2}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.53 \newpage
-              <./immagini/interfacciamm.png>] (bibliografia/bibliografia.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
-
+              <./immagini/interfacciamm.png>] (bibliografia/bibliografia.tex
 [31
 
-]
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
+ [32]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (Tesi.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 2413A4E8AA695B74A6EA6A79BE1EEACA;2386.
+(rerunfilecheck)             Checksum: DE2838D9FF15D6D545F05A4160DC1146;2397.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
- 7967 strings out of 493323
- 114106 string characters out of 3139066
- 236702 words of memory out of 3000000
- 11272 multiletter control sequences out of 15000+200000
+ 7970 strings out of 493323
+ 114147 string characters out of 3139066
+ 236788 words of memory out of 3000000
+ 11273 multiletter control sequences out of 15000+200000
  9622 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,7n,42p,908b,1251s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -623,9 +652,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on Tesi.pdf (32 pages, 975805 bytes).
+Output written on Tesi.pdf (33 pages, 985705 bytes).
 PDF statistics:
- 529 PDF objects out of 1000 (max. 8388607)
- 131 named destinations out of 1000 (max. 500000)
+ 535 PDF objects out of 1000 (max. 8388607)
+ 133 named destinations out of 1000 (max. 500000)
  326 words of extra memory for PDF output out of 10000 (max. 10000000)
 

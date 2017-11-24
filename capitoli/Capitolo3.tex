@@ -1,5 +1,5 @@
 \chapter{Struttura del MagicMirror}\label{capitolo3}
-Il MagicMirror (detto anche \empth{MM}) \`e un progetto ideato e sviluppato da Michael Teeuw, successivamente esteso nelle sue
+Il MagicMirror (detto anche \emph{MM}) \`e un progetto ideato e sviluppato da Michael Teeuw, successivamente esteso nelle sue
 funzionalit\`a da una moltitudine di utenti su GitHub.
 La prima versione \`e stata scritta completamente in Python, mentre nella versione successiva \`e stato utilizzato Electron,
 che ha comportato una variazione di linguaggio, a favore di Javascript. In questo modo \`e stato possibile implementare un'interfaccia esteticamente pi\`u gradevole
@@ -12,7 +12,7 @@ una semplice pellicola a specchio (la quale da un lato permette di specchiarsi e
 attraverso) si crea un effetto particolare per cui una persona riesce a specchiarsi
 e allo stesso tempo riesce a vedere le scritte o le immagini trasmesse dal monitor,
 come mostrato in figura \ref{fig:MM}. In quest'ultima si pu\`o vedere il MM
-che, oltre alla sua funzione base di specchio, mostra alcune informazioni come l'ora, la temperature, il meteo e un messaggio.
+che, oltre alla sua funzione base di specchio, mostra alcune informazioni come l'ora, la temperatura, il meteo e un messaggio.
 In questo capitolo verr\`a spiegata la struttura generale del MM (sezione \ref{cap:MMalto}), le classi principali che vengono caricate
 all'avvio (sezione \ref{cap:MMavvio}), la struttura del file di configurazione (sezione \ref{cap:MMconf}),
 come viene implementata un'applicazione (sezione \ref{cap:app})
@@ -34,20 +34,18 @@ Si possono individuare alcuni elementi principali rappresentati in figura \ref{f
 \end{figure}
 \begin{itemize}
 \item Il core, il cuore del MM dove gira il codice principale.
-\item Il server, che gira in locale, usato per restituire la pagina HTML con i dati al browser di Electron e gestisce le API
-\item Le API per i moduli, i metodi e funzionalit\`a esposti dal MM per poter integrare i moduli creati
-\item Le API per i Node Helper, i metodi e funzionalit\`a esposti dla MM per poter itegrare i NodeHelper
-dei relativi moduli
-\item Il Socket, entit\`a che si trova nell'API dei moduli e fornisce un canale di comunicazione tra questi
-\item Il SocketClient, entit\`a che si trova tra le API delle applicazioni e dei Node Helper, e fornisce il canale
-di comunicazione tra questi due.\\[2\baselineskip]
+\item Il server, che gira in locale, usato per restituire la pagina HTML con i dati al browser di Electron e comunicare con le API
+\item I Moduli, entità che espone le API per l'implementazione di applicazioni
+\item I Node Helper, enità che espone le API l'implementazione di funzioni di supporto al Modulo
+\item Il Socket, entit\`a che fornisce un canale di comunicazione tra i Moduli
+\item Il SocketClient, entit\`a che che fornisce un canale di comunicazione tra un Modulo e il proprio NodeHelper.\\[2\baselineskip]
 \end{itemize}
 
-\section{Avvio ed Escuzione}\label{cap:MMavvio}
+\section{Avvio ed Esecuzione}\label{cap:MMavvio}
 Il MM viene avviato tramite linea di comando, la quale esegue
 il codice di un file Javascript, il cui percorso \`e indicato nel documento \textit{package.json} di Electron, descritto nella sezione \ref{cap:Electron}.
 Il file contiene il codice di Electron, che si occupa dell'avvio di MM, caricandone tutte le strutture, e della creazione una nuova finestra browser,
-il cui compito \`e di mostrare l'output dei moduli del MM.
+il cui compito \`e di mostrare l'output dei moduli.
 La pagina costruita e l'output dei moduli sono un insieme di Document Object Model (DOM), ovvero oggetti HTML che compongono una pagina web,
 i quali vengono mostrati
 solo dopo l'avvio di tutti i moduli attivi.\\
@@ -74,7 +72,7 @@ Come discusso nella sezione \ref{cap:interfacciaproblemi}, il MM carica un file 
 \item la lingua principale del sistema
 \item il formato dell'ora (12h o 24h)
 \item unit\`a di misura (ad esempio pixel), usata per gestire la distanza degli oggetti HTML
-\item una lista di applicazioni (in formato JSON) da caricare con la relativa posizione nella pagina. Per ogni applicazione deve necessariamente comparire il
+\item una lista di moduli (in formato JSON) da caricare durante l'avvio del MM con la relativa posizione nella pagina. Per ogni applicazione deve necessariamente comparire il
 nome e la posizione; opzionalmente si possono inserire un campo  \textit{header} e un campo \textit{config} specifico per l'applicazione, come mostrato
 nell'esempio in figura \ref{code:configapp}.
 \begin{lstlisting}[label={code:configapp}, caption={Campi di configurazione di un modulo nel MM}, captionpos=b]

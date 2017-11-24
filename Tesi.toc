@@ -19,17 +19,17 @@
 \contentsline {subsection}{\numberline {2.3.7}Mustache}{12}{subsection.2.3.7}
 \contentsline {subsection}{\numberline {2.3.8}MySQL}{12}{subsection.2.3.8}
 \contentsline {subsection}{\numberline {2.3.9}JavaScript}{13}{subsection.2.3.9}
-\contentsline {subsection}{\numberline {2.3.10}Python}{14}{subsection.2.3.10}
+\contentsline {subsection}{\numberline {2.3.10}Python}{13}{subsection.2.3.10}
 \contentsline {subsection}{\numberline {2.3.11}GitLab}{14}{subsection.2.3.11}
 \contentsline {chapter}{\numberline {3}Struttura del MagicMirror}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Il MM dall'alto livello}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}Avvio ed Escuzione}{18}{section.3.2}
+\contentsline {section}{\numberline {3.2}Avvio ed Esecuzione}{17}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Il file di Configurazione}{18}{subsection.3.2.1}
 \contentsline {section}{\numberline {3.3}Implementazione di un'applicazione}{19}{section.3.3}
 \contentsline {section}{\numberline {3.4}Messaggistica del MM}{20}{section.3.4}
 \contentsline {chapter}{\numberline {4}Applicazioni per il MM}{21}{chapter.4}
 \contentsline {section}{\numberline {4.1}Modulo per comandi vocali}{21}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Comunicazione con l'API}{22}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.1}Comunicazione con l'API di Google}{22}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Difficolt\`a incontrate}{24}{subsection.4.1.2}
 \contentsline {subsubsection}{Sound eXchange (SoX)}{24}{section*.3}
 \contentsline {subsubsection}{Autenticazione Google API}{24}{section*.4}

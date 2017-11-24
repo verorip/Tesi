@@ -5,7 +5,7 @@ per accedere ai sevizi di Google (sezione \ref{cap:google}), come avviene la com
 e l'implementazione del modulo con Touch Board (sezione \ref{cap:touch}).
 
 \section{Modulo per comandi vocali}\label{cap:voce}
-La prima applicazione implementata, come \`e stato accennato nell'introduzione del capitolo \ref{capitolo4}, \`e
+La prima applicazione implementata, \`e
 stata il controllo del MM tramite comandi vocali.
 Nello specifico l'applicazione deve, tramite delle specifiche frasi,
 gestire le altre applicazioni presenti nel MM, sfruttando funzioni offerte dallo stesso.\\
@@ -15,7 +15,13 @@ Successivamente, l'audio cos\`i elaborato, viene
 passato all'API Google Speech, la quale lo inoltra al Servizio Google Speech e si mette in attesa di una risposta.
 Al ritorno di questa, viene passata al modulo che ha il compito di validare il comando e di inoltrarlo in boradcast a tutti i moduli, se
 corretto.
-Per poter utilizzare l'API \`e necessario installare il software SoX e fornire un'autenticazione per i servizi Google.
+La validazione del comando è un semplice controllo di stringa tra il comando ricevuto dal NodeHeler e una lista di stringhe in un array che
+corrispondono alla lista di comandi.
+Alcuni comandi di esempio sono: \emph{mostra ora}, per mostrare l'ora, \emph{che giorno \`e?}, per mostrare
+il calendario, oppure \emph{mostra -nome modulo-}, per visualizzare uno specifico modulo.\\
+Per poter utilizzare l'API \`e stato necessario scaricare un software per l'elaborazione dell'audio.
+Tra le diverse possibilità è stato scelto il software Sound eXchange (\emph{SoX}).
+Inoltre \`e richiesta un'autenticazione per poter usufruire dei servizi Google.
 
 \begin{figure}[H]
     \includegraphics[width=1\textwidth, height=0.4\textheight]{modulovocale}
@@ -23,9 +29,9 @@ Per poter utilizzare l'API \`e necessario installare il software SoX e fornire u
     \label{fig:modulovocale}
 \end{figure}
 
-\subsection{Comunicazione con l'API}\label{cap:api}
+\subsection{Comunicazione con l'API di Google}\label{cap:api}
 Il NodeHelper dell'applicazione si occupa di gestire lo streaming con l'API e
-di mandare i risultati (o gli errori) all'applicazione tramite le funzioni messe
+di mandare i risultati (o gli errori) all'applicazione tramite i metodi di \emph{SocketClient} messi
 a disposizione dal MM, esposte nella sezione \ref{cap:MMmess}.
 Il seguente codice viene usato per creare un canale streaming con l'API:
 \begin{lstlisting}[language=Javascript, caption={Codice per l'inoltro dell'audio al Servizio Google}, captionpos=b]
@@ -48,8 +54,8 @@ il modulo lo notificherebbe a video con un messaggio di errore. La seconda rispo
 che il modulo validerebbe come comando,
 e, in caso di risposta positiva, la inoltrerebbe ai moduli.\\[1\baselineskip]
 \end{itemize}
-Per passare il flusso audio alla funzione appena descritta bisogna creare una \emph{pipe}, ovvero uno strumento
-per permettere a due processi di comunicare.
+Per passare il flusso audio alla funzione appena descritta bisogna creare una \emph{pipe}, ovvero un meccanismo di Comunicazione
+tra due processi tramite il quale l'output del primo processo \`e inoltrato come input al secondo processo.
 Nel seguente codice:
 \begin{lstlisting}[language=Javascript]
       // Start recording and send the microphone input to the Speech API
@@ -64,7 +70,7 @@ Nel seguente codice:
         .on('error', sendSocketNotification('error'))
         .pipe(recognizeStream);
 \end{lstlisting}
-\emph{record} \`e una funzione con ascolto di eventi che
+\emph{record} \`e una funzione oggetto con ascolto di eventi che
 imposta tramite il metodo \emph{.start} i settaggi dello streaming (per esempio la frequenza) e ne inizia la cattura.
 L'evento \emph{.on('error')} serve per sollevare un'eccezione in caso di errore, che poi viene inoltrata al modulo.
 L'evento \emph{.pipe(recognizeStream)} crea una pipe tra la funzione di registrazione e \emph{recognizeStream} descritta nel codice precedente,
@@ -72,12 +78,12 @@ passando il flusso audio direttamente alla funzione.
 
 \subsection{Difficolt\`a incontrate}
 \subsubsection{Sound eXchange (SoX)}\label{cap:sox}
-Per permettere all'audio di venire correttamente elaborato
-per lo streaming, \`e necessario utilizzare Sound eXchange (SoX), citato nella sezione \ref{cap:voce}.
+Come discusso nella sezione \ref{cap:voce}, per permettere all'audio di venire correttamente elaborato
+per lo streaming, \`e necessario utilizzare SoX.
 Affinch\`e il microfono si colleghi correttamente al programma \`e necessario impostare correttamente
-i valori delle varibili d'ambiente \textit{AUDIODEV} e \textit{AUDIODRIVER}.
+i valori delle variabili d'ambiente \textit{AUDIODEV} e \textit{AUDIODRIVER}.
 La prima variabile corrisponde al dispositivo audio al quale il programma deve fare riferimento,
-la seconda varibile al driver audio da utilizzare; di solito il predefinito \`e Advanced Linux Sound Architecture(ALSA).
+la seconda variabile al driver audio da utilizzare; di solito il predefinito \`e Advanced Linux Sound Architecture(ALSA).
 
 \subsubsection{Autenticazione Google API}\label{cap:google}
 Per poter usufruire delle API di Google \`e necessario fornire un'autenticazione a livello
@@ -87,8 +93,8 @@ attivabili tramite Google Cloud Platform Console.
 Le credenziali consistono in un username, l'email dell'account Google e una chiave di sicurezza unica,
  il tutto contenuto in un file JSON che pu\`o essere scaricato e salvato in locale.
 Per poter permettere al sistema di utilizzare l'API occorre che il file JSON con le credenziali sia
-raggiungibile all'interno del sistema e per rendere possibile ciò, bisogna creare una variabile d'ambiente con assegnato il percorso
-dove si trova il file.
+raggiungibile all'interno del sistema e per rendere possibile ci\`o, bisogna creare una variabile d'ambiente con il nome
+\textit{GOOGLE_APPLICATION_CREDENTIALS} con assegnato il percorso dove si trova il file.
 
 \section{Modulo con Touch Board}\label{cap:touch}
 Nell'implementazione del modulo con la Touch Board \`e necessario aver installato nel sistema
@@ -98,22 +104,26 @@ GPIO della scheda RaspberryPi) e con un sensore elettrico di prossimit\`a, come 
 5 cm di distanza.
 Le librerie Python, in dotazione con la scheda, offrono funzioni per catturare i diversi input trasmessi, come ad esempio
 la direzione di spostamento del dito, oppure la cattura di un tocco sulla scheda.\\
-La struttura del modulo, mostrata in figura \ref{fig:structtouch}, \`e composta da un'entit\`a che, al ricevimento di un input
-sulla Touch Board, elabora e riconosce l'input ricevuto e lo inoltra al modulo.
-Il comando viene validato e, in caso di risposta positiva, viene inoltrato agli altri moduli.
+La struttura del modulo, mostrata in figura \ref{fig:structtouch}, \`e composta da un'entit\`a \emph{Riconoscimento del comando} che,
+al ricevimento di un input
+sulla Touch Board, elabora e riconosce il segnale ricevuto (che pu\`o essere la direzione di spostamento del dito sulla scheda oppure un tocco)
+e lo inoltra al modulo.
+Il comando viene validato dall'entità \emph{validatore di comando} tramite semplice comparazione tra la stringa ricevuta e un array di stringhe,
+dove ogni elemento corrisponde
+ad un possibile comando che si pu\`o impartire. In caso di risposta positiva, il comando viene inoltrato in broadcast agli altri moduli,
+con i metodi discussi nella sezione \ref{cap:MMmess}.\\
 Per poter eseguire un programma Python sul MM \`e necessario usare la libreria Javascript \emph{Python-Shell}, la quale
 permette di avviare una shell di Python in background e avviare, di conseguenza, i programmi.
 La comunicazione tra programma Python e il NodeHelper avviene tramite messaggi in JSON. Quando la scheda riceve un input,
 il programma Python comunica il risultato al NodeHelper che lo inoltra al modulo.
+\begin{figure}[H]
+    \includegraphics[width=1\textwidth, height=0.6\textheight]{skywriter}
+    \caption{Touch Board Skydriver by Piromoni}
+    \label{fig:TouchBoard}
+\end{figure}
 
 \begin{figure}[H]
     \includegraphics[width=1\textwidth, height=0.4\textheight]{touchstruct}
     \caption{Struttura del modulo con la Touch Board}
     \label{fig:structtouch}
-\end{figure}
-
-\begin{figure}[H]
-    \includegraphics[width=1\textwidth, height=0.6\textheight]{skywriter}
-    \caption{Touch Board Skydriver by Piromoni}
-    \label{fig:TouchBoard}
 \end{figure}

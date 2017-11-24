@@ -149,16 +149,16 @@ INPUT ./immagini/modulovocale.png
 INPUT ./immagini/modulovocale.png
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omlcmr.fd
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omlcmr.fd
-INPUT immagini/touchstruct.png
-INPUT ./immagini/touchstruct.png
-INPUT ./immagini/touchstruct.png
-INPUT ./immagini/touchstruct.png
-INPUT ./immagini/touchstruct.png
 INPUT immagini/skywriter.jpg
 INPUT ./immagini/skywriter.jpg
 INPUT ./immagini/skywriter.jpg
 INPUT ./immagini/skywriter.jpg
 INPUT ./immagini/skywriter.jpg
+INPUT immagini/touchstruct.png
+INPUT ./immagini/touchstruct.png
+INPUT ./immagini/touchstruct.png
+INPUT ./immagini/touchstruct.png
+INPUT ./immagini/touchstruct.png
 INPUT capitoli/Capitolo5.tex
 INPUT capitoli/Capitolo5.tex
 INPUT immagini/interfacciatesi.png

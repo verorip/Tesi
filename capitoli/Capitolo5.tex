@@ -1,7 +1,7 @@
-\chapter{Interfaccia web di amministrazione}\label{capitolo5}
-In questo capitolo vengono esposti la progettazione e l'implementazione dell'interfaccia web di amministrazione
+\chapter{Interfaccia web di configurazione}\label{capitolo5}
+In questo capitolo vengono esposti la progettazione e l'implementazione dell'interfaccia web di configurazione
 nel MM.
-Al fine di ospitare la pagina web che contiene il pannello di amministrazione, \`e necessario
+Al fine di ospitare la pagina web che contiene il pannello di configurazione, \`e necessario
 creare una nuova classe server oltre a quella gi\`a esistente, citata nel sezione \ref{cap:MMalto}.
 Il server gira su una porta differente rispetto al primo server, la quale è indicata nel file di configurazione del MM,
 ed \`e accessibile da qualsiasi utente all'interno della sottorete.
@@ -16,15 +16,17 @@ In particolare, nel capitolo, verranno esposte la struttura del funzionamento de
 l'individuazione dei moduli
 presenti nel MM, con i relativi file JSON, al fine di renderli modificabili (sezione \ref{cap:individuazione}).\\[1\baselineskip]
 
-\section{Struttura dell'interfaccia Web di amministrazione}\label{cap:strutturainterfaccia}
-Come gi\`a descritto nella sezione precedente il server \`e implementato con Express, quindi la struttura
+\section{Struttura dell'interfaccia Web di configurazione}\label{cap:strutturainterfaccia}
+Dato che il server \`e implementato con Express, quindi la struttura
 contiene le due entit\`a (Controller e Modello), descritte nella sezione \ref{cap:express}, come mostrato
 in figura \ref{fig:struttinterfaccia}.
-Il browser fa richiesta di una pagina di un determinato modulo passando un Uniform Resource Identifier(\textit{URI}),
-che viene ricevuto dal controller principale e inoltrato al modello a cui fa riferimento (in questo caso il modello
-\`e uno soltanto). Il modello ricerca in locale il file JSON del modulo richiesto e lo passa al controller, il quale lo inoltra alla vista.
-Quest'ultima aggiorna il template della pagina inserendo i dati contenuti nel JSON, che \`e stato passato, e la inoltra al browser che ne ha fatto richiesta.\\
-Non \`e stato necessario utilizzare il Routing dal momento che esiste un solo modello e, di conseguenza, un solo controller.\\[1\baselineskip]
+Un utente (tramite il browser) fa richiesta di una pagina di un determinato modulo passando un Uniform Resource Identifier(\textit{URI}),
+che viene ricevuto dal controller principale (passo 1) e inoltrato al modello (passo 2) a cui fa riferimento (in questo caso il modello
+\`e uno soltanto). Il modello ricerca in locale il file JSON del modulo richiesto (passo 3) e lo passa al controller (passo 4 e 5), il quale lo
+inoltra alla vista.
+Quest'ultima aggiorna il template della pagina inserendo i dati contenuti nel JSON che \`e stato passato, e la inoltra al browser che ne ha fatto richiesta.\\
+Non \`e stato necessario utilizzare il Routing dal momento che \`e stato necessario
+implementare un solo modello e, di conseguenza, un solo controller.\\[1\baselineskip]
 
 \begin{figure}[H]
     \includegraphics[width=1\textwidth, height=0.4\textheight]{interfacciatesi}
@@ -33,7 +35,7 @@ Non \`e stato necessario utilizzare il Routing dal momento che esiste un solo mo
 \end{figure}
 
 \section{Individuazione e visualizzazione dei moduli nell'interfaccia}\label{cap:individuazione}
-Come gi\`a trattato nella sezione \ref{cap:app}, tutti i moduli sono contenuti nella
+Come gi\`a discusso nella sezione \ref{cap:app}, tutti i moduli sono contenuti nella
 cartella \textit{Modules} del MM. Il server, tramite una funzione della libreria,
 legge i nomi di tutte le cartelle contenute all'interno di \textit{Modules}, il cui percorso \`e stato passato
 come parametro alla funzione. In seguito, salva tutti i nomi dei moduli
@@ -46,7 +48,7 @@ di libreria precedentemente usata anche su quest'ultima cartella e concatenare, 
 per ottenere un'unica lista con tutti i moduli, necessaria per poter popolare il men\`u del pannello web di configurazione.\\
 Tutte le pagine web che ritorna il server sono divise in 2 sezioni come illustrato nella figura \ref{fig:interfaccia}:
 \begin{itemize}
-\item Il men\`u laterale, che contiene tutti i moduli messi nella lista. Ogni opzione del men\`u corrisponde ad un modulo, che inoltra
+\item Il men\`u laterale, che contiene tutti i moduli messi nella lista (ad esempio \textit{calendar} e \textit{clock}). Ogni opzione del men\`u corrisponde ad un modulo, che inoltra
 la richiesta con il rispettivo URI
 \item Le varie impostazioni del modulo, visualizzate tramite \textit{CodeMirror}\cite{CodeMirror}, una componente Javascript
 che permette l'implementazione di un'area di testo per la modifica di codici all'interno di una pagina web.\\[1\baselineskip]
@@ -59,8 +61,13 @@ Insieme vengono passati i parametri \textit{posizione} ed \textit{header}, tratt
 di configurazione passato all'inizializzazione del server.
 Durante la creazione della pagina, i vari campi trasmessi, vengono inseriti dentro l'area di testo di \textit{CodeMirror}, che permetter\`a di eseguirne
 le modifiche. Sotto all'area di testo \`e presente un bottone, che permette di attivare o disattivare il modulo nel MM; tuttavia affinch\`e la modifica
-venga apportata \`e richiesto un riavvio del software. Le modifiche effettuate vengono spedite al server che si occupa di salvarle nel file di configurazione
-principale del MM.
+venga apportata \`e richiesto un riavvio manuale del software.
+Le modifiche effettuate vengono spedite al server che si occupa di salvarle nel file di configurazione
+principale del MM. Le metodologie e le pratiche per modificare e salvare le modifiche nel file di configurazione sono state sviluppate ed
+implementate da una mio collega.\\
+Nel caso che durante una delle operazioni di fetch o di invio dei dati alla pagina si verifichi un errore, viene mostrata una pagina
+con un errore generico. Invece, in caso di errata sintassi del file JSON modificato, viene ricaricata la pagina del modulo appena modificato
+mostrando una stringa di errore sopra all'area di editor di testo.
 
 
 \begin{figure}[H]
