@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  24 NOV 2017 14:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  24 NOV 2017 15:30
 entering extended mode
 **./Tesi.tex
 (Tesi.tex
@@ -541,22 +541,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--56
 
 [23]
 Missing character: There is no Ã in font cmr12!
-Missing character: There is no ² in font cmr12!
- <immagini/skywriter.jpg, id=398, 1027.84pt x 1027.84pt>
+Missing character: There is no   in font cmr12!
+ <immagini/skywriter.jpg, id=399, 1027.84pt x 1027.84pt>
 File: immagini/skywriter.jpg Graphic file (type jpg)
 
 <use immagini/skywriter.jpg>
-Package pdftex.def Info: immagini/skywriter.jpg used on input line 115.
+Package pdftex.def Info: immagini/skywriter.jpg used on input line 120.
 (pdftex.def)             Requested size: 390.00296pt x 355.20116pt.
  [24]
-<immagini/touchstruct.png, id=406, 1445.4pt x 813.0375pt>
+<immagini/touchstruct.png, id=407, 1445.4pt x 813.0375pt>
 File: immagini/touchstruct.png Graphic file (type png)
 
 <use immagini/touchstruct.png>
-Package pdftex.def Info: immagini/touchstruct.png used on input line 121.
+Package pdftex.def Info: immagini/touchstruct.png used on input line 126.
 (pdftex.def)             Requested size: 389.99857pt x 236.79213pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 [][]
  []
 
@@ -583,20 +583,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--18
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--28
+Underfull \hbox (badness 10000) in paragraph at lines 20--30
 
  []
 
 [27
 
-] <immagini/interfacciatesi.png, id=426, 1445.4pt x 813.0375pt>
+] <immagini/interfacciatesi.png, id=427, 1445.4pt x 813.0375pt>
 File: immagini/interfacciatesi.png Graphic file (type png)
 
 <use immagini/interfacciatesi.png>
-Package pdftex.def Info: immagini/interfacciatesi.png used on input line 30.
+Package pdftex.def Info: immagini/interfacciatesi.png used on input line 32.
 (pdftex.def)             Requested size: 389.99857pt x 236.79213pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
 [][]
  []
 
@@ -605,20 +605,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.48 \begin{itemize}
+l.50 \begin{itemize}
                      <./immagini/interfacciatesi.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 51--53
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
  []
 
-<immagini/interfacciamm.png, id=438, 789.70032pt x 574.39594pt>
+[29] <immagini/interfacciamm.png, id=445, 789.70032pt x 574.39594pt>
 File: immagini/interfacciamm.png Graphic file (type png)
 
 <use immagini/interfacciamm.png>
-Package pdftex.def Info: immagini/interfacciamm.png used on input line 67.
+Package pdftex.def Info: immagini/interfacciamm.png used on input line 74.
 (pdftex.def)             Requested size: 390.00516pt x 296.00563pt.
-) [29] [30pdfTeX warning (ext4): destination with the same identifier (name{fig
-ure.5.2}) has been already used, duplicate ignored
+) [30pdfTeX warning (ext4): destination with the same identifier (name{figure.5
+.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -634,13 +634,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: DE2838D9FF15D6D545F05A4160DC1146;2397.
+(rerunfilecheck)             Checksum: CF9C7D4ACD9F9B50C7C5C815EBE4EF67;2395.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
  7970 strings out of 493323
  114147 string characters out of 3139066
- 236788 words of memory out of 3000000
+ 236786 words of memory out of 3000000
  11273 multiletter control sequences out of 15000+200000
  9622 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -652,9 +652,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on Tesi.pdf (33 pages, 985705 bytes).
+Output written on Tesi.pdf (33 pages, 984349 bytes).
 PDF statistics:
- 535 PDF objects out of 1000 (max. 8388607)
+ 536 PDF objects out of 1000 (max. 8388607)
  133 named destinations out of 1000 (max. 500000)
  326 words of extra memory for PDF output out of 10000 (max. 10000000)
 

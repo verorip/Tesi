@@ -34,6 +34,6 @@
 \contentsline {subsubsection}{Sound eXchange (SoX)}{24}{section*.3}
 \contentsline {subsubsection}{Autenticazione Google API}{24}{section*.4}
 \contentsline {section}{\numberline {4.2}Modulo con Touch Board}{24}{section.4.2}
-\contentsline {chapter}{\numberline {5}Interfaccia web di amministrazione}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}Struttura dell'interfaccia Web di amministrazione}{27}{section.5.1}
+\contentsline {chapter}{\numberline {5}Interfaccia web di configurazione}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Struttura dell'interfaccia Web di configurazione}{27}{section.5.1}
 \contentsline {section}{\numberline {5.2}Individuazione e visualizzazione dei moduli nell'interfaccia}{28}{section.5.2}
