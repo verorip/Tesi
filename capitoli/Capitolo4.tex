@@ -13,14 +13,14 @@ Nella figura \ref{fig:modulovocale} \`e rappresentata la struttura e il funziona
 Il microfono cattura l'audio, che viene elaborato, all'interno del NodeHelper, dal componente "Elaborazione Audio".
 Successivamente, l'audio cos\`i elaborato, viene
 passato all'API Google Speech, la quale lo inoltra al Servizio Google Speech e si mette in attesa di una risposta.
-Al ritorno di questa, viene passata al modulo che ha il compito di validare il comando e di inoltrarlo in boradcast a tutti i moduli, se
+Al ritorno di questa, viene passata al modulo che ha il compito di validare il comando e di inoltrarlo in broadcast a tutti i moduli, se
 corretto.
 La validazione del comando è un semplice controllo di stringa tra il comando ricevuto dal NodeHeler e una lista di stringhe in un array che
 corrispondono alla lista di comandi.
 Alcuni comandi di esempio sono: \emph{mostra ora}, per mostrare l'ora, \emph{che giorno \`e?}, per mostrare
 il calendario, oppure \emph{mostra -nome modulo-}, per visualizzare uno specifico modulo.\\
 Per poter utilizzare l'API \`e stato necessario scaricare un software per l'elaborazione dell'audio.
-Tra le diverse possibilità è stato scelto il software Sound eXchange (\emph{SoX}).
+Tra le diverse possibilit\`a è stato scelto il software Sound eXchange (\emph{SoX}).
 Inoltre \`e richiesta un'autenticazione per poter usufruire dei servizi Google.
 
 \begin{figure}[H]
@@ -48,7 +48,7 @@ il flusso audio.
 La funzione si mette successivamente in attesa di una risposta dall'API la quale pu\`o essere di due tipi:
 \begin{itemize}
 \item errore, nel caso ci sia stato un errore di connessione. In questo caso viene mandato al modulo un messaggio di errore
-\item dati di risposta, nel caso di risposta senza errori, ma che pu\`o essere divisa uteriormente in altre due risposte. La prima sia ha nel caso in cui
+\item dati di risposta, nel caso di risposta senza errori, ma che pu\`o essere divisa ulteriormente in altre due risposte. La prima sia ha nel caso in cui
 viene raggiunto il limite di parole tradotte (Google mette a disposizione un limite giornaliero per chi vuole usufruirne gratuitamente). In questo caso
 il modulo lo notificherebbe a video con un messaggio di errore. La seconda risposta contiene una stringa con la frase tradotta,
 che il modulo validerebbe come comando,
@@ -108,7 +108,7 @@ La struttura del modulo, mostrata in figura \ref{fig:structtouch}, \`e composta 
 al ricevimento di un input
 sulla Touch Board, elabora e riconosce il segnale ricevuto (che pu\`o essere la direzione di spostamento del dito sulla scheda oppure un tocco)
 e lo inoltra al modulo.
-Il comando viene validato dall'entità \emph{validatore di comando} tramite semplice comparazione tra la stringa ricevuta e un array di stringhe,
+Il comando viene validato dall'entit\`a \emph{validatore di comando} tramite semplice comparazione tra la stringa ricevuta e un array di stringhe,
 dove ogni elemento corrisponde
 ad un possibile comando che si pu\`o impartire. In caso di risposta positiva, il comando viene inoltrato in broadcast agli altri moduli,
 con i metodi discussi nella sezione \ref{cap:MMmess}.\\

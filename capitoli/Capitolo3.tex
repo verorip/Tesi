@@ -35,10 +35,10 @@ Si possono individuare alcuni elementi principali rappresentati in figura \ref{f
 \begin{itemize}
 \item Il core, il cuore del MM dove gira il codice principale.
 \item Il server, che gira in locale, usato per restituire la pagina HTML con i dati al browser di Electron e comunicare con le API
-\item I Moduli, entità che espone le API per l'implementazione di applicazioni
-\item I Node Helper, enità che espone le API l'implementazione di funzioni di supporto al Modulo
+\item I Moduli, entit\`a che espone le API per l'implementazione di applicazioni
+\item I NodeHelper, entit\`a che espone le API l'implementazione di funzioni di supporto al Modulo
 \item Il Socket, entit\`a che fornisce un canale di comunicazione tra i Moduli
-\item Il SocketClient, entit\`a che che fornisce un canale di comunicazione tra un Modulo e il proprio NodeHelper.\\[2\baselineskip]
+\item Il SocketClient, entit\`a che fornisce un canale di comunicazione tra un Modulo e il proprio NodeHelper.\\[2\baselineskip]
 \end{itemize}
 
 \section{Avvio ed Esecuzione}\label{cap:MMavvio}
@@ -52,12 +52,12 @@ solo dopo l'avvio di tutti i moduli attivi.\\
 Le strutture principali caricate dal MM sono le seguenti:
 \begin{itemize}
 \item gli end-point delle API per le applicazioni, che sono le interfacce usate per leggere e caricare le applicazioni inserite nel MM.
-\item gli end-point delle API per la gestione dei Node Helper. Sono strutture opzionali usate per collegamenti
-esterni al MM (per esempio, con API di un servizio cloud). Ogni applicazione ha il proprio Node Helper con cui pu\`o comunicare tramite messaggi in modo
+\item gli end-point delle API per la gestione dei NodeHelper. Sono strutture opzionali usate per collegamenti
+esterni al MM (per esempio, con API di un servizio cloud). Ogni applicazione ha il proprio NodeHelper con cui pu\`o comunicare tramite messaggi in modo
 simile a come comunicano le applicazioni tra di loro.
 \item un "Socket" e un "Socket-Client", entit\`a principali che definiscono le funzioni per lo scambio dei messaggi tra le applicazioni e i
-rispettivi Node Helper.
-\item un Logger, implementato per tenere i log dell'applicazione e degli evenutali errori. Usato pricipalmente per il debugging.
+rispettivi NodeHelper.
+\item un Logger, implementato per tenere i log dell'applicazione e degli eventuali errori. Usato principalmente per il debugging.
 \item un file di configurazione, nel quale sono specificati il nome e le coordinate per la posizione dei vari moduli
 all'interno della pagina.\\[2\baselineskip]
 \end{itemize}
@@ -97,7 +97,7 @@ Dentro la cartella appena creata devono essere inseriti:
 \item 1 file Javascript (JS), ovvero il documento principale con lo stesso nome della cartella appena creata. Contiene il codice dell'applicazione, il quale
 conterr\`a a sua volta il codice per la creazione dei DOM
 \item 1 file Cascading Style Sheets (CSS), per modificare l'estetica del DOM della relativa applicazione (opzionale)
-\item 1 file node\_helper.js, che \`e il Node Helper associato alla specifica applicazione (opzionale)
+\item 1 file node\_helper.js, che \`e il NodeHelper associato alla specifica applicazione (opzionale)
 \item Altri file necessari all'applicazione (immagini, JSON, etc)\\[1\baselineskip]
 \end{itemize}
 
@@ -117,11 +117,11 @@ se disponibile, viene caricata la traduzione in base alla lingua configurata nel
 \item getHeader: function() {	return this.data.header;}, funzione che stampa il campo \textit{header} della configurazione, con la possibilit\`a concaternarla
 ad una stringa o ad un parametro
 \item notificationReceived: function(notification, payload, sender) {}, funzione che serve per ricevere messaggi da altre applicazioni. Viene richiamata alla ricezione
-\item socketNotificationReceived: function(notification, payload){}, funzione che serve per ricevere messaggi dal Node Helper della relativa applicazione\\[1\baselineskip]
+\item socketNotificationReceived: function(notification, payload){}, funzione che serve per ricevere messaggi dal NodeHelper della relativa applicazione\\[1\baselineskip]
 \end{itemize}
 Inoltre possono essere aggiunte delle funzioni necessarie all'applicazione implementandole con la stessa sintassi di quelle di default.
 \\[1\baselineskip]
-Il Node Helper, invece, viene caricato come libreria ed esportato insieme all'applicazione quando viene caricata dallo specchio. Per inizializzarlo sono
+Il NodeHelper, invece, viene caricato come libreria ed esportato insieme all'applicazione quando viene caricata dallo specchio. Per inizializzarlo sono
 necessari i comandi:
 \begin{lstlisting}[language=JavaScript]
 {

@@ -1,35 +1,36 @@
-\BOOKMARK [0][-]{chapter*.2}{Introduzione}{}% 1
-\BOOKMARK [0][-]{chapter.1}{Scopi e Problemi Affrontati}{}% 2
-\BOOKMARK [1][-]{section.1.1}{Applicazioni del MagicMirror}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.2}{Interfaccia di controllo del MagicMirror}{chapter.1}% 4
-\BOOKMARK [0][-]{chapter.2}{Tecnologie Implicate}{}% 5
-\BOOKMARK [1][-]{section.2.1}{Prefazione}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.2}{Hardware}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.2.1}{RasperryPi}{section.2.2}% 8
-\BOOKMARK [2][-]{subsection.2.2.2}{Periferiche}{section.2.2}% 9
-\BOOKMARK [1][-]{section.2.3}{Software}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.3.1}{Raspbian}{section.2.3}% 11
-\BOOKMARK [2][-]{subsection.2.3.2}{Electron}{section.2.3}% 12
-\BOOKMARK [2][-]{subsection.2.3.3}{OpenCV}{section.2.3}% 13
-\BOOKMARK [2][-]{subsection.2.3.4}{Google Speech API}{section.2.3}% 14
-\BOOKMARK [2][-]{subsection.2.3.5}{Node.JS}{section.2.3}% 15
-\BOOKMARK [2][-]{subsection.2.3.6}{Express}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.7}{Mustache}{section.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.3.8}{MySQL}{section.2.3}% 18
-\BOOKMARK [2][-]{subsection.2.3.9}{JavaScript}{section.2.3}% 19
-\BOOKMARK [2][-]{subsection.2.3.10}{Python}{section.2.3}% 20
-\BOOKMARK [2][-]{subsection.2.3.11}{GitLab}{section.2.3}% 21
-\BOOKMARK [0][-]{chapter.3}{Struttura del MagicMirror}{}% 22
-\BOOKMARK [1][-]{section.3.1}{Il MM dall'alto livello}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.2}{Avvio ed Esecuzione}{chapter.3}% 24
-\BOOKMARK [2][-]{subsection.3.2.1}{Il file di Configurazione}{section.3.2}% 25
-\BOOKMARK [1][-]{section.3.3}{Implementazione di un'applicazione}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.4}{Messaggistica del MM}{chapter.3}% 27
-\BOOKMARK [0][-]{chapter.4}{Applicazioni per il MM}{}% 28
-\BOOKMARK [1][-]{section.4.1}{Modulo per comandi vocali}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.1.1}{Comunicazione con l'API di Google}{section.4.1}% 30
-\BOOKMARK [2][-]{subsection.4.1.2}{Difficolt\340 incontrate}{section.4.1}% 31
-\BOOKMARK [1][-]{section.4.2}{Modulo con Touch Board}{chapter.4}% 32
-\BOOKMARK [0][-]{chapter.5}{Interfaccia web di configurazione}{}% 33
-\BOOKMARK [1][-]{section.5.1}{Struttura dell'interfaccia Web di configurazione}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.2}{Individuazione e visualizzazione dei moduli nell'interfaccia}{chapter.5}% 35
+\BOOKMARK [0][-]{chapter*.2}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{Introduzione}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Scopi e Problemi Affrontati}{}% 3
+\BOOKMARK [1][-]{section.1.1}{Applicazioni del MagicMirror}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Interfaccia di controllo del MagicMirror}{chapter.1}% 5
+\BOOKMARK [0][-]{chapter.2}{Tecnologie Implicate}{}% 6
+\BOOKMARK [1][-]{section.2.1}{Prefazione}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{Hardware}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.1}{RasperryPi}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.2}{Periferiche}{section.2.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Software}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.3.1}{Raspbian}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.2}{Electron}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.3}{OpenCV}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.4}{Google Speech API}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.5}{Node.JS}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.6}{Express}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.7}{Mustache}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.8}{MySQL}{section.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.3.9}{JavaScript}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.10}{Python}{section.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.3.11}{GitLab}{section.2.3}% 22
+\BOOKMARK [0][-]{chapter.3}{Struttura del MagicMirror}{}% 23
+\BOOKMARK [1][-]{section.3.1}{Il MM dall'alto livello}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.2}{Avvio ed Esecuzione}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.2.1}{Il file di Configurazione}{section.3.2}% 26
+\BOOKMARK [1][-]{section.3.3}{Implementazione di un'applicazione}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.4}{Messaggistica del MM}{chapter.3}% 28
+\BOOKMARK [0][-]{chapter.4}{Applicazioni per il MM}{}% 29
+\BOOKMARK [1][-]{section.4.1}{Modulo per comandi vocali}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.1.1}{Comunicazione con l'API di Google}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.2}{Difficolt\340 incontrate}{section.4.1}% 32
+\BOOKMARK [1][-]{section.4.2}{Modulo con Touch Board}{chapter.4}% 33
+\BOOKMARK [0][-]{chapter.5}{Interfaccia web di configurazione}{}% 34
+\BOOKMARK [1][-]{section.5.1}{Struttura dell'interfaccia Web di configurazione}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.2}{Individuazione e visualizzazione dei moduli nell'interfaccia}{chapter.5}% 36

@@ -10,8 +10,8 @@ immagini (OpenCV \cite{OpenCV-website} e Google Speech API \cite{GoogleSTT-websi
 nello sviluppo di applicazioni web (Electron \cite{Electron-website}, Node.JS \cite{Node.JS-website},
 Express \cite{Express-website}, Mustache \cite{Mustache}) e della gestione dati (MySQL \cite{MySQL}).
 Inoltre sono stati adottati diversi linguaggi di programmazione (JavaScript \cite{JavaScript}, Python \cite{Python}).
-Inoltre per la gestione distribuita di progetti softwave e di versionamento del cofice \`e
-stata usat la piattaforma GitLab \cite{git-website}.
+Inoltre per la gestione distribuita di progetti software e di versionamento del codice \`e
+stata usata la piattaforma GitLab \cite{git-website}.
 
 \section{Hardware}
 \subsection{RasperryPi}
@@ -137,7 +137,7 @@ di scaricare ed installare librerie private o pubbliche salvate su un database.
 
 \subsection{Express}\label{cap:express}
 Express \`e un framework per Node.JS che permette di creare applicazioni Web in JavaScript, offrendo strumenti e pacchetti
-che implementano pi\`u facilmente tutte le funzionalit\`e offerte da Node.JS.
+che implementano pi\`u facilmente tutte le funzionalit\`a offerte da Node.JS.
 Il software viene usato per creare e gestire il back-end di un server, che \`e composto da 3 entit\`a importanti:
 \begin{itemize}
 \item il Controller, che definisce le funzioni associate ad un determinato modello.
@@ -155,7 +155,7 @@ genera automaticamente pagine web, permettendo cos\`i di riutilizzare elementi s
 Dal momento che Mustache \`e disponibile in diversi linguaggi tra cui Javascript \`e stato usato per l'interfaccia web di configurazione
 del MagicMirror.
 Mustache \`e un sistema logic-less perch\`e \`e privo di istruzioni per il controllo del flusso
-(come ad esempio l'"if" e l'"else"), quindi tutti i controllli di questo tipo sono data-driven.\\
+(come ad esempio l'"if" e l'"else"), quindi tutti i controlli di questo tipo sono data-driven.\\
 
 \subsection{MySQL}
 MySQL \`e stato usato durante lo stage come database per l'archiviazione di account di utenti
@@ -174,10 +174,10 @@ Inizialmente usato per il lato client ha subito un'evoluzione che lo ha portato 
 \\[2\baselineskip]
 ECMAJavascript(ES) \`e lo standard di Javascript che negli ultimi anni ha sviluppato ed evoluto il linguaggio in diverse versioni.
 Uno degli aspetti su cui il processo di standardizzazione si è focalizzato \`e la semplificazione della gestione degli eventi e delle funzioni asincrone
-(cioè di quelle che riconsegnano il controllo al chiamante prima della loro terminazione).
+(cio\`e di quelle che riconsegnano il controllo al chiamante prima della loro terminazione).
 Le pratiche utilizzate per sincronizzare di queste funzioni in ECMAJavascript 5 (ES5), la versione usata durante lo
 stage, sono l'utilizzo delle callback.\\[1\baselineskip]
-In ECMAJavascript 6 (ES6) \`e stato introdotto il concetto di Promisesche ha sostituito le funzioni di Callback.
+In ECMAJavascript 6 (ES6) \`e stato introdotto il concetto di Promises, che ha sostituito le funzioni di Callback.
 Una Promise rappresenta un proxy per un valore non necessariamente noto quando la Promise è stata creata. Consente di associare degli handlers
 con il successo o il fallimento di un'azione asincrona (e il "valore" in caso di successo, o la motivazione in caso di fallimento).
 Sono tutt'ora in via di sviluppo nuove versioni di Javascript.
@@ -198,5 +198,5 @@ GitLab \`e una piattaforma web che implementa le funzionalit\`a offerte dal soft
 servizi tra i quali la possibilit\`a di creare wiki e un servizio di issue tracking, utile per tenere traccia
 di eventuali richieste o problemi.
 La comodit\`a di questa piattaforma sta nel poter creare dei Commit, ovvero ad ogni modifica del codice si pu\`o
-salvarne lo stato assegnadoli un'etichetta in locale, per poi spedirlo al respository in remoto del progetto.
+salvarne lo stato assegnandoli un'etichetta in locale, per poi spedirlo al respository in remoto del progetto.
 In ogni momento si pu\`o tornare ad una versione vecchia tramite gli strumenti di versionamento offerti dalla piattaforma web.

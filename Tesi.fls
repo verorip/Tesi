@@ -113,6 +113,8 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy8.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy6.tfm
 OUTPUT Tesi.toc
+INPUT capitoli/Abstract.tex
+INPUT capitoli/Abstract.tex
 INPUT capitoli/Introduzione.tex
 INPUT capitoli/Introduzione.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmti12.tfm
@@ -171,6 +173,8 @@ INPUT ./immagini/interfacciamm.png
 INPUT ./immagini/interfacciamm.png
 INPUT ./immagini/interfacciamm.png
 INPUT ./immagini/interfacciamm.png
+INPUT capitoli/Conclusione.tex
+INPUT capitoli/Conclusione.tex
 INPUT bibliografia/bibliografia.tex
 INPUT bibliografia/bibliografia.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmtt12.tfm

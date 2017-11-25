@@ -35,10 +35,10 @@ Lo scambio dei messaggi tra il MM e la pagina web avviene in formato JSON, lo st
 usato per il file di configurazione.\\
 Un altro problema riscontrato in questa parte \`e stata la difficolt\`a dell'utilizzo di Javascript
 perch\`e \`e un linguaggio orientato ad eventi, ovvero alcune funzioni vengono eseguite senza attendere
-il risulato della precedente. Il linguaggio, per poter sincronizzare le funzioni, mette a disposizione
-le callback: funzioni passate come paratemo ad un'altra funzione, così
-ques'ultima può svolgere un determinato compito (quello svolto nella callback) che non \`e noto al momento
-della scrittura dle codice.
+il risultato della precedente. Il linguaggio, per poter sincronizzare le funzioni, mette a disposizione
+le callback: funzioni passate come parametro ad un'altra funzione, così
+ques'ultima pu\`o svolgere un determinato compito (quello svolto nella callback) che non \`e noto al momento
+della scrittura del codice.
 Senza buone pratiche di programmazione si rischia di incontrarsi in un fenomeno chiamato "Callback Hell", ovvero callback che chiamano a loro volta
 altre callback creando funzioni annidate pi\`u volte, come mostrato in figura \ref{fig:hell}.
 \begin{figure}[H]

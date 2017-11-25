@@ -1,0 +1,24 @@
+\chapter*{Conclusione}
+
+Per riassumere il lavoro svolto, si ricorda che durante la prima parte dello stage sono state sviluppate due interfacce utente per il MM:
+\begin{itemize}
+\item Una vocale, che permette l'impartizione di comandi vocali validi. In questa parte si \`e dovuto affrontare il problema di interfacciarsi
+ai servizi Google e di far comunicare correttamente il microfono con le API esposte, tramite il software SoX
+\item Una touch, che permette l'impartizione di comandi validi tramite il movimento delle dita su una scheda touch.
+Il problema riscontrato con questa interfaccia \`e stato implementare un canale di comunicazione tra il programma python che cattura i controlli
+sulla scheda e il NodeHelper.
+\end{itemize}
+Nella seconda parte \`e stata implementata un'interfaccia web di configurazione remota
+che permette di configurare pi\`u facilmente il MM e i suoi moduli.
+I problemi riscontrati in questa parte sono stati:
+\begin{itemize}
+\item La corretta individuazione, visualizzazione e modifica dei file JSON
+dei moduli, contenuti all'interno dei file locali del MM
+\item L'utilizzo di una buona pratica di programmazione in Javascript per evitare fenomeni
+che portassero ad una scrittura del codice molto confusionaria.\\[1\baselineskip]
+\end{itemize}
+Alcune parti di questi progetti sono ancora arcaici o poco sviluppati:
+infatti un possibile sviluppo futuro delle interfacce utente \`e l'inserimento di un'unit\`a logica che possa validare i comandi
+impartiti (sia vocali che touch), in modo pi\`u concreto rispetto ad un semplice  controllo di stringa.\\
+Invece, per l'interfaccia web di configurazione, si pu\`o implementare un sistema per il riavvio automatico del software,
+anzich\`e farlo manualmente, insieme ad una crittografia dei messaggi scambiati, in modo da inserire un livello di sicurezza.
