@@ -17,10 +17,10 @@ l'individuazione dei moduli
 presenti nel MM, con i relativi file JSON, al fine di renderli modificabili (sezione \ref{cap:individuazione}).\\[1\baselineskip]
 
 \section{Struttura dell'interfaccia Web di configurazione}\label{cap:strutturainterfaccia}
-Dato che il server \`e implementato con Express, quindi la struttura
-contiene le due entit\`a (Controller e Modello), descritte nella sezione \ref{cap:express}, come mostrato
-in figura \ref{fig:struttinterfaccia}.
-Un utente (tramite il browser) fa richiesta di una pagina di un determinato modulo passando un Uniform Resource Identifier(\textit{URI}),
+Dato che il server \`e implementato con Express, la struttura
+\`e caratterizzata dalle due entit\`a (Controller e Modello), descritte nella sezione \ref{cap:express}.
+Come mostrato in figura \ref{fig:struttinterfaccia},
+un utente (tramite il browser) fa richiesta di una pagina di un determinato modulo passando un Uniform Resource Identifier(\textit{URI}),
 che viene ricevuto dal controller principale (passo 1) e inoltrato al modello (passo 2) a cui fa riferimento (in questo caso il modello
 \`e uno soltanto). Il modello ricerca in locale il file JSON del modulo richiesto (passo 3) e lo passa al controller (passo 4 e 5), il quale lo
 inoltra alla vista.
@@ -64,7 +64,7 @@ le modifiche. Sotto all'area di testo \`e presente un bottone, che permette di a
 venga apportata \`e richiesto un riavvio manuale del software.
 Le modifiche effettuate vengono spedite al server che si occupa di salvarle nel file di configurazione
 principale del MM. Le metodologie e le pratiche per modificare e salvare le modifiche nel file di configurazione sono state sviluppate ed
-implementate da una mio collega.\\
+implementate da una mia collega.\\
 Nel caso che durante una delle operazioni di fetch o di invio dei dati alla pagina si verifichi un errore, viene mostrata una pagina
 con un errore generico. Invece, in caso di errata sintassi del file JSON modificato, viene ricaricata la pagina del modulo appena modificato
 mostrando una stringa di errore sopra all'area di editor di testo.

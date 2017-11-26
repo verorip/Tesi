@@ -36,17 +36,17 @@ usato per il file di configurazione.\\
 Un altro problema riscontrato in questa parte \`e stata la difficolt\`a dell'utilizzo di Javascript
 perch\`e \`e un linguaggio orientato ad eventi, ovvero alcune funzioni vengono eseguite senza attendere
 il risultato della precedente. Il linguaggio, per poter sincronizzare le funzioni, mette a disposizione
-le callback: funzioni passate come parametro ad un'altra funzione, così
-ques'ultima pu\`o svolgere un determinato compito (quello svolto nella callback) che non \`e noto al momento
+le callback: esse sono funzioni passate come parametro ad un'altra funzione, cosicch\'e
+quest'ultima pu\`o svolgere un determinato compito (quello svolto nella callback) che non \`e noto al momento
 della scrittura del codice.
-Senza buone pratiche di programmazione si rischia di incontrarsi in un fenomeno chiamato "Callback Hell", ovvero callback che chiamano a loro volta
+Senza buone pratiche di programmazione si rischia di incontrare un fenomeno chiamato "CallbackHell", ovvero callback che chiamano a loro volta
 altre callback creando funzioni annidate pi\`u volte, come mostrato in figura \ref{fig:hell}.
 \begin{figure}[H]
     \includegraphics[width=1\textwidth, height=0.3\textheight]{callback}
-    \caption{Esempio di Callback Hell}
+    \caption{Esempio di CallbackHell}
     \label{fig:hell}
 \end{figure}
 Nella figura il codice esegue delle query attraverso delle API esposte da un servizio. La funzione \textit{CallEndpoint()} chiama la funzione dell'API passandogli
 un percorso, il quale restituisce il risultato di una query. Per poter procedere a quella successiva \`e richiesto il risultato della precedente e
 per farlo \`e necessario l'utilizzo di un'altra callback. Questa dipendenza si ripresenta anche nelle query successive creando un annidamento
-sempre maggiore conosciuto come callbackHell.
+sempre maggiore conosciuto come CallbackHell.

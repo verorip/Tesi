@@ -7,7 +7,7 @@ e l'implementazione del modulo con Touch Board (sezione \ref{cap:touch}).
 \section{Modulo per comandi vocali}\label{cap:voce}
 La prima applicazione implementata, \`e
 stata il controllo del MM tramite comandi vocali.
-Nello specifico l'applicazione deve, tramite delle specifiche frasi,
+Nello specifico l'applicazione deve, tramite delle opportune frasi,
 gestire le altre applicazioni presenti nel MM, sfruttando funzioni offerte dallo stesso.\\
 Nella figura \ref{fig:modulovocale} \`e rappresentata la struttura e il funzionamento del modulo.
 Il microfono cattura l'audio, che viene elaborato, all'interno del NodeHelper, dal componente "Elaborazione Audio".
@@ -15,12 +15,12 @@ Successivamente, l'audio cos\`i elaborato, viene
 passato all'API Google Speech, la quale lo inoltra al Servizio Google Speech e si mette in attesa di una risposta.
 Al ritorno di questa, viene passata al modulo che ha il compito di validare il comando e di inoltrarlo in broadcast a tutti i moduli, se
 corretto.
-La validazione del comando è un semplice controllo di stringa tra il comando ricevuto dal NodeHeler e una lista di stringhe in un array che
+La validazione del comando \`e un semplice controllo di stringa tra il comando ricevuto dal NodeHelper e una lista di stringhe in un array che
 corrispondono alla lista di comandi.
 Alcuni comandi di esempio sono: \emph{mostra ora}, per mostrare l'ora, \emph{che giorno \`e?}, per mostrare
 il calendario, oppure \emph{mostra -nome modulo-}, per visualizzare uno specifico modulo.\\
-Per poter utilizzare l'API \`e stato necessario scaricare un software per l'elaborazione dell'audio.
-Tra le diverse possibilit\`a è stato scelto il software Sound eXchange (\emph{SoX}).
+Per poter utilizzare l'API \`e stato necessario scaricare un software per l'elaborazione dell'audio, e,
+tra le diverse possibilit\`a, \`e stato scelto il software Sound eXchange (\emph{SoX}).\\
 Inoltre \`e richiesta un'autenticazione per poter usufruire dei servizi Google.
 
 \begin{figure}[H]
@@ -92,9 +92,9 @@ Per poterlo fare bisogna ottenere delle credenziali di sicurezza per un account 
 attivabili tramite Google Cloud Platform Console.
 Le credenziali consistono in un username, l'email dell'account Google e una chiave di sicurezza unica,
  il tutto contenuto in un file JSON che pu\`o essere scaricato e salvato in locale.
-Per poter permettere al sistema di utilizzare l'API occorre che il file JSON con le credenziali sia
+Per permettere al sistema di utilizzare l'API, occorre che il file JSON, con le credenziali salvate, sia
 raggiungibile all'interno del sistema e per rendere possibile ci\`o, bisogna creare una variabile d'ambiente
-con il nome \emph{GOOGLE\_APPLICATION\_CREDENTIALS} con assegnato il percorso dove si trova il file.
+con il nome \emph{GOOGLE\_APPLICATION\_CREDENTIALS} nel quale viene salvato il percorso dove si trova il file.
 
 \section{Modulo con Touch Board}\label{cap:touch}
 Nell'implementazione del modulo con la Touch Board \`e necessario aver installato nel sistema

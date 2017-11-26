@@ -12,7 +12,7 @@ una semplice pellicola a specchio (la quale da un lato permette di specchiarsi e
 attraverso) si crea un effetto particolare per cui una persona riesce a specchiarsi
 e allo stesso tempo riesce a vedere le scritte o le immagini trasmesse dal monitor,
 come mostrato in figura \ref{fig:MM}. In quest'ultima si pu\`o vedere il MM
-che, oltre alla sua funzione base di specchio, mostra alcune informazioni come l'ora, la temperatura, il meteo e un messaggio.
+che, oltre alla sua funzione base di specchio, mostra alcune informazioni come l'ora, la temperatura, il meteo e un messaggio.\\
 In questo capitolo verr\`a spiegata la struttura generale del MM (sezione \ref{cap:MMalto}), le classi principali che vengono caricate
 all'avvio (sezione \ref{cap:MMavvio}), la struttura del file di configurazione (sezione \ref{cap:MMconf}),
 come viene implementata un'applicazione (sezione \ref{cap:app})
@@ -34,9 +34,9 @@ Si possono individuare alcuni elementi principali rappresentati in figura \ref{f
 \end{figure}
 \begin{itemize}
 \item Il core, il cuore del MM dove gira il codice principale.
-\item Il server, che gira in locale, usato per restituire la pagina HTML con i dati al browser di Electron e comunicare con le API
+\item Il server, che gira in locale, usato per restituire la pagina HTML, con i dati, al browser di Electron e comunicare con le API
 \item I Moduli, entit\`a che espone le API per l'implementazione di applicazioni
-\item I NodeHelper, entit\`a che espone le API l'implementazione di funzioni di supporto al Modulo
+\item I NodeHelper, entit\`a che espone le API per l'implementazione di funzioni di supporto al Modulo
 \item Il Socket, entit\`a che fornisce un canale di comunicazione tra i Moduli
 \item Il SocketClient, entit\`a che fornisce un canale di comunicazione tra un Modulo e il proprio NodeHelper.\\[2\baselineskip]
 \end{itemize}
@@ -44,7 +44,7 @@ Si possono individuare alcuni elementi principali rappresentati in figura \ref{f
 \section{Avvio ed Esecuzione}\label{cap:MMavvio}
 Il MM viene avviato tramite linea di comando, la quale esegue
 il codice di un file Javascript, il cui percorso \`e indicato nel documento \textit{package.json} di Electron, descritto nella sezione \ref{cap:Electron}.
-Il file contiene il codice di Electron, che si occupa dell'avvio di MM, caricandone tutte le strutture, e della creazione una nuova finestra browser,
+Il file contiene il codice di Electron, che si occupa dell'avvio di MM, caricandone tutte le strutture, e della creazione di una nuova finestra browser,
 il cui compito \`e di mostrare l'output dei moduli.
 La pagina costruita e l'output dei moduli sono un insieme di Document Object Model (DOM), ovvero oggetti HTML che compongono una pagina web,
 i quali vengono mostrati
@@ -71,7 +71,7 @@ Come discusso nella sezione \ref{cap:interfacciaproblemi}, il MM carica un file 
 \item una whitelist, ovvero un IP oppure un range di IP che possono collegarsi allo specchio
 \item la lingua principale del sistema
 \item il formato dell'ora (12h o 24h)
-\item unit\`a di misura (ad esempio pixel), usata per gestire la distanza degli oggetti HTML
+\item l'unit\`a di misura (ad esempio pixel), usata per gestire la distanza degli oggetti HTML
 \item una lista di moduli (in formato JSON) da caricare durante l'avvio del MM con la relativa posizione nella pagina. Per ogni applicazione deve necessariamente comparire il
 nome e la posizione; opzionalmente si possono inserire un campo  \textit{header} e un campo \textit{config} specifico per l'applicazione, come mostrato
 nell'esempio in figura \ref{code:configapp}.

@@ -3,14 +3,14 @@ In questo capitolo verranno discusse le tecnologie che sono state studiate ed ut
 In particolare il capitolo \`e diviso tra tecnologie hardware e tecnologie software.
 
 \section{Prefazione}
-Lo sviluppo del progetto di stage \`e stato svolto nell'ambiente Raspbian\cite{Raspbian}
+Lo sviluppo del progetto di stage \`e stato svolto nell'ambiente Raspbian\cite{Raspbian},
 una distribuzione Debian\cite{Debian} che gira sul dispositivo RasperryPi\cite{Raspberry}.
 Inoltre sono state adottate diverse tecnologie nel campo del riconoscimento vocale e di
 immagini (OpenCV \cite{OpenCV-website} e Google Speech API \cite{GoogleSTT-website}),
 nello sviluppo di applicazioni web (Electron \cite{Electron-website}, Node.JS \cite{Node.JS-website},
 Express \cite{Express-website}, Mustache \cite{Mustache}) e della gestione dati (MySQL \cite{MySQL}).
 Inoltre sono stati adottati diversi linguaggi di programmazione (JavaScript \cite{JavaScript}, Python \cite{Python}).
-Inoltre per la gestione distribuita di progetti software e di versionamento del codice \`e
+Infine, per la gestione distribuita di progetti software e di versionamento del codice, \`e
 stata usata la piattaforma GitLab \cite{git-website}.
 
 \section{Hardware}
@@ -175,19 +175,19 @@ Inizialmente usato per il lato client ha subito un'evoluzione che lo ha portato 
 ECMAJavascript(ES) \`e lo standard di Javascript che negli ultimi anni ha sviluppato ed evoluto il linguaggio in diverse versioni.
 Uno degli aspetti su cui il processo di standardizzazione si è focalizzato \`e la semplificazione della gestione degli eventi e delle funzioni asincrone
 (cio\`e di quelle che riconsegnano il controllo al chiamante prima della loro terminazione).
-Le pratiche utilizzate per sincronizzare di queste funzioni in ECMAJavascript 5 (ES5), la versione usata durante lo
+Le pratiche utilizzate per sincronizzare queste funzioni in ECMAJavascript 5 (ES5), ovvero la versione usata durante lo
 stage, sono l'utilizzo delle callback.\\[1\baselineskip]
-In ECMAJavascript 6 (ES6) \`e stato introdotto il concetto di Promises, che ha sostituito le funzioni di Callback.
-Una Promise rappresenta un proxy per un valore non necessariamente noto quando la Promise è stata creata. Consente di associare degli handlers
-con il successo o il fallimento di un'azione asincrona (e il "valore" in caso di successo, o la motivazione in caso di fallimento).
+In ECMAJavascript 6 (ES6) \`e stato introdotto il concetto di Promises, che ha sostituito le funzioni di callback.
+Una Promise rappresenta un proxy per un valore non necessariamente noto quando la Promise \`e stata creata. Questa consente di associare degli handlers
+con il successo o il fallimento di un'azione asincrona, restituendo il valore prodotto, nel primo caso, o la motivazione nel secondo.\\
 Sono tutt'ora in via di sviluppo nuove versioni di Javascript.
 
 \subsection{Python}\label{cap:python}
-Python \`e un linguaggio di programmazione open source, ad alto livello con semantica dinamica, orientato ad oggetti, usato
-per sviluppo di applicazioni e scripting.\\[1\baselineskip]
+Python \`e un linguaggio di programmazione open source, ad alto livello, con semantica dinamica, orientato ad oggetti, usato
+per lo sviluppo di applicazioni e scripting.\\[1\baselineskip]
 Questo linguaggio \`e stato particolarmente utile per l'interfacciamento con la telecamera e la Touch Board, essendo a disposizione librerie
 apposite per gestirle.\\
-Come molti altri linguaggi supporta l'implementazione di pacchetti esterni che possono essere salvati in una repository pubblica
+Come molti altri linguaggi, supporta l'implementazione di pacchetti esterni che possono essere salvati in una repository pubblica
 o su piattaforme esterne.
 Nel primo caso Python utilizza un suo gestore di pacchetti: Pip Installs Packages o Pip Installs Python (pip, acronimo ricorsivo).
 Nel secondo caso i pacchetti possono essere inseriti senza dover utilizzare il gestore di pacchetti appena introdotto.

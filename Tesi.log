@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  25 NOV 2017 17:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.16)  26 NOV 2017 11:47
 entering extended mode
 **./Tesi.tex
 (Tesi.tex
@@ -313,7 +313,7 @@ italian.ldf    See the documentation concerning the babel-italian typesetting
 italian.ldf    on input line 9.
 
 (frontespizio/frontespizio.tex
-<immagini/logo.png, id=147, 825.0825pt x 290.08376pt>
+<immagini/logo.png, id=155, 825.0825pt x 290.08376pt>
 File: immagini/logo.png Graphic file (type png)
  <use immagini/logo.png>
 Package pdftex.def Info: immagini/logo.png used on input line 3.
@@ -374,9 +374,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--20
 
  []
 
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ¬ in font cmr12!
-<immagini/callback.png, id=228, 1286.8075pt x 468.75125pt>
+<immagini/callback.png, id=238, 1286.8075pt x 468.75125pt>
 File: immagini/callback.png Graphic file (type png)
 
 <use immagini/callback.png>
@@ -420,8 +418,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--159
 [13]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ¨ in font cmr12!
 
 Underfull \hbox (badness 10000) in paragraph at lines 186--195
 
@@ -429,7 +425,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--195
 
 [14]) [15] (capitoli/Capitolo3.tex
 Capitolo 3.
-<immagini/magic_mirror.jpg, id=317, 1550.79375pt x 1304.875pt>
+<immagini/magic_mirror.jpg, id=327, 1550.79375pt x 1304.875pt>
 File: immagini/magic_mirror.jpg Graphic file (type jpg)
 
 <use immagini/magic_mirror.jpg>
@@ -447,7 +443,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--24
 
 [16
 
-] <immagini/strutturaMM.png, id=324, 1445.4pt x 813.0375pt>
+] <immagini/strutturaMM.png, id=334, 1445.4pt x 813.0375pt>
 File: immagini/strutturaMM.png Graphic file (type png)
 
 <use immagini/strutturaMM.png>
@@ -496,13 +492,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--156
 
 ) [21] (capitoli/Capitolo4.tex
 Capitolo 4.
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ¨ in font cmr12!
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ¨ in font cmr12!
 [22
 
-] <immagini/modulovocale.png, id=371, 1445.4pt x 813.0375pt>
+] <immagini/modulovocale.png, id=381, 1445.4pt x 813.0375pt>
 File: immagini/modulovocale.png Graphic file (type png)
 
 <use immagini/modulovocale.png>
@@ -530,14 +522,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--56
 
  []
 
-[24] <immagini/skywriter.jpg, id=409, 1027.84pt x 1027.84pt>
+[24] <immagini/skywriter.jpg, id=419, 1027.84pt x 1027.84pt>
 File: immagini/skywriter.jpg Graphic file (type jpg)
 
 <use immagini/skywriter.jpg>
 Package pdftex.def Info: immagini/skywriter.jpg used on input line 120.
 (pdftex.def)             Requested size: 390.00296pt x 355.20116pt.
  [25]
-<immagini/touchstruct.png, id=416, 1445.4pt x 813.0375pt>
+<immagini/touchstruct.png, id=426, 1445.4pt x 813.0375pt>
 File: immagini/touchstruct.png Graphic file (type png)
 
 <use immagini/touchstruct.png>
@@ -577,7 +569,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--30
 
 [28
 
-] <immagini/interfacciatesi.png, id=436, 1445.4pt x 813.0375pt>
+] <immagini/interfacciatesi.png, id=446, 1445.4pt x 813.0375pt>
 File: immagini/interfacciatesi.png Graphic file (type png)
 
 <use immagini/interfacciatesi.png>
@@ -599,7 +591,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
  []
 
-[30] <immagini/interfacciamm.png, id=455, 789.70032pt x 574.39594pt>
+[30] <immagini/interfacciamm.png, id=465, 789.70032pt x 574.39594pt>
 File: immagini/interfacciamm.png Graphic file (type png)
 
 <use immagini/interfacciamm.png>
@@ -612,7 +604,7 @@ Package pdftex.def Info: immagini/interfacciamm.png used on input line 74.
                                                   \fi \fi 
 l.55 \newpage
               <./immagini/interfacciamm.png>] (capitoli/Conclusione.tex
-Underfull \hbox (badness 10000) in paragraph at lines 17--19
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
 
@@ -628,14 +620,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 60.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 60.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 6C71DAA17C68636054F6280F34FAE6E4;2441.
+(rerunfilecheck)             Checksum: 8116123862091608872DD9FC824AEAD0;2540.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 60.
  ) 
 Here is how much of TeX's memory you used:
- 7981 strings out of 493323
- 114302 string characters out of 3139066
- 236786 words of memory out of 3000000
- 11274 multiletter control sequences out of 15000+200000
+ 7984 strings out of 493323
+ 114334 string characters out of 3139066
+ 237785 words of memory out of 3000000
+ 11277 multiletter control sequences out of 15000+200000
  9622 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,7n,42p,908b,1251s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -646,9 +638,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on Tesi.pdf (35 pages, 988623 bytes).
+Output written on Tesi.pdf (35 pages, 989669 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
+ 558 PDF objects out of 1000 (max. 8388607)
  137 named destinations out of 1000 (max. 500000)
- 334 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 350 words of extra memory for PDF output out of 10000 (max. 10000000)
 
